@@ -1,2 +1,3 @@
 # Section 508 Test Automation
-Accessibility test automation overview.
+## Overview
+This is an overview of Section 508/Accessibility test automation.
