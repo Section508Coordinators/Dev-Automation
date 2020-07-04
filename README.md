@@ -4,6 +4,7 @@ This is an overview of Section 508/Accessibility test automation as presented by
 
 ### Automated Accessibility Testing Strategies
 * This resource is first organized by testing strategy. An overall approach can be devised by integration the following Section 508/Accessibility strategies into the SDLC as follows:  
+
     * [Developer Unit Testing](https://github.com/akingkci/508-Test-Automation/tree/master/examples/axe-core)
     * [Automated Integration Testing](https://github.com/akingkci/508-Test-Automation/tree/master/examples/lighthouse)
     * [Continuous Integration/Continous Delivery Pipelines](https://github.com/akingkci/508-Test-Automation/tree/master/examples/lighthouse)
