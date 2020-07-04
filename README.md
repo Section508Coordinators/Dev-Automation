@@ -6,10 +6,10 @@ This is an overview of Section 508/Accessibility test automation as presented by
 The following accessibility test tools and frameworks are treated in this repository:
 * [Accessible UI Frameworks, Authoring Tools and Coding Techniques](https://github.com/akingkci/508-Test-Automation/tree/master/examples/pa11y)
 * Integrating Section 508/Accessibiliting into:
-** [Developer Unit Testing](https://github.com/akingkci/508-Test-Automation/tree/master/examples/axe-core)
-** [Automated Integration Testing](https://github.com/akingkci/508-Test-Automation/tree/master/examples/lighthouse)
-** [Continuous Integration/Continous Delivery Pipelines](https://github.com/akingkci/508-Test-Automation/tree/master/examples/lighthouse)
-** [Regression/Q.A. and Web Site Scanning & Remediation Strategies](https://github.com/akingkci/508-Test-Automation/tree/master/examples/lighthouse)  
+    * [Developer Unit Testing](https://github.com/akingkci/508-Test-Automation/tree/master/examples/axe-core)
+    * [Automated Integration Testing](https://github.com/akingkci/508-Test-Automation/tree/master/examples/lighthouse)
+    * [Continuous Integration/Continous Delivery Pipelines](https://github.com/akingkci/508-Test-Automation/tree/master/examples/lighthouse)
+    * [Regression/Q.A. and Web Site Scanning & Remediation Strategies](https://github.com/akingkci/508-Test-Automation/tree/master/examples/lighthouse)  
 
 ### Compatible Accessibility Test Tools and Examples
 The following open source accessibility test tools and frameworks are treated in this repository:
@@ -17,6 +17,3 @@ The following open source accessibility test tools and frameworks are treated in
 * [Axe-core Accessibility Ruleset Libarary](https://github.com/akingkci/508-Test-Automation/tree/master/examples/axe-core)
 * [Google Lighthouse Acessiblity Engine](https://github.com/akingkci/508-Test-Automation/tree/master/examples/lighthouse)
 * [Microsoft's Accessibility Insights for Web browser extension tool](https://github.com/akingkci/508-Test-Automation/tree/master/examples/lighthouse)
-
-
-
