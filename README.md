@@ -1,6 +1,6 @@
 # Section 508 Test Automation
 
-View the [GitHub published](https://akingkci.github.io/Playbook-Automation/) page
+View the [GitHub published page](https://akingkci.github.io/Playbook-Automation/)
 
 
 ## Overview
