@@ -17,19 +17,19 @@ This resource is first organized by testing strategy as follows:
 ### Compatible Accessibility Test Tools and Examples
 Within the various accessiblity test automation straties, the following open source accessibility test tool vendors have been initially studied:  
 
-  1. <b><i>Axe-core Accessibility Ruleset Libarary</i?</b>
+  1. <b><i>Axe-core Accessibility Ruleset Libarary</i></b>
       * [Unit testing](https:// )
       * [Integration testing](https:// )
       * [CI/CD testing](https:// )
       * [Regression / Q.A. testing](https:// )
       
-  2. <b>Pa11y Accessiblity Test Engine</b>
+  2. <b><i>Pa11y Accessiblity Test Engine</i></b>
       * [Unit testing](https:// )
       * [Integration testing](https:// )
       * [CI/CD testing](https:// )
       * [Regression / Q.A. testing](https:// )
   
-  3. <b>Google Lighthouse Acessiblity Engine</b>
+  3. <b><i>Google Lighthouse Acessiblity Engine</i></b>
       * [Unit testing](https:// )
       * [Integration testing](https:// )
       * [CI/CD testing](https:// )
