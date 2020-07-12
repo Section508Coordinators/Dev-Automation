@@ -1,3 +1,7 @@
 # Axe unit testing scripts
-## Basic
-## Advanced
+
+This directory structure presents scripts in the following two general categories:
+  * basic
+  * advanced
+  
+  
