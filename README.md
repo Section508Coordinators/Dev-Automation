@@ -4,7 +4,7 @@ View the [GitHub published page](https://akingkci.github.io/Playbook-Automation/
 
 
 ## Overview
-Overview text goes here.   
+This repository presents multiple examples of integrating accessibility into test automation via different test strateties and using various open source vendor tools.
 
 ### Automated Accessibility Testing Strategies
 This resource is first organized by testing strategy as follows:  
