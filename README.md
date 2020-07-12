@@ -18,19 +18,12 @@ This resource is first organized by testing strategy as follows:
 Within the various accessiblity test automation straties, the following open source accessibility test tool vendors have been initially studied:  
 
   1. [Axe-core Accessibility Ruleset Libarary](https://)
-    a. [Unit testing] (https:// )
-    b. [Integration testing] (https:// )
-    c. [CI/CD testing] (https:// )
-    d. [Regression / Q.A. testing] (https:// )
+      a. [Unit testing] (https:// )
+      b. [Integration testing] (https:// )
+      c. [CI/CD testing] (https:// )
+      d. [Regression / Q.A. testing] (https:// )
+      
   2. [Pa11y Accessiblity Test Engine](https:// )
-    a. [Unit testing] (https:// )
-    b. [Integration testing] (https:// )
-    c. [CI/CD testing] (https:// )
-    d. [Regression / Q.A. testing] (https:// )
+
   
   3. [Google Lighthouse Acessiblity Engine](https://)
-    a. [Unit testing] (https:// )
-    b. [Integration testing] (https:// )
-    c. [CI/CD testing] (https:// )
-    d. [Regression / Q.A. testing] (https:// )
- 
