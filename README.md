@@ -11,7 +11,7 @@ This resource is first organized by testing strategy as follows:
 
   1. [Developer Unit Testing](https://github.com/akingkci/Playbook-Automation/tree/master/test-strategy/unit)
   2. [Automated Integration Testing](https://github.com/akingkci/Playbook-Automation/tree/master/test-strategy/integration)
-  3. [Continuous Integration/Continous Delivery Pipelines](https:// )
+  3. [Continuous Integration/Continous Delivery Pipelines](https://github.com/akingkci/Playbook-Automation/tree/master/test-strategy/ci-cd)
   4. [Regression/Q.A. and Web Site Scanning & Remediation Strategies](https:// )  
 
 ### Compatible Accessibility Test Tools and Examples
