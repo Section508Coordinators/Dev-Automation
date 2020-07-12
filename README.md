@@ -17,7 +17,7 @@ This resource is first organized by testing strategy as follows:
 ### Compatible Accessibility Test Tools and Examples
 Within the various accessiblity test automation straties, the following open source accessibility test tool vendors have been initially studied:  
 
-  1. Axe-core Accessibility Ruleset Libarary
+  1. <b>Axe-core Accessibility Ruleset Libarary</b>
       * [Unit testing](https:// )
       * [Integration testing](https:// )
       * [CI/CD testing](https:// )
