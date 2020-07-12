@@ -23,13 +23,13 @@ Within the various accessiblity test automation straties, the following open sou
       * [CI/CD testing](https:// )
       * [Regression / Q.A. testing](https:// )
       
-  2. Pa11y Accessiblity Test Engine
+  2. <b>Pa11y Accessiblity Test Engine</b>
       * [Unit testing](https:// )
       * [Integration testing](https:// )
       * [CI/CD testing](https:// )
       * [Regression / Q.A. testing](https:// )
   
-  3. Google Lighthouse Acessiblity Engine
+  3. <b>Google Lighthouse Acessiblity Engine</b>
       * [Unit testing](https:// )
       * [Integration testing](https:// )
       * [CI/CD testing](https:// )
