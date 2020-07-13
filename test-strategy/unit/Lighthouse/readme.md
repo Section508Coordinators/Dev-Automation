@@ -1,1 +1,0 @@
-# Lighthouse unit testing examples
