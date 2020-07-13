@@ -1,7 +1,10 @@
 # Section 508 Test Automation
 
-View the [GitHub published page](https://akingkci.github.io/Playbook-Automation/)
+<hr>
 
+Go to the [GitHub Playbook-Automation published page](https://akingkci.github.io/Playbook-Automation/)
+
+<hr>
 
 ## Overview
 This repository presents multiple examples of integrating accessibility into test automation via different test strateties and using various open source vendor tools.
