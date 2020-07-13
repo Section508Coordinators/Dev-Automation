@@ -1,0 +1,35 @@
+{
+  "name": "custom-axe-example",
+  "version": "0.0.9",
+  "description": "Example of combining various Axe APIs and tools together to generate configurable reports.",
+  "keywords": [],
+  "author": "Jesse Dowell",
+  "contributors": [],
+  "repository": {
+    "type": "git",
+    "url": "https://gitlab.com/jdow/custom-axe.git"
+  },
+  "homepage": "https://gitlab.com/jdow/custom-axe.git",
+  "bugs": "https://gitlab.com/jdow/custom-axe/-/issues",
+  "license": "LGPL-3.0",
+  "engines": {
+    "node": ">=8"
+  },
+  "main": "./lib/custom-axe.js",
+  "bin": {
+    "custom-axe": "./bin/custom-axe.js"
+  },
+  "scripts": {},
+  "dependencies": {
+    "axe-puppeteer": "^1.0.0",
+    "commander": "^5.0.0",
+    "globby": "^6.1.0",
+    "pa11y-ci-reporter-html": "^2.0.1",
+    "protocolify": "^3.0.0",
+    "puppeteer": "^2.1.1",
+    "sitemapper": "^3.0.5"
+  },
+  "devDependencies": {
+    "typescript": "^3.8.3"
+  }
+}
