@@ -1,6 +1,6 @@
 # Library Examples
 
-## Test Strategy: Unit testing
+## Test Strategy: Regression testing
 
 ### Vendor: Axe core
 
