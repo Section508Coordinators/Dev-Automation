@@ -111,8 +111,8 @@ const config = {
 		// ],
 		// disableOtherRules: true,     //////// if true, only use our rules
 		////////////////////////////// define new rules or override existing
-		// rules: [
-		// 	// {
+		 rules: [
+		 //{
 		// 	// 	id: '',
 		// 	// 	// selector: string;
 		// 	// 	// excludeHidden?: boolean;
@@ -123,9 +123,9 @@ const config = {
 		// 	// 	// none?: string[];
 		// 	// 	// tags: string[];
 		// 	// 	// matches: string;
-		// 	// }
-
-		// 	{id: 'accesskeys', enabled: true},
+		 //}
+		 	{id: 'landmark-one-main', enabled: false},
+		 	{id: 'region', enabled: false}		 			 	
 		// 	{id: 'area-alt', enabled: true},
 		// 	{id: 'aria-allowed-attr', enabled: true},
 		// 	{id: 'aria-allowed-role', enabled: true},
@@ -210,7 +210,7 @@ const config = {
 		// 	{id: 'valid-lang', enabled: false},
 		// 	{id: 'video-caption', enabled: false},
 		// 	{id: 'video-description', enabled: false},
-		// ],
+		 ],
 		// locale?: Locale;
 		// axeVersion: ''
 	}
