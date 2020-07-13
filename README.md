@@ -9,16 +9,16 @@ This repository presents multiple examples of integrating accessibility into tes
 ### Automated Accessibility Testing Vendors / Tools
 
   * Axe core
-    1. [Basic examples](http:// )
-    2. [Custom examples](http:// )
+    1. [Basic examples](https://github.com/akingkci/auto-axe-basic)
+    2. [Custom examples](https://github.com/akingkci/auto-axe-custom)
     
   * Pa11y test engine
-    1. [Basic examples](http:// )
-    2. [Custom examples](http:// )
+    1. [Basic examples](https://github.com/akingkci/auto-pa11y-basic)
+    2. [Custom examples](https://github.com/akingkci/auto-pa11y-custom)
     
   * Google Lighthouse test engine
-    1. [Basic examples](http:// )
-    2. [Custom examples](http:// )
+    1. [Basic examples](http:// ) loading...
+    2. [Custom examples](http:// ) loading...
 
      
   
