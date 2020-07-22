@@ -1,0 +1,32 @@
+{
+  "name": "custom-lighthouse-example",
+  "version": "0.0.1",
+  "description": "Example of using Lighthouse to scan multiple urls, authenticate, and report on results",
+  "main": "lib/custom-lighthouse.js",
+  "bin": {
+    "custom-lighthouse-example": "bin/custom-lighthouse.js"
+  },
+  "dependencies": {
+    "cheerio": "^1.0.0-rc.3",
+    "commander": "^5.0.0",
+    "globby": "^6.1.0",
+    "handlebars": "^4.7.3",
+    "lighthouse": "^5.6.0",
+    "node-fetch": "^2.6.0",
+    "protocolify": "^2.0.0",
+    "puppeteer": "^2.1.1",
+    "typescript": "^3.8.3"
+  },
+  "devDependencies": {
+    "eslint": "^6.8.0"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "ssh://git@gitlab.saga-it.co:2224/neweditions/custom-lighthouse-example.git"
+  },
+  "author": "morgan@saga-it.com",
+  "license": "ISC"
+}
