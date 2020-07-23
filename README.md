@@ -2,7 +2,7 @@
 
 <hr>
 
-Go to the [GitHub Playbook-Automation published page](https://akingkci.github.io/Playbook-Automation/)
+Go to the [GitHub Playbook-Automation published page](https://akingkci.github.io/Dev-Automation/)
 
 <hr>
 
@@ -12,16 +12,16 @@ This repository presents multiple examples of integrating accessibility into tes
 ### Automated Accessibility Testing Vendors / Tools
 
   * Axe core
-    1. [Basic examples](https://github.com/akingkci/Playbook-Automation/tree/master/examples/axe/basic)
-    2. [Advanced examples](https://github.com/akingkci/Playbook-Automation/tree/master/examples/axe/advanced)
+    1. [Basic examples](https://github.com/akingkci/Dev-Automation/tree/master/examples/axe/basic)
+    2. [Advanced examples](https://github.com/akingkci/Dev-Automation/tree/master/examples/axe/advanced)
     
   * Pa11y test engine
-    1. [Basic examples](https://github.com/akingkci/Playbook-Automation/tree/master/examples/pa11y/basic) - loading...
-    2. [Advanced examples](https://github.com/akingkci/Playbook-Automation/tree/master/examples/pa11y/advanced) - loading...
+    1. [Basic examples](https://github.com/akingkci/Dev-Automation/tree/master/examples/pa11y/basic)
+    2. [Advanced examples](https://github.com/akingkci/Dev-Automation/tree/master/examples/pa11y/advanced)
     
   * Google Lighthouse test engine
-    1. [Basic examples](https://github.com/akingkci/Playbook-Automation/tree/master/examples/lighthouse/basic) - loadking...
-    2. [Advanced examples](https://github.com/akingkci/Playbook-Automation/tree/master/examples/lighthouse/advanced) - loading...
+    1. [Basic examples](https://github.com/akingkci/Dev-Automation/tree/master/examples/lighthouse/basic)
+    2. [Advanced examples](https://github.com/akingkci/Dev-Automation/tree/master/examples/lighthouse/advanced)
 
      
   
