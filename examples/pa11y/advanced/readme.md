@@ -7,9 +7,3 @@ Go to the [GitHub Playbook-Automation published page](https://akingkci.github.io
 <hr>
 
   * Project 1: Bulk scan script w/ability to customize rulesets and rules used
-
-<hr>
-
-Go to the [GitHub Playbook-Automation published page](https://akingkci.github.io/Dev-Automation/)
-
-<hr>
