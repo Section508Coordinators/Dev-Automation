@@ -1,0 +1,58 @@
+version: 0.1
+
+env:
+  shell: bash
+  variables:
+    NODE_ENV: production
+  exported-variables:
+    - NODE_ENV
+
+phases:
+  install:
+    commands:
+      - npm install -g lerna
+  pre_build:
+    commands:
+      - yarn
+      - lerna bootstrap --no-ci --concurrency 4
+  build:
+    commands:
+      - yarn --cwd=packages/styles build
+      - yarn --cwd=packages/react build
+      - yarn build
+      # - lerna run build --concurrency 4
+  post_build:
+    commands:
+      - yarn --cwd=packages/react test
+      - yarn dev &
+      - sleep 5 && yarn test-pa11y-axe
+      - yarn generate-pa11y-axe-report
+      - yarn print-pa11y-axe-cli-results
+      - yarn test-pa11y-htmlcs
+      - yarn generate-pa11y-htmlcs-report
+      - yarn print-pa11y-htmlcs-cli-results
+
+artifacts:
+  secondary-artifacts:
+    StagingArtifact:
+      files:
+        - "**/*"
+      name: StagingArtifact
+      base-directory: docs/dist
+    ProdBuildArtifact:
+      files:
+        - "*.js"
+        - "*.css"
+        - "*.html"
+        - "*.ico"
+        - "public/*/**"
+      name: ProdBuildArtifact
+      base-directory: docs/dist
+
+cache:
+  paths:
+    - /root/.npm/*/**
+    - /root/.cache/yarn/*/**
+    - node_modules/*/**
+    - packages/react/node_modules/*/**
+    - packages/styles/node_modules/*/**
