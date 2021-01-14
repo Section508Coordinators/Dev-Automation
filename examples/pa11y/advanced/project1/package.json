@@ -23,7 +23,7 @@
     "commander": "^2.20.3",
     "globby": "^6.1.0",
     "lodash": "^4.17.20",
-    "node-fetch": "^1.7.0",
+    "node-fetch": "^2.6.1",
     "pa11y": "^5.3.0",
     "pa11y-ci": "^2.3.0",
     "pa11y-ci-reporter-html": "^2.0.0",
