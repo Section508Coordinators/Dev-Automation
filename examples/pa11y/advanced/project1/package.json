@@ -47,7 +47,7 @@
   },
   "main": "./lib/custom-pa11y.js",
   "bin": {
-    "dhs-ci": "./bin/custom-pa11y.js"
+    "dhs-ci": "bin/custom-pa11y.js"
   },
   "scripts": {
     "test": "make ci"
