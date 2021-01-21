@@ -11,7 +11,7 @@ This repository presents multiple examples of integrating accessibility into var
 
 ### Automated Accessibility Testing Vendors / Tools
 
-  * Axe core
+  * ***Axe core***
     * Basic examples
         1. [Browser extensions](https://github.com/akingkci/Dev-Automation/tree/master/examples/examples/axe-core/axe-basic-browser-ext)
         2. [Command line interface (CLI)](https://github.com/akingkci/Dev-Automation/tree/master/examples/examples/axe-core/axe-basic-cli)
@@ -19,7 +19,7 @@ This repository presents multiple examples of integrating accessibility into var
     * Advanced examples
         1. [Axe-core custom project1](https://github.com/akingkci/Dev-Automation/tree/master/examples/examples/axe-core/axe-advanced-project1)
         
-  * Pa11y test engine
+  * ***Pa11y test engine***
     * Basic examples
         1. [Browser extensions](https://github.com/akingkci/Dev-Automation/tree/master/examples/examples/pa11y/pa11y-basic-browser-ext)
         2. [Command line interface (CLI)](https://github.com/akingkci/Dev-Automation/tree/master/examples/examples/pa11y/pa11y-basic-cli)
@@ -27,7 +27,7 @@ This repository presents multiple examples of integrating accessibility into var
     * Advanced examples
         1. [Pa11y custom project1](https://github.com/akingkci/Dev-Automation/tree/master/examples/examples/pa11y/pa11y-advanced-project1)
         
-  * Google Lighthouse test engine
+  * ***Google Lighthouse test engine***
     * Basic examples
         1. [Browser extensions](https://github.com/akingkci/Dev-Automation/tree/master/examples/examples/lighthouse/lh-basic-browser-ext)
         2. [Command line interface (CLI)](https://github.com/akingkci/Dev-Automation/tree/master/examples/examples/lighthouse/lh-basic-cli)
