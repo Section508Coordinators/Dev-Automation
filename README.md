@@ -19,12 +19,14 @@ This repository presents multiple examples of integrating accessibility into var
     * Advanced examples
         1. [Axe-core custom project1](https://github.com/akingkci/Dev-Automation/tree/master/examples/examples/axe-core/axe-advanced-project1)
         
-
   * Pa11y test engine
-    1. Windows UI
-    2. HTMLCS Browser extension (Bookmarklet)
-    3. [Basic examples](https://github.com/akingkci/Dev-Automation/tree/master/examples/pa11y/basic)
-    4. [Advanced examples](https://github.com/akingkci/Dev-Automation/tree/master/examples/pa11y/advanced)
+    * Basic examples
+        1. [Browser extensions](https://github.com/akingkci/Dev-Automation/tree/master/examples/examples/pa11y/pa11y-basic-browser-ext)
+        2. [Command line interface (CLI)](https://github.com/akingkci/Dev-Automation/tree/master/examples/examples/pa11y/pa11y-basic-cli)
+        3. [Scripting](https://github.com/akingkci/Dev-Automation/tree/master/examples/examples/pa11y/pa11y-basic-scripts)
+    * Advanced examples
+        1. [Axe-core custom project1](https://github.com/akingkci/Dev-Automation/tree/master/examples/examples/pa11y/pa11y-advanced-project1)
+        
     
   * Google Lighthouse test engine
     1. DevTools (Browser)
