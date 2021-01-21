@@ -1,0 +1,9 @@
+_site
+.sass-cache
+.jekyll-metadata
+public/
+*~
+#-Dreamweaver IDE realted exclusions (ADK)
+*dwsync.xml
+*.LCK
+_notes/
