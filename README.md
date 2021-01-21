@@ -12,7 +12,8 @@ This repository presents multiple examples of integrating accessibility into var
 ### Automated Accessibility Testing Vendors / Tools
 
   * Axe core
-    1. Browser extensions
+    * Basic examples
+        1. [Browser extensions](https://github.com/akingkci/Dev-Automation/tree/master/examples/examples/axe-core/axe-basic-browser-ext)
     2. [Basic examples](https://github.com/akingkci/Dev-Automation/tree/master/examples/axe/basic)
     3. [Advanced examples](https://github.com/akingkci/Dev-Automation/tree/master/examples/axe/advanced)
 
