@@ -33,6 +33,6 @@ This repository presents multiple examples of integrating accessibility into var
         2. [Command line interface (CLI)](https://github.com/akingkci/Dev-Automation/tree/master/examples/examples/lighthouse/lh-basic-cli)
         3. [Scripting](https://github.com/akingkci/Dev-Automation/tree/master/examples/examples/lighthouse/lh-basic-scripts)
     * Advanced examples
-        1. [Pa11y custom project1](https://github.com/akingkci/Dev-Automation/tree/master/examples/examples/lighthouse/lh-advanced-project1)
+        1. [Lighthouse custom project1](https://github.com/akingkci/Dev-Automation/tree/master/examples/examples/lighthouse/lh-advanced-project1)
         
      
