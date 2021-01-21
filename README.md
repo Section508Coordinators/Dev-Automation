@@ -14,8 +14,11 @@ This repository presents multiple examples of integrating accessibility into var
   * Axe core
     * Basic examples
         1. [Browser extensions](https://github.com/akingkci/Dev-Automation/tree/master/examples/examples/axe-core/axe-basic-browser-ext)
-    2. [Basic examples](https://github.com/akingkci/Dev-Automation/tree/master/examples/axe/basic)
-    3. [Advanced examples](https://github.com/akingkci/Dev-Automation/tree/master/examples/axe/advanced)
+        2. [Command line interface (CLI)](https://github.com/akingkci/Dev-Automation/tree/master/examples/examples/axe-core/axe-basic-cli)
+        3. [Scripting](https://github.com/akingkci/Dev-Automation/tree/master/examples/examples/axe-core/axe-basic-scripts)
+    * Advanced examples
+        1. [Axe-core custom project1](https://github.com/akingkci/Dev-Automation/tree/master/examples/examples/axe-core/axe-advanced-project1)
+        
 
   * Pa11y test engine
     1. Windows UI
