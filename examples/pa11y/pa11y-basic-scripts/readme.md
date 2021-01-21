@@ -6,7 +6,7 @@ Go to the [GitHub Playbook-Automation published page](https://akingkci.github.io
 
 <hr>
 
-##pa11y: Scripting using JavaScript
+## pa11y: Scripting using JavaScript
 
 The scripts (JavaScript) in this project are meant to provide relatively simple examples, on which you can build, of how to use the pa11y  accessibility engine for accessibility testing using various configurations and rulesets - to include Deque's axe-core and SQIZ Lab's HTML CodeSniffer.  
 
