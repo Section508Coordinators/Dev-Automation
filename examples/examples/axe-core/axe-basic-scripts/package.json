@@ -1,0 +1,13 @@
+{
+  "name": "axe-basic-scripting",
+  "version": "1.0.0",
+  "description": "Examples of using the axe-core library for basic scripting",
+  "main": "index.js",
+  "author": "Alan King",
+  "license": "MIT",
+  "private": true,
+  "dependencies": {
+    "axe-webdriverjs": "^2.3.0",
+    "selenium-webdriver": "^4.0.0-alpha.8"
+  }
+}

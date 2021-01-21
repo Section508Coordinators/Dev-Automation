@@ -1,0 +1,82 @@
+# axe-core basic examples: Scripting
+
+<hr>
+
+Go to the [GitHub Playbook-Automation published page](https://akingkci.github.io/Dev-Automation/)
+
+<hr>
+
+##axe-core library: Scripting using Selenium WebDriver
+
+The scripts (JavaScript) in this project are meant to provide relatively simple examples, on which you can build, of how to use the axe-core accessibility engine for accessibility testing using Selenium WebDriver as well as both the Chrome and Firefox browser engines.  
+
+## Technology stack
+
+These examples use the following technology stack:
+
+- Nodejs 6+
+- Git (Bash window is fine)
+- Chrome browser version 59+
+- Chrome WebDriver (use your version of Chrome)
+- Firefox browser
+- Firefox (Gecko) WebDriver
+- Selenium WebDriver
+- axe-WebDriverJs
+- JavaScript
+
+## Setup
+
+Perform the following steps to setup your environment to run the examples:
+
+1. Install Nodejs 6+
+2. Install Git 
+3. Install Selenium Webdriver: `npm install selenium-webdriver --no-save`
+4. Install axe-core webdriverjs and its dependencies: `npm install @axe-core/webdriverjs`
+5. Running the examples, as is, will require you to have the Firefox and Chrome browsers installed on the machine. Also, you will need to install the corresponding WebDrivers as follows:
+   1. **Chrome**
+      1. Requires Chrome browser version 59+
+      2. Install the Chromedriver version that corresponds to your Chrome browser version and ensure its file system location is in your Windows PATH statement
+   2. **Firefox**
+      1. Requires any relatively current Firefox browser
+      2. Install Gecko driver and ensure it is in your PATH statement
+
+<hr>
+
+### Example scripts
+
+- Script 1: Example of a basic script that calls the *Firefox* browser engine
+  - `01_axe-core_BasicScript.js`
+- Script 2: Example of a basic script that calls the *Chrome* headless engine
+  - `02_axe-core_BasicScript.js`
+
+## Usage/Syntax
+
+In a Git Bash window, run: `node <script_name>`
+
+In response, the script 1 will:
+
+1. Invoke a visual instance of Firefox containing a test page. In the case of script 2, a headless Chrome is invoked which will cause a momentary Chrome UI to open and when the test is done, close.
+2. When testing is complete for either script, a summary of the axe-core accessibility test results will be written to the command window.
+
+<hr>
+
+# More Information
+
+See the resources below for more information that may be helpful in further customizing the examples for your organization's use:
+
+## Axe-core and Selenium WebDriver
+
+More information on axe-core accessibility scripting to the Selenium WebDriverJS can be found at the [Deque GitHub WebDriverJs](https://github.com/dequelabs/axe-core-npm/tree/develop/packages/webdriverjs) repository.
+
+## Axe-core accessibility rules
+
+A full list of axe-core rules (test logic) can be found here: https://github.com/dequelabs/axe-core/blob/develop/doc/rule-descriptions.md. 
+
+## Full API reference for developers
+
+More comprehensive guidance on the axe-core engine can be found in the [Axe JavaScript Accessibility API](https://github.com/dequelabs/axe-core/blob/develop/doc/API.md). <hr>
+
+
+## End
+
+01/17/2021 | 02:15p

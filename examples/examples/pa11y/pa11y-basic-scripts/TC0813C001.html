@@ -1,0 +1,89 @@
+<!doctype html>
+<html lang="en"><!-- InstanceBegin template="/Templates/RulesetTestCases-FINAL.dwt" codeOutsideHTMLIsLocked="false" -->
+<head>
+<meta charset="utf-8">
+<link rel="stylesheet" type="text/css" href="../css/oc.css">  
+<!-- InstanceBeginEditable name="doctitle" -->
+<title>Test Case: TC0813C001 - Contrast: 4.5:1</title>
+
+<style>
+input[type="checkbox"]
+	{
+		pointer-events:none;
+		}
+</style>
+
+<!-- InstanceEndEditable -->
+
+<!-- InstanceBeginEditable name="head" -->
+<!-- InstanceEndEditable -->
+</head>
+<body>
+<!-- InstanceBeginEditable name="TopMenu" -->
+<div class="menu">
+<p>| <a target="_top" href="/ooc2/">Home</a> | </p>
+</div>
+<!-- InstanceEndEditable -->
+
+<h1>Accessibility Test Cases for Web</h1>
+<hr>
+<!-- InstanceBeginEditable name="TestCaseName" -->
+<h2>Test Case ID: TC0813C001</h2>
+<p class="h2">ICT Baseline Test: Contrast (TTv5 13.C) - Text 12px and smaller.</p>
+<p class="h4">Test Case Type:
+  <label for="tmpCBAuto">Automated</label>
+  <input checked type="checkbox" name="tmpCBAuto" id="tmpCBAuto">
+
+  <label for="tmpCBManual">Manual</label>
+  <input checked type="checkbox" name="tmpCBManual" id="tmpCBManual">
+</p>
+
+<h3><strong>Instructions</strong></h3>
+<p>Apply accessibility rules against this page and interpret results as indicated in the Interpreting Test Results section below.</p>
+<!-- InstanceEndEditable -->
+<hr>
+
+<!--***** SCENARIOS *****-->
+<h3>Test Scenarios</h3>
+<h4> Scenario 1</h4>
+<!-- InstanceBeginEditable name="TestCaseScenario" -->
+<p>Insufficient contrast at 12px <strong>(Fail)</strong>:</p>
+<div style="background:#00FF00; width:100px"> <p style=" font-size:12px;color:#8080FF">TEXT</p> </div>
+
+<h4>Scenario 2</h4>
+<p>Sufficient contrast at 12px <strong>(Pass)</strong>:</p>
+<div style="background:#00FF00; width:200px"> <p style=" font-size:12px;color: #404080">TEXT</p></div>
+
+<!-- InstanceEndEditable -->
+<hr>
+
+<!--***** INTERPRETING TEST RESULTS *****-->
+<h2>Interpreting Test Results</h2>
+<h3>ICT Testing Baseline Status</h3>
+<!-- InstanceBeginEditable name="ResultsInterpretation" -->
+<p>The ICT Testing Baseline interprets Scenario 1 as a <em><strong>failure</strong></em> for the Contrast baseline test. Scenario 2 <em><strong>passes</strong></em>. The degree to which test results with an alternative rule agrees with these results is the degree to which that rule aligns with the baseline.</p>
+<!-- InstanceEndEditable -->
+<hr>
+
+<!--***** RULESET ALIGNMENTS *****-->
+<h4>Ruleset Alignments</h4>
+<!-- InstanceBeginEditable name="RulesetAlignments" -->
+<h5>HTML CodeSniffer </h5>
+<ul>
+  <li> WCAG2AA.Principle1.Guideline1_4.1_4_3.G18</li>
+</ul>
+<h5>Axe-core  </h5>
+<ul>
+  <li>color-contrast</li>
+</ul>
+
+<!-- InstanceEndEditable -->
+
+
+<!--***** FOOTER *****-->
+<hr>
+<p style="font-size:small">Validated? [<!-- InstanceBeginEditable name="Validation" -->YES<!-- InstanceEndEditable -->] - Test Case | Updated: <!-- #BeginDate format:fAm3a -->Saturday 07/04/2020 2:02 PM<!-- #EndDate --> | Template Version: 07/04/2020 02:02p</p>
+<hr>
+
+</body>
+<!-- InstanceEnd --></html>

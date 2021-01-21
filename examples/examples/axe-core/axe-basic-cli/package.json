@@ -1,0 +1,9 @@
+{
+  "name": "axe-basic-command_line_interface",
+  "version": "1.0.0",
+  "description": "Examples of axe-core testing within a command line interface",
+  "main": "index.js",
+  "author": "Alan King",
+  "license": "MIT",
+  "private": true
+}

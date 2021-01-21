@@ -1,0 +1,942 @@
+<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+
+  <head>
+    <meta charset="utf-8" />
+    <title>Accessibility Report Summary</title>
+    <style>
+      html,
+      body {
+	  background-color: #ffffff;
+	  color: #333333;
+	  font-family: Arial, Helvetica, sans-serif;
+	  font-size: 16px;
+	  line-height: 22px;
+	  margin: 10;
+	  padding: 0;
+      }
+
+      main {
+	  margin: 10px auto;
+	  max-width: 1000px;
+	  text-align: center;
+      }
+
+      h1 {
+	  font-size: 24px;
+	  line-height: 24px;
+	  margin-bottom: 10px;
+      }
+
+      .label {
+	  display: inline-block;
+	  font-size: 1.25em;
+	  padding-right: 10px;
+      }
+
+      .pages {
+	  list-style-type: none;
+	  margin: 10px 0 20px 0;
+	  padding: 0;
+      }
+
+      .page {
+	  background-color: #ffffff;
+	  border: 1px solid #cccccc;
+	  border-radius: 5px;
+	  display: flex;
+	  justify-content: space-between;
+	  margin: 15px 0;
+	  padding: 10px;
+      }
+
+      .page.hidden {
+	  display: none;
+      }
+
+      .pageLink {
+	  display: inline-block;
+	  flex-grow: 1;
+	  overflow: hidden;
+	  padding: 5px;
+	  text-align: left;
+	  text-overflow: ellipsis;
+	  white-space: nowrap;
+      }
+
+      .counts {
+	  flex-grow: 0;
+	  margin: 0;
+	  max-width: 375px;
+	  min-width: 375px;
+	  padding: 0;
+      }
+
+      .count {
+	  background-color: #f4f4f4;
+	  border: 1px solid #aaaaaa;
+	  border-radius: 5px;
+	  display: inline-block;
+	  margin-right: 5px;
+	  min-width: 105px;
+	  padding: 5px;
+	  text-align: center;
+      }
+
+      .filter .button {
+	  background-color: #ffffff;
+	  border: 1px solid #ffffff;
+	  border-radius: 5px;
+	  display: inline-block;
+	  margin-right: 5px;
+	  min-width: 105px;
+	  padding: 5px;
+	  text-align: center;
+      }
+
+      #pa11yIssues:not(.hidden),
+      #pageErrors:not(.hidden) {
+	  background-color: #ffdddd;
+	  border-color: #ff9696;
+      }
+
+      #noIssues:not(.hidden) {
+	  background-color: #defce2;
+	  border-color: #89e791;
+      }
+
+      .button:hover {
+	  cursor: pointer;
+      }
+
+      .hasErrors .error {
+	  background-color: #ffdddd;
+	  border-color: #ff9696;
+      }
+
+      .hasWarnings .warning {
+	  background-color: #ffffdd;
+	  border-color: #e7c12b;
+      }
+
+      .hasNotices .notice {
+	  background-color: #eef4ff;
+	  border-color: #b6d0ff;
+      }
+
+      .pageError .error {
+	  color: #cc0000;
+	  display: inline-block;
+	  margin-right: 5px;
+	  padding: 5px 0;
+	  text-align: left;
+	  width: 100%;
+      }
+
+	  table{
+		  text-align: left;
+		  width: 100%;
+		  border-collapse: separate;
+          border-spacing: 0px;
+      }
+      th, td{
+		  border-style: solid;
+		  border-width: 1px 1px 0 0;
+		  border-color: grey;
+		  padding: 7px;
+      }
+	  td:last-child, th:last-child {
+		  text-align: right;
+	  }
+
+	  th:first-child {
+		  border-left-width: 1px;
+		  text-align: center;
+	  }
+
+	  tfoot th, tfoot td {
+		  border-bottom-width: 1px;
+	  }
+
+	  tfoot th:first-child {
+		  text-align: right;
+	  }
+
+    </style>
+  </head>
+
+  <body>
+    <main>
+      <h1>Accessibility Report Summary</h1>
+      <p>Generated at: Wed Jan 20 2021 13:03:35 GMT-0500 (Eastern Standard Time)</p>
+      <canvas id="accessibilityChart" aria-labelledby="accessibilityChartLanguage" role="img">
+	Acessibility score doughnut chart with score described in the next paragraph.
+      </canvas>
+
+	  <h2>Accessibility Issues</h2>
+	  <table>
+		  <caption>Accessibility Issues By Type</caption>
+		  <thead>
+			  <tr>
+				  <th scope="col">#</th>
+				  <th scope="col">Accessibility Rule</th>
+				  <th scope="col">Count</th>
+			  </tr>
+		  </thead>
+		  <tbody>
+			  <tr>
+				  <th scope="row">1</th>
+				  <td scope="row">label</td>
+				  <td>44</td>
+			  </tr>
+			  <tr>
+				  <th scope="row">2</th>
+				  <td scope="row">aria-allowed-role</td>
+				  <td>19</td>
+			  </tr>
+			  <tr>
+				  <th scope="row">3</th>
+				  <td scope="row">link-name</td>
+				  <td>18</td>
+			  </tr>
+			  <tr>
+				  <th scope="row">4</th>
+				  <td scope="row">list</td>
+				  <td>14</td>
+			  </tr>
+			  <tr>
+				  <th scope="row">5</th>
+				  <td scope="row">image-alt</td>
+				  <td>10</td>
+			  </tr>
+			  <tr>
+				  <th scope="row">6</th>
+				  <td scope="row">color-contrast</td>
+				  <td>9</td>
+			  </tr>
+			  <tr>
+				  <th scope="row">7</th>
+				  <td scope="row">html-has-lang</td>
+				  <td>9</td>
+			  </tr>
+			  <tr>
+				  <th scope="row">8</th>
+				  <td scope="row">frame-title</td>
+				  <td>7</td>
+			  </tr>
+			  <tr>
+				  <th scope="row">9</th>
+				  <td scope="row">frame-title-unique</td>
+				  <td>6</td>
+			  </tr>
+			  <tr>
+				  <th scope="row">10</th>
+				  <td scope="row">role-img-alt</td>
+				  <td>6</td>
+			  </tr>
+			  <tr>
+				  <th scope="row">11</th>
+				  <td scope="row">listitem</td>
+				  <td>6</td>
+			  </tr>
+			  <tr>
+				  <th scope="row">12</th>
+				  <td scope="row">scope-attr-valid</td>
+				  <td>5</td>
+			  </tr>
+			  <tr>
+				  <th scope="row">13</th>
+				  <td scope="row">button-name</td>
+				  <td>4</td>
+			  </tr>
+			  <tr>
+				  <th scope="row">14</th>
+				  <td scope="row">input-image-alt</td>
+				  <td>4</td>
+			  </tr>
+			  <tr>
+				  <th scope="row">15</th>
+				  <td scope="row">document-title</td>
+				  <td>4</td>
+			  </tr>
+			  <tr>
+				  <th scope="row">16</th>
+				  <td scope="row">duplicate-id</td>
+				  <td>3</td>
+			  </tr>
+			  <tr>
+				  <th scope="row">17</th>
+				  <td scope="row">input-button-name</td>
+				  <td>3</td>
+			  </tr>
+			  <tr>
+				  <th scope="row">18</th>
+				  <td scope="row">aria-hidden-focus</td>
+				  <td>3</td>
+			  </tr>
+			  <tr>
+				  <th scope="row">19</th>
+				  <td scope="row">empty-heading</td>
+				  <td>2</td>
+			  </tr>
+			  <tr>
+				  <th scope="row">20</th>
+				  <td scope="row">scrollable-region-focusable</td>
+				  <td>2</td>
+			  </tr>
+			  <tr>
+				  <th scope="row">21</th>
+				  <td scope="row">aria-input-field-name</td>
+				  <td>2</td>
+			  </tr>
+			  <tr>
+				  <th scope="row">22</th>
+				  <td scope="row">aria-toggle-field-name</td>
+				  <td>2</td>
+			  </tr>
+			  <tr>
+				  <th scope="row">23</th>
+				  <td scope="row">form-field-multiple-labels</td>
+				  <td>2</td>
+			  </tr>
+			  <tr>
+				  <th scope="row">24</th>
+				  <td scope="row">td-headers-attr</td>
+				  <td>2</td>
+			  </tr>
+			  <tr>
+				  <th scope="row">25</th>
+				  <td scope="row">html-lang-valid</td>
+				  <td>1</td>
+			  </tr>
+			  <tr>
+				  <th scope="row">26</th>
+				  <td scope="row">valid-lang</td>
+				  <td>1</td>
+			  </tr>
+		  </tbody>
+		  <tfoot>
+			  <tr>
+				  <th colspan="2" scope="row">Sum</th>
+				  <td>188</td>
+			  </tr>
+		  </tfoot>
+	  </table>
+
+	  <h2>URL Results Summary</h2>
+      <p id="accessibilityChartLanguage">
+	There were 23 passing URLs and 78 URLs with issues giving this scan an
+	accessibility score of 23%.
+      </p>
+
+	  <h2>Detail URL Results</h2>
+      <div class="filter">
+	<span class="label">Filter page results: </span>
+	<span id="pa11yIssues" class="button" title="Axe analyzed page and found issues">Axe Issues</span>
+	<span id="noIssues" class="button" title="Axe analyzed page and found no issues">No Issues</span>
+	<span id="pageErrors" class="button" title="Axe failed to analyze page">Page Errors</span>
+      </div>
+      <ul class="pages">
+<li class="page"><span class="pageLink" title="http://coc.kciprojects.com/">http://coc.kciprojects.com/</span><p class="counts">
+	    <span class="count error">0 errors</span>
+	    <span class="count warning">0 warnings</span>
+	    <span class="count notice">0 notices</span>
+	  </p>
+	</li><li class="page hasErrors"><a class="pageLink" href="coc-kciprojects-com-ooc-stubs-Parsing-1-4-1-UniqueID.html" title="http://coc.kciprojects.com/ooc/stubs/Parsing_1.4.1_UniqueID.html">http://coc.kciprojects.com/ooc/stubs/Parsing_1.4.1_UniqueID.html</a><p class="counts">
+	    <span class="count error">3 errors</span>
+	    <span class="count warning">0 warnings</span>
+	    <span class="count notice">0 notices</span>
+	  </p>
+	</li><li class="page hasErrors"><a class="pageLink" href="coc-kciprojects-com-ooc-stubs-LinksAndButtons-4-1-2-H91-Button-Name.html" title="http://coc.kciprojects.com/ooc/stubs/LinksAndButtons_4.1.2_H91.Button.Name.html">http://coc.kciprojects.com/ooc/stubs/LinksAndButtons_4.1.2_H91.Button.Name.html</a><p class="counts">
+	    <span class="count error">1 errors</span>
+	    <span class="count warning">0 warnings</span>
+	    <span class="count notice">0 notices</span>
+	  </p>
+	</li><li class="page hasErrors"><a class="pageLink" href="coc-kciprojects-com-ooc-stubs-LinksAndButtons-4-1-2-LinkWithNoContent-H91-A.html" title="http://coc.kciprojects.com/ooc/stubs/LinksAndButtons_4.1.2_LinkWithNoContent_H91.A.html">http://coc.kciprojects.com/ooc/stubs/LinksAndButtons_4.1.2_LinkWithNoContent_H91.A.html</a><p class="counts">
+	    <span class="count error">4 errors</span>
+	    <span class="count warning">0 warnings</span>
+	    <span class="count notice">0 notices</span>
+	  </p>
+	</li><li class="page hasErrors"><a class="pageLink" href="coc-kciprojects-com-ooc-stubs-Forms-4-1-2-H91-InputText-Name.html" title="http://coc.kciprojects.com/ooc/stubs/Forms_4.1.2_H91.InputText.Name.html">http://coc.kciprojects.com/ooc/stubs/Forms_4.1.2_H91.InputText.Name.html</a><p class="counts">
+	    <span class="count error">3 errors</span>
+	    <span class="count warning">0 warnings</span>
+	    <span class="count notice">0 notices</span>
+	  </p>
+	</li><li class="page hasErrors"><a class="pageLink" href="coc-kciprojects-com-ooc-stubs-Forms-4-1-2-H91-InputPassword-Name.html" title="http://coc.kciprojects.com/ooc/stubs/Forms_4.1.2_H91.InputPassword.Name.html">http://coc.kciprojects.com/ooc/stubs/Forms_4.1.2_H91.InputPassword.Name.html</a><p class="counts">
+	    <span class="count error">2 errors</span>
+	    <span class="count warning">0 warnings</span>
+	    <span class="count notice">0 notices</span>
+	  </p>
+	</li><li class="page hasErrors"><a class="pageLink" href="coc-kciprojects-com-ooc-stubs-Contrast-1-4-3-G145-Color-3-1.html" title="http://coc.kciprojects.com/ooc/stubs/Contrast_1.4.3_G145.Color_3.1.html">http://coc.kciprojects.com/ooc/stubs/Contrast_1.4.3_G145.Color_3.1.html</a><p class="counts">
+	    <span class="count error">1 errors</span>
+	    <span class="count warning">0 warnings</span>
+	    <span class="count notice">0 notices</span>
+	  </p>
+	</li><li class="page hasErrors"><a class="pageLink" href="coc-kciprojects-com-ooc-stubs-Contrast-1-4-3-G18-Color-4-5-1.html" title="http://coc.kciprojects.com/ooc/stubs/Contrast_1.4.3_G18.Color_4.5.1.html">http://coc.kciprojects.com/ooc/stubs/Contrast_1.4.3_G18.Color_4.5.1.html</a><p class="counts">
+	    <span class="count error">1 errors</span>
+	    <span class="count warning">0 warnings</span>
+	    <span class="count notice">0 notices</span>
+	  </p>
+	</li><li class="page hasErrors"><a class="pageLink" href="coc-kciprojects-com-ooc-stubs-LinksAndButtons-1-1-1-H30-2-ImageLinks.html" title="http://coc.kciprojects.com/ooc/stubs/LinksAndButtons_1.1.1_H30.2.ImageLinks.html">http://coc.kciprojects.com/ooc/stubs/LinksAndButtons_1.1.1_H30.2.ImageLinks.html</a><p class="counts">
+	    <span class="count error">7 errors</span>
+	    <span class="count warning">0 warnings</span>
+	    <span class="count notice">0 notices</span>
+	  </p>
+	</li><li class="page hasErrors"><a class="pageLink" href="coc-kciprojects-com-ooc-stubs-LinksAndButtons-1-1-1-H36-ImageSubmit.html" title="http://coc.kciprojects.com/ooc/stubs/LinksAndButtons_1.1.1_H36.ImageSubmit.html">http://coc.kciprojects.com/ooc/stubs/LinksAndButtons_1.1.1_H36.ImageSubmit.html</a><p class="counts">
+	    <span class="count error">1 errors</span>
+	    <span class="count warning">0 warnings</span>
+	    <span class="count notice">0 notices</span>
+	  </p>
+	</li><li class="page hasErrors"><a class="pageLink" href="coc-kciprojects-com-ooc-stubs-Images-1-1-1-H37-ImageLabels.html" title="http://coc.kciprojects.com/ooc/stubs/Images_1.1.1_H37.ImageLabels.html">http://coc.kciprojects.com/ooc/stubs/Images_1.1.1_H37.ImageLabels.html</a><p class="counts">
+	    <span class="count error">2 errors</span>
+	    <span class="count warning">0 warnings</span>
+	    <span class="count notice">0 notices</span>
+	  </p>
+	</li><li class="page hasErrors"><a class="pageLink" href="coc-kciprojects-com-ooc-stubs-LinksAndButtons-4-1-2-H91-RoleButtonLi-Name.html" title="http://coc.kciprojects.com/ooc/stubs/LinksAndButtons_4.1.2_H91.RoleButtonLi.Name.html">http://coc.kciprojects.com/ooc/stubs/LinksAndButtons_4.1.2_H91.RoleButtonLi.Name.html</a><p class="counts">
+	    <span class="count error">27 errors</span>
+	    <span class="count warning">0 warnings</span>
+	    <span class="count notice">0 notices</span>
+	  </p>
+	</li><li class="page hasErrors"><a class="pageLink" href="coc-kciprojects-com-ooc-stubs-LinksAndButtons-4-1-2-H91-InputButton-Name.html" title="http://coc.kciprojects.com/ooc/stubs/LinksAndButtons_4.1.2_H91.InputButton.Name.html">http://coc.kciprojects.com/ooc/stubs/LinksAndButtons_4.1.2_H91.InputButton.Name.html</a><p class="counts">
+	    <span class="count error">3 errors</span>
+	    <span class="count warning">0 warnings</span>
+	    <span class="count notice">0 notices</span>
+	  </p>
+	</li><li class="page hasErrors"><a class="pageLink" href="coc-kciprojects-com-ooc-stubs-ContentStructure-1-3-1-H42-EmptyHeading.html" title="http://coc.kciprojects.com/ooc/stubs/ContentStructure_1.3.1_H42.EmptyHeading.html">http://coc.kciprojects.com/ooc/stubs/ContentStructure_1.3.1_H42.EmptyHeading.html</a><p class="counts">
+	    <span class="count error">1 errors</span>
+	    <span class="count warning">0 warnings</span>
+	    <span class="count notice">0 notices</span>
+	  </p>
+	</li><li class="page hasErrors"><a class="pageLink" href="coc-kciprojects-com-ooc-stubs-BarrierTest-shadowDOMv1.html" title="http://coc.kciprojects.com/ooc/stubs/BarrierTest_shadowDOMv1.html">http://coc.kciprojects.com/ooc/stubs/BarrierTest_shadowDOMv1.html</a><p class="counts">
+	    <span class="count error">2 errors</span>
+	    <span class="count warning">0 warnings</span>
+	    <span class="count notice">0 notices</span>
+	  </p>
+	</li><li class="page hasErrors"><a class="pageLink" href="coc-kciprojects-com-ooc-stubs-siframes-BarrierTest-siFrames.html" title="http://coc.kciprojects.com/ooc/stubs/siframes/BarrierTest_siFrames.html">http://coc.kciprojects.com/ooc/stubs/siframes/BarrierTest_siFrames.html</a><p class="counts">
+	    <span class="count error">1 errors</span>
+	    <span class="count warning">0 warnings</span>
+	    <span class="count notice">0 notices</span>
+	  </p>
+	</li><li class="page hasErrors"><a class="pageLink" href="coc-kciprojects-com-ooc-stubs-sframes-sFrames.html" title="http://coc.kciprojects.com/ooc/stubs/sframes/sFrames.html">http://coc.kciprojects.com/ooc/stubs/sframes/sFrames.html</a><p class="counts">
+	    <span class="count error">3 errors</span>
+	    <span class="count warning">0 warnings</span>
+	    <span class="count notice">0 notices</span>
+	  </p>
+	</li><li class="page hasErrors"><a class="pageLink" href="coc-kciprojects-com-ooc-stubs-diframes-diframes.html" title="http://coc.kciprojects.com/ooc/stubs/diframes/diframes.html">http://coc.kciprojects.com/ooc/stubs/diframes/diframes.html</a><p class="counts">
+	    <span class="count error">1 errors</span>
+	    <span class="count warning">0 warnings</span>
+	    <span class="count notice">0 notices</span>
+	  </p>
+	</li><li class="page hasErrors"><a class="pageLink" href="coc-kciprojects-com-ooc-stubs-dframes-dframes.html" title="http://coc.kciprojects.com/ooc/stubs/dframes/dframes.html">http://coc.kciprojects.com/ooc/stubs/dframes/dframes.html</a><p class="counts">
+	    <span class="count error">1 errors</span>
+	    <span class="count warning">0 warnings</span>
+	    <span class="count notice">0 notices</span>
+	  </p>
+	</li><li class="page hasErrors"><a class="pageLink" href="coc-kciprojects-com-ooc-stubs-index.html" title="http://coc.kciprojects.com/ooc/stubs/index.html">http://coc.kciprojects.com/ooc/stubs/index.html</a><p class="counts">
+	    <span class="count error">16 errors</span>
+	    <span class="count warning">0 warnings</span>
+	    <span class="count notice">0 notices</span>
+	  </p>
+	</li><li class="page hasErrors"><a class="pageLink" href="coc-kciprojects-com-ooc-stubs-siframes-siFrames-src1.html" title="http://coc.kciprojects.com/ooc/stubs/siframes/siFrames-src1.html">http://coc.kciprojects.com/ooc/stubs/siframes/siFrames-src1.html</a><p class="counts">
+	    <span class="count error">2 errors</span>
+	    <span class="count warning">0 warnings</span>
+	    <span class="count notice">0 notices</span>
+	  </p>
+	</li><li class="page"><span class="pageLink" title="http://coc.kciprojects.com/ooc/stubs/sframes/sframes-src1.html">http://coc.kciprojects.com/ooc/stubs/sframes/sframes-src1.html</span><p class="counts">
+	    <span class="count error">0 errors</span>
+	    <span class="count warning">0 warnings</span>
+	    <span class="count notice">0 notices</span>
+	  </p>
+	</li><li class="page hasErrors"><a class="pageLink" href="coc-kciprojects-com-ooc-stubs-sframes-sframes-src2.html" title="http://coc.kciprojects.com/ooc/stubs/sframes/sframes-src2.html">http://coc.kciprojects.com/ooc/stubs/sframes/sframes-src2.html</a><p class="counts">
+	    <span class="count error">2 errors</span>
+	    <span class="count warning">0 warnings</span>
+	    <span class="count notice">0 notices</span>
+	  </p>
+	</li><li class="page"><span class="pageLink" title="http://coc.kciprojects.com/ooc/stubs/sframes/sframes-src3.html">http://coc.kciprojects.com/ooc/stubs/sframes/sframes-src3.html</span><p class="counts">
+	    <span class="count error">0 errors</span>
+	    <span class="count warning">0 warnings</span>
+	    <span class="count notice">0 notices</span>
+	  </p>
+	</li><li class="page hasErrors hasWarnings"><a class="pageLink" href="coc-kciprojects-com-ooc-stubs-diframes-content.html" title="http://coc.kciprojects.com/ooc/stubs/diframes/content.html">http://coc.kciprojects.com/ooc/stubs/diframes/content.html</a><p class="counts">
+	    <span class="count error">1 errors</span>
+	    <span class="count warning">1 warnings</span>
+	    <span class="count notice">0 notices</span>
+	  </p>
+	</li><li class="page"><span class="pageLink" title="http://coc.kciprojects.com/ooc/stubs/dframes/dframes-src1.html">http://coc.kciprojects.com/ooc/stubs/dframes/dframes-src1.html</span><p class="counts">
+	    <span class="count error">0 errors</span>
+	    <span class="count warning">0 warnings</span>
+	    <span class="count notice">0 notices</span>
+	  </p>
+	</li><li class="page hasErrors hasWarnings"><a class="pageLink" href="coc-kciprojects-com-ooc-stubs-dframes-dframes-src2.html" title="http://coc.kciprojects.com/ooc/stubs/dframes/dframes-src2.html">http://coc.kciprojects.com/ooc/stubs/dframes/dframes-src2.html</a><p class="counts">
+	    <span class="count error">1 errors</span>
+	    <span class="count warning">1 warnings</span>
+	    <span class="count notice">0 notices</span>
+	  </p>
+	</li><li class="page"><span class="pageLink" title="http://coc.kciprojects.com/ooc/stubs/dframes/dframes-src3.html">http://coc.kciprojects.com/ooc/stubs/dframes/dframes-src3.html</span><p class="counts">
+	    <span class="count error">0 errors</span>
+	    <span class="count warning">0 warnings</span>
+	    <span class="count notice">0 notices</span>
+	  </p>
+	</li><li class="page hasErrors"><a class="pageLink" href="coc-kciprojects-com-rulings-index.html" title="http://coc.kciprojects.com/rulings/index.html">http://coc.kciprojects.com/rulings/index.html</a><p class="counts">
+	    <span class="count error">1 errors</span>
+	    <span class="count warning">0 warnings</span>
+	    <span class="count notice">0 notices</span>
+	  </p>
+	</li><li class="page hasErrors"><a class="pageLink" href="coc-kciprojects-com-ooc-stubs-diframes-diFrames.html" title="http://coc.kciprojects.com/ooc/stubs/diframes/diFrames.html">http://coc.kciprojects.com/ooc/stubs/diframes/diFrames.html</a><p class="counts">
+	    <span class="count error">1 errors</span>
+	    <span class="count warning">0 warnings</span>
+	    <span class="count notice">0 notices</span>
+	  </p>
+	</li><li class="page hasErrors"><a class="pageLink" href="coc-kciprojects-com-ooc-stubs-sframes-sframes.html" title="http://coc.kciprojects.com/ooc/stubs/sframes/sframes.html">http://coc.kciprojects.com/ooc/stubs/sframes/sframes.html</a><p class="counts">
+	    <span class="count error">3 errors</span>
+	    <span class="count warning">0 warnings</span>
+	    <span class="count notice">0 notices</span>
+	  </p>
+	</li><li class="page hasErrors"><a class="pageLink" href="coc-kciprojects-com-ooc-stubs-Keyboard-2-1-1-Scrollable-Region.html" title="http://coc.kciprojects.com/ooc/stubs/Keyboard_2.1.1_Scrollable-Region.html">http://coc.kciprojects.com/ooc/stubs/Keyboard_2.1.1_Scrollable-Region.html</a><p class="counts">
+	    <span class="count error">1 errors</span>
+	    <span class="count warning">0 warnings</span>
+	    <span class="count notice">0 notices</span>
+	  </p>
+	</li><li class="page hasErrors"><a class="pageLink" href="coc-kciprojects-com-ooc-stubs-Images-1-1-1-ARIA-Role-IMG-Labels.html" title="http://coc.kciprojects.com/ooc/stubs/Images_1.1.1_ARIA-Role-IMG.Labels.html">http://coc.kciprojects.com/ooc/stubs/Images_1.1.1_ARIA-Role-IMG.Labels.html</a><p class="counts">
+	    <span class="count error">3 errors</span>
+	    <span class="count warning">0 warnings</span>
+	    <span class="count notice">0 notices</span>
+	  </p>
+	</li><li class="page"><span class="pageLink" title="http://coc.kciprojects.com/ooc/stubs/Images_1.1.1_Decorative.html">http://coc.kciprojects.com/ooc/stubs/Images_1.1.1_Decorative.html</span><p class="counts">
+	    <span class="count error">0 errors</span>
+	    <span class="count warning">0 warnings</span>
+	    <span class="count notice">0 notices</span>
+	  </p>
+	</li><li class="page hasErrors"><a class="pageLink" href="coc-kciprojects-com-ooc-stubs-Forms-4-1-2-H91-InputFile-Name.html" title="http://coc.kciprojects.com/ooc/stubs/Forms_4.1.2_H91.InputFile.Name.html">http://coc.kciprojects.com/ooc/stubs/Forms_4.1.2_H91.InputFile.Name.html</a><p class="counts">
+	    <span class="count error">2 errors</span>
+	    <span class="count warning">0 warnings</span>
+	    <span class="count notice">0 notices</span>
+	  </p>
+	</li><li class="page hasErrors"><a class="pageLink" href="coc-kciprojects-com-ooc-stubs-Forms-4-1-2-H91-TextArea-Name.html" title="http://coc.kciprojects.com/ooc/stubs/Forms_4.1.2_H91.TextArea.Name.html">http://coc.kciprojects.com/ooc/stubs/Forms_4.1.2_H91.TextArea.Name.html</a><p class="counts">
+	    <span class="count error">2 errors</span>
+	    <span class="count warning">0 warnings</span>
+	    <span class="count notice">0 notices</span>
+	  </p>
+	</li><li class="page hasErrors"><a class="pageLink" href="coc-kciprojects-com-ooc-stubs-Forms-4-1-2-H91-InputCheckBox-Name.html" title="http://coc.kciprojects.com/ooc/stubs/Forms_4.1.2_H91.InputCheckBox.Name.html">http://coc.kciprojects.com/ooc/stubs/Forms_4.1.2_H91.InputCheckBox.Name.html</a><p class="counts">
+	    <span class="count error">2 errors</span>
+	    <span class="count warning">0 warnings</span>
+	    <span class="count notice">0 notices</span>
+	  </p>
+	</li><li class="page hasErrors"><a class="pageLink" href="coc-kciprojects-com-ooc-stubs-Forms-4-1-2-H91-InputRadioButton-Name.html" title="http://coc.kciprojects.com/ooc/stubs/Forms_4.1.2_H91.InputRadioButton.Name.html">http://coc.kciprojects.com/ooc/stubs/Forms_4.1.2_H91.InputRadioButton.Name.html</a><p class="counts">
+	    <span class="count error">4 errors</span>
+	    <span class="count warning">0 warnings</span>
+	    <span class="count notice">0 notices</span>
+	  </p>
+	</li><li class="page hasErrors"><a class="pageLink" href="coc-kciprojects-com-ooc-stubs-Forms-4-1-2-H91-Select-Name.html" title="http://coc.kciprojects.com/ooc/stubs/Forms_4.1.2_H91.Select.Name.html">http://coc.kciprojects.com/ooc/stubs/Forms_4.1.2_H91.Select.Name.html</a><p class="counts">
+	    <span class="count error">2 errors</span>
+	    <span class="count warning">0 warnings</span>
+	    <span class="count notice">0 notices</span>
+	  </p>
+	</li><li class="page hasErrors"><a class="pageLink" href="coc-kciprojects-com-ooc-stubs-Forms-1-3-1-F68-LabelFormControl.html" title="http://coc.kciprojects.com/ooc/stubs/Forms_1.3.1_F68.LabelFormControl.html">http://coc.kciprojects.com/ooc/stubs/Forms_1.3.1_F68.LabelFormControl.html</a><p class="counts">
+	    <span class="count error">2 errors</span>
+	    <span class="count warning">0 warnings</span>
+	    <span class="count notice">0 notices</span>
+	  </p>
+	</li><li class="page"><span class="pageLink" title="http://coc.kciprojects.com/ooc/stubs/Forms_4.1.2_H91.Fieldset.Name.html">http://coc.kciprojects.com/ooc/stubs/Forms_4.1.2_H91.Fieldset.Name.html</span><p class="counts">
+	    <span class="count error">0 errors</span>
+	    <span class="count warning">0 warnings</span>
+	    <span class="count notice">0 notices</span>
+	  </p>
+	</li><li class="page hasErrors"><a class="pageLink" href="coc-kciprojects-com-ooc-stubs-Forms-1-3-1-HiddenLabel-F68-Hidden.html" title="http://coc.kciprojects.com/ooc/stubs/Forms_1.3.1_HiddenLabel_F68.Hidden.html">http://coc.kciprojects.com/ooc/stubs/Forms_1.3.1_HiddenLabel_F68.Hidden.html</a><p class="counts">
+	    <span class="count error">1 errors</span>
+	    <span class="count warning">0 warnings</span>
+	    <span class="count notice">0 notices</span>
+	  </p>
+	</li><li class="page hasErrors"><a class="pageLink" href="coc-kciprojects-com-ooc-stubs-Forms-4-1-2-ARIA-InputFieldName.html" title="http://coc.kciprojects.com/ooc/stubs/Forms_4.1.2_ARIA-InputFieldName.html">http://coc.kciprojects.com/ooc/stubs/Forms_4.1.2_ARIA-InputFieldName.html</a><p class="counts">
+	    <span class="count error">1 errors</span>
+	    <span class="count warning">0 warnings</span>
+	    <span class="count notice">0 notices</span>
+	  </p>
+	</li><li class="page hasErrors"><a class="pageLink" href="coc-kciprojects-com-ooc-stubs-Forms-4-1-2-ARIA-ToggleFieldName.html" title="http://coc.kciprojects.com/ooc/stubs/Forms_4.1.2_ARIA-ToggleFieldName.html">http://coc.kciprojects.com/ooc/stubs/Forms_4.1.2_ARIA-ToggleFieldName.html</a><p class="counts">
+	    <span class="count error">1 errors</span>
+	    <span class="count warning">0 warnings</span>
+	    <span class="count notice">0 notices</span>
+	  </p>
+	</li><li class="page hasErrors"><a class="pageLink" href="coc-kciprojects-com-ooc-stubs-Forms-4-1-2-H44-LabelForBoundToNonExistentID.html" title="http://coc.kciprojects.com/ooc/stubs/Forms_4.1.2_H44.LabelForBoundToNonExistentID.html">http://coc.kciprojects.com/ooc/stubs/Forms_4.1.2_H44.LabelForBoundToNonExistentID.html</a><p class="counts">
+	    <span class="count error">1 errors</span>
+	    <span class="count warning">0 warnings</span>
+	    <span class="count notice">0 notices</span>
+	  </p>
+	</li><li class="page hasWarnings"><a class="pageLink" href="coc-kciprojects-com-ooc-stubs-Forms-4-1-2-H93-MultiLabelFor.html" title="http://coc.kciprojects.com/ooc/stubs/Forms_4.1.2_H93.MultiLabelFor.html">http://coc.kciprojects.com/ooc/stubs/Forms_4.1.2_H93.MultiLabelFor.html</a><p class="counts">
+	    <span class="count error">0 errors</span>
+	    <span class="count warning">1 warnings</span>
+	    <span class="count notice">0 notices</span>
+	  </p>
+	</li><li class="page hasErrors"><a class="pageLink" href="coc-kciprojects-com-ooc-stubs-PageTitles-2-4-2-NoTitleElement.html" title="http://coc.kciprojects.com/ooc/stubs/PageTitles_2.4.2_NoTitleElement.html">http://coc.kciprojects.com/ooc/stubs/PageTitles_2.4.2_NoTitleElement.html</a><p class="counts">
+	    <span class="count error">1 errors</span>
+	    <span class="count warning">0 warnings</span>
+	    <span class="count notice">0 notices</span>
+	  </p>
+	</li><li class="page hasErrors"><a class="pageLink" href="coc-kciprojects-com-ooc-stubs-PageTitles-2-4-2-EmptyTitle.html" title="http://coc.kciprojects.com/ooc/stubs/PageTitles_2.4.2_EmptyTitle.html">http://coc.kciprojects.com/ooc/stubs/PageTitles_2.4.2_EmptyTitle.html</a><p class="counts">
+	    <span class="count error">1 errors</span>
+	    <span class="count warning">0 warnings</span>
+	    <span class="count notice">0 notices</span>
+	  </p>
+	</li><li class="page hasErrors"><a class="pageLink" href="coc-kciprojects-com-ooc2-TC1214B001.html" title="http://coc.kciprojects.com/ooc2/TC1214B001.html">http://coc.kciprojects.com/ooc2/TC1214B001.html</a><p class="counts">
+	    <span class="count error">3 errors</span>
+	    <span class="count warning">0 warnings</span>
+	    <span class="count notice">0 notices</span>
+	  </p>
+	</li><li class="page hasErrors"><a class="pageLink" href="coc-kciprojects-com-ooc-stubs-Tables-1-3-1-HeadersInSameTable.html" title="http://coc.kciprojects.com/ooc/stubs/Tables_1.3.1_HeadersInSameTable.html">http://coc.kciprojects.com/ooc/stubs/Tables_1.3.1_HeadersInSameTable.html</a><p class="counts">
+	    <span class="count error">1 errors</span>
+	    <span class="count warning">0 warnings</span>
+	    <span class="count notice">0 notices</span>
+	  </p>
+	</li><li class="page"><span class="pageLink" title="http://coc.kciprojects.com/ooc/stubs/Tables_1.3.1-H43.MissingHeaderIds.html">http://coc.kciprojects.com/ooc/stubs/Tables_1.3.1-H43.MissingHeaderIds.html</span><p class="counts">
+	    <span class="count error">0 errors</span>
+	    <span class="count warning">0 warnings</span>
+	    <span class="count notice">0 notices</span>
+	  </p>
+	</li><li class="page"><span class="pageLink" title="http://coc.kciprojects.com/ooc/stubs/Tables_1.3.1_H43.MissingHeadersAttr.html">http://coc.kciprojects.com/ooc/stubs/Tables_1.3.1_H43.MissingHeadersAttr.html</span><p class="counts">
+	    <span class="count error">0 errors</span>
+	    <span class="count warning">0 warnings</span>
+	    <span class="count notice">0 notices</span>
+	  </p>
+	</li><li class="page"><span class="pageLink" title="http://coc.kciprojects.com/ooc/stubs/Tables_1.3.1_2headers-No-Valid-Header-Coding_H43.H63.html">http://coc.kciprojects.com/ooc/stubs/Tables_1.3.1_2headers-No-Valid-Header-Coding_H43.H63.html</span><p class="counts">
+	    <span class="count error">0 errors</span>
+	    <span class="count warning">0 warnings</span>
+	    <span class="count notice">0 notices</span>
+	  </p>
+	</li><li class="page"><span class="pageLink" title="http://coc.kciprojects.com/ooc/stubs/Tables_1.3.1-H43.HeadersRequired.html">http://coc.kciprojects.com/ooc/stubs/Tables_1.3.1-H43.HeadersRequired.html</span><p class="counts">
+	    <span class="count error">0 errors</span>
+	    <span class="count warning">0 warnings</span>
+	    <span class="count notice">0 notices</span>
+	  </p>
+	</li><li class="page"><span class="pageLink" title="http://coc.kciprojects.com/ooc/stubs/Tables_1.3.1_H39.LayoutWithCaptions.html">http://coc.kciprojects.com/ooc/stubs/Tables_1.3.1_H39.LayoutWithCaptions.html</span><p class="counts">
+	    <span class="count error">0 errors</span>
+	    <span class="count warning">0 warnings</span>
+	    <span class="count notice">0 notices</span>
+	  </p>
+	</li><li class="page"><span class="pageLink" title="http://coc.kciprojects.com/ooc/stubs/Tables_1.3.1_H73.LayoutWithSummary.html">http://coc.kciprojects.com/ooc/stubs/Tables_1.3.1_H73.LayoutWithSummary.html</span><p class="counts">
+	    <span class="count error">0 errors</span>
+	    <span class="count warning">0 warnings</span>
+	    <span class="count notice">0 notices</span>
+	  </p>
+	</li><li class="page hasErrors"><a class="pageLink" href="coc-kciprojects-com-ooc-stubs-Tables-1-3-1-RolePresentationChildSemanticMeaning-F92-ARIA4.html" title="http://coc.kciprojects.com/ooc/stubs/Tables_1.3.1_RolePresentationChildSemanticMeaning_F92_ARIA4.html">http://coc.kciprojects.com/ooc/stubs/Tables_1.3.1_RolePresentationChildSemanticMeaning_F92_ARIA4.html</a><p class="counts">
+	    <span class="count error">2 errors</span>
+	    <span class="count warning">0 warnings</span>
+	    <span class="count notice">0 notices</span>
+	  </p>
+	</li><li class="page"><span class="pageLink" title="http://coc.kciprojects.com/ooc/stubs/ContentStructure_1.3.1_HeadingsCreatedByFormattingOnly.html">http://coc.kciprojects.com/ooc/stubs/ContentStructure_1.3.1_HeadingsCreatedByFormattingOnly.html</span><p class="counts">
+	    <span class="count error">0 errors</span>
+	    <span class="count warning">0 warnings</span>
+	    <span class="count notice">0 notices</span>
+	  </p>
+	</li><li class="page hasErrors"><a class="pageLink" href="coc-kciprojects-com-ooc-stubs-ContentStructure-1-3-1-Lists.html" title="http://coc.kciprojects.com/ooc/stubs/ContentStructure_1.3.1_Lists.html">http://coc.kciprojects.com/ooc/stubs/ContentStructure_1.3.1_Lists.html</a><p class="counts">
+	    <span class="count error">3 errors</span>
+	    <span class="count warning">0 warnings</span>
+	    <span class="count notice">0 notices</span>
+	  </p>
+	</li><li class="page hasErrors"><a class="pageLink" href="coc-kciprojects-com-ooc-stubs-LinkWithNoContent-H91-A.html" title="http://coc.kciprojects.com/ooc/stubs/LinkWithNoContent_H91.A.html">http://coc.kciprojects.com/ooc/stubs/LinkWithNoContent_H91.A.html</a><p class="counts">
+	    <span class="count error">4 errors</span>
+	    <span class="count warning">0 warnings</span>
+	    <span class="count notice">0 notices</span>
+	  </p>
+	</li><li class="page hasErrors"><a class="pageLink" href="coc-kciprojects-com-ooc-stubs-LinkWithEmptyLinkContent-H91-A.html" title="http://coc.kciprojects.com/ooc/stubs/LinkWithEmptyLinkContent_H91.A.html">http://coc.kciprojects.com/ooc/stubs/LinkWithEmptyLinkContent_H91.A.html</a><p class="counts">
+	    <span class="count error">2 errors</span>
+	    <span class="count warning">0 warnings</span>
+	    <span class="count notice">0 notices</span>
+	  </p>
+	</li><li class="page hasErrors"><a class="pageLink" href="coc-kciprojects-com-ooc-stubs-LinksAndButtons-4-1-2-H91-InputImage-Name.html" title="http://coc.kciprojects.com/ooc/stubs/LinksAndButtons_4.1.2_H91.InputImage.Name.html">http://coc.kciprojects.com/ooc/stubs/LinksAndButtons_4.1.2_H91.InputImage.Name.html</a><p class="counts">
+	    <span class="count error">2 errors</span>
+	    <span class="count warning">0 warnings</span>
+	    <span class="count notice">0 notices</span>
+	  </p>
+	</li><li class="page hasErrors"><a class="pageLink" href="coc-kciprojects-com-ooc-stubs-Language-3-1-1-H57-LanguageTag.html" title="http://coc.kciprojects.com/ooc/stubs/Language_3.1.1_H57.LanguageTag.html">http://coc.kciprojects.com/ooc/stubs/Language_3.1.1_H57.LanguageTag.html</a><p class="counts">
+	    <span class="count error">1 errors</span>
+	    <span class="count warning">0 warnings</span>
+	    <span class="count notice">0 notices</span>
+	  </p>
+	</li><li class="page hasErrors"><a class="pageLink" href="coc-kciprojects-com-ooc-stubs-Language-3-1-1-H57-MainLanguageCodeInvalid.html" title="http://coc.kciprojects.com/ooc/stubs/Language_3.1.1_H57.MainLanguageCodeInvalid.html">http://coc.kciprojects.com/ooc/stubs/Language_3.1.1_H57.MainLanguageCodeInvalid.html</a><p class="counts">
+	    <span class="count error">1 errors</span>
+	    <span class="count warning">0 warnings</span>
+	    <span class="count notice">0 notices</span>
+	  </p>
+	</li><li class="page hasErrors"><a class="pageLink" href="coc-kciprojects-com-ooc-stubs-Language-3-1-1-H58-LanguageContentSegment.html" title="http://coc.kciprojects.com/ooc/stubs/Language_3.1.1_H58.LanguageContentSegment.html">http://coc.kciprojects.com/ooc/stubs/Language_3.1.1_H58.LanguageContentSegment.html</a><p class="counts">
+	    <span class="count error">1 errors</span>
+	    <span class="count warning">0 warnings</span>
+	    <span class="count notice">0 notices</span>
+	  </p>
+	</li><li class="page hasErrors"><a class="pageLink" href="coc-kciprojects-com-ooc-stubs-siframes-BarrierTest-siFrames3.html" title="http://coc.kciprojects.com/ooc/stubs/siframes/BarrierTest_siFrames3.html">http://coc.kciprojects.com/ooc/stubs/siframes/BarrierTest_siFrames3.html</a><p class="counts">
+	    <span class="count error">3 errors</span>
+	    <span class="count warning">0 warnings</span>
+	    <span class="count notice">0 notices</span>
+	  </p>
+	</li><li class="page"><span class="pageLink" title="http://coc.kciprojects.com/ooc/stubs/Resize-Text_1.4.4_DisabledScaling.html">http://coc.kciprojects.com/ooc/stubs/Resize-Text_1.4.4_DisabledScaling.html</span><p class="counts">
+	    <span class="count error">0 errors</span>
+	    <span class="count warning">0 warnings</span>
+	    <span class="count notice">0 notices</span>
+	  </p>
+	</li><li class="page"><span class="pageLink" title="http://coc.kciprojects.com/ooc/stubs/Object-text-alternative_H53.html">http://coc.kciprojects.com/ooc/stubs/Object-text-alternative_H53.html</span><p class="counts">
+	    <span class="count error">0 errors</span>
+	    <span class="count warning">0 warnings</span>
+	    <span class="count notice">0 notices</span>
+	  </p>
+	</li><li class="page"><span class="pageLink" title="http://coc.kciprojects.com/ooc/stubs/LinksAndButtons_Guideline1_1.1_1_1.H2.EG5.html">http://coc.kciprojects.com/ooc/stubs/LinksAndButtons_Guideline1_1.1_1_1.H2.EG5.html</span><p class="counts">
+	    <span class="count error">0 errors</span>
+	    <span class="count warning">0 warnings</span>
+	    <span class="count notice">0 notices</span>
+	  </p>
+	</li><li class="page"><span class="pageLink" title="http://coc.kciprojects.com/ooc/stubs/LinksAndButtons_Guideline1_1.1_1_1.H2.EG4.html">http://coc.kciprojects.com/ooc/stubs/LinksAndButtons_Guideline1_1.1_1_1.H2.EG4.html</span><p class="counts">
+	    <span class="count error">0 errors</span>
+	    <span class="count warning">0 warnings</span>
+	    <span class="count notice">0 notices</span>
+	  </p>
+	</li><li class="page hasErrors"><a class="pageLink" href="coc-kciprojects-com-rulings-Ruling-01-Describers-no-Namers.html" title="http://coc.kciprojects.com/rulings/Ruling-01_Describers-no-Namers.html">http://coc.kciprojects.com/rulings/Ruling-01_Describers-no-Namers.html</a><p class="counts">
+	    <span class="count error">2 errors</span>
+	    <span class="count warning">0 warnings</span>
+	    <span class="count notice">0 notices</span>
+	  </p>
+	</li><li class="page hasErrors"><a class="pageLink" href="coc-kciprojects-com-rulings-Ruling-02-ARIA-Hidden-vs-Focusable-Elements.html" title="http://coc.kciprojects.com/rulings/Ruling-02_ARIA-Hidden_vs_Focusable-Elements.html">http://coc.kciprojects.com/rulings/Ruling-02_ARIA-Hidden_vs_Focusable-Elements.html</a><p class="counts">
+	    <span class="count error">1 errors</span>
+	    <span class="count warning">0 warnings</span>
+	    <span class="count notice">0 notices</span>
+	  </p>
+	</li><li class="page"><span class="pageLink" title="http://coc.kciprojects.com/rulings/Ruling-03_PresentationalElements.html">http://coc.kciprojects.com/rulings/Ruling-03_PresentationalElements.html</span><p class="counts">
+	    <span class="count error">0 errors</span>
+	    <span class="count warning">0 warnings</span>
+	    <span class="count notice">0 notices</span>
+	  </p>
+	</li><li class="page hasErrors"><a class="pageLink" href="coc-kciprojects-com-rulings-Ruling-04-role-grid.html" title="http://coc.kciprojects.com/rulings/Ruling-04_role-grid.html">http://coc.kciprojects.com/rulings/Ruling-04_role-grid.html</a><p class="counts">
+	    <span class="count error">1 errors</span>
+	    <span class="count warning">0 warnings</span>
+	    <span class="count notice">0 notices</span>
+	  </p>
+	</li><li class="page"><span class="pageLink" title="http://coc.kciprojects.com/rulings/Ruling-05_aria-live-off.html">http://coc.kciprojects.com/rulings/Ruling-05_aria-live-off.html</span><p class="counts">
+	    <span class="count error">0 errors</span>
+	    <span class="count warning">0 warnings</span>
+	    <span class="count notice">0 notices</span>
+	  </p>
+	</li><li class="page hasErrors"><a class="pageLink" href="coc-kciprojects-com-rulings-Ruling-06-Accessibility-Tree-Images.html" title="http://coc.kciprojects.com/rulings/Ruling-06_Accessibility-Tree_Images.html">http://coc.kciprojects.com/rulings/Ruling-06_Accessibility-Tree_Images.html</a><p class="counts">
+	    <span class="count error">1 errors</span>
+	    <span class="count warning">0 warnings</span>
+	    <span class="count notice">0 notices</span>
+	  </p>
+	</li><li class="page hasErrors"><a class="pageLink" href="coc-kciprojects-com-ooc2.html" title="http://coc.kciprojects.com/ooc2/">http://coc.kciprojects.com/ooc2/</a><p class="counts">
+	    <span class="count error">2 errors</span>
+	    <span class="count warning">0 warnings</span>
+	    <span class="count notice">0 notices</span>
+	  </p>
+	</li><li class="page hasErrors"><a class="pageLink" href="coc-kciprojects-com-ooc-stubs-siframes-siFrames-src2.html" title="http://coc.kciprojects.com/ooc/stubs/siframes/siFrames-src2.html">http://coc.kciprojects.com/ooc/stubs/siframes/siFrames-src2.html</a><p class="counts">
+	    <span class="count error">2 errors</span>
+	    <span class="count warning">0 warnings</span>
+	    <span class="count notice">0 notices</span>
+	  </p>
+	</li><li class="page hasErrors"><a class="pageLink" href="coc-kciprojects-com-ooc2-TC0104A001.html" title="http://coc.kciprojects.com/ooc2/TC0104A001.html">http://coc.kciprojects.com/ooc2/TC0104A001.html</a><p class="counts">
+	    <span class="count error">1 errors</span>
+	    <span class="count warning">0 warnings</span>
+	    <span class="count notice">0 notices</span>
+	  </p>
+	</li><li class="page hasErrors"><a class="pageLink" href="coc-kciprojects-com-ooc2-TC0607A001.html" title="http://coc.kciprojects.com/ooc2/TC0607A001.html">http://coc.kciprojects.com/ooc2/TC0607A001.html</a><p class="counts">
+	    <span class="count error">2 errors</span>
+	    <span class="count warning">0 warnings</span>
+	    <span class="count notice">0 notices</span>
+	  </p>
+	</li><li class="page hasErrors"><a class="pageLink" href="coc-kciprojects-com-ooc2-TC0607A002.html" title="http://coc.kciprojects.com/ooc2/TC0607A002.html">http://coc.kciprojects.com/ooc2/TC0607A002.html</a><p class="counts">
+	    <span class="count error">3 errors</span>
+	    <span class="count warning">0 warnings</span>
+	    <span class="count notice">0 notices</span>
+	  </p>
+	</li><li class="page hasErrors"><a class="pageLink" href="coc-kciprojects-com-ooc2-TC0607A004.html" title="http://coc.kciprojects.com/ooc2/TC0607A004.html">http://coc.kciprojects.com/ooc2/TC0607A004.html</a><p class="counts">
+	    <span class="count error">1 errors</span>
+	    <span class="count warning">0 warnings</span>
+	    <span class="count notice">0 notices</span>
+	  </p>
+	</li><li class="page hasErrors"><a class="pageLink" href="coc-kciprojects-com-ooc2-TC0813C001.html" title="http://coc.kciprojects.com/ooc2/TC0813C001.html">http://coc.kciprojects.com/ooc2/TC0813C001.html</a><p class="counts">
+	    <span class="count error">1 errors</span>
+	    <span class="count warning">0 warnings</span>
+	    <span class="count notice">0 notices</span>
+	  </p>
+	</li><li class="page hasErrors"><a class="pageLink" href="coc-kciprojects-com-ooc2-TC0813C002.html" title="http://coc.kciprojects.com/ooc2/TC0813C002.html">http://coc.kciprojects.com/ooc2/TC0813C002.html</a><p class="counts">
+	    <span class="count error">1 errors</span>
+	    <span class="count warning">0 warnings</span>
+	    <span class="count notice">0 notices</span>
+	  </p>
+	</li><li class="page hasErrors"><a class="pageLink" href="coc-kciprojects-com-ooc2-TC1005C001.html" title="http://coc.kciprojects.com/ooc2/TC1005C001.html">http://coc.kciprojects.com/ooc2/TC1005C001.html</a><p class="counts">
+	    <span class="count error">3 errors</span>
+	    <span class="count warning">0 warnings</span>
+	    <span class="count notice">0 notices</span>
+	  </p>
+	</li><li class="page hasErrors"><a class="pageLink" href="coc-kciprojects-com-ooc2-TC1005C002.html" title="http://coc.kciprojects.com/ooc2/TC1005C002.html">http://coc.kciprojects.com/ooc2/TC1005C002.html</a><p class="counts">
+	    <span class="count error">2 errors</span>
+	    <span class="count warning">0 warnings</span>
+	    <span class="count notice">0 notices</span>
+	  </p>
+	</li><li class="page hasErrors"><a class="pageLink" href="coc-kciprojects-com-ooc2-TC1005C003.html" title="http://coc.kciprojects.com/ooc2/TC1005C003.html">http://coc.kciprojects.com/ooc2/TC1005C003.html</a><p class="counts">
+	    <span class="count error">3 errors</span>
+	    <span class="count warning">0 warnings</span>
+	    <span class="count notice">0 notices</span>
+	  </p>
+	</li><li class="page hasErrors"><a class="pageLink" href="coc-kciprojects-com-ooc2-TC1005C004.html" title="http://coc.kciprojects.com/ooc2/TC1005C004.html">http://coc.kciprojects.com/ooc2/TC1005C004.html</a><p class="counts">
+	    <span class="count error">2 errors</span>
+	    <span class="count warning">0 warnings</span>
+	    <span class="count notice">0 notices</span>
+	  </p>
+	</li><li class="page hasErrors"><a class="pageLink" href="coc-kciprojects-com-ooc2-TC1005C005.html" title="http://coc.kciprojects.com/ooc2/TC1005C005.html">http://coc.kciprojects.com/ooc2/TC1005C005.html</a><p class="counts">
+	    <span class="count error">4 errors</span>
+	    <span class="count warning">0 warnings</span>
+	    <span class="count notice">0 notices</span>
+	  </p>
+	</li><li class="page hasErrors"><a class="pageLink" href="coc-kciprojects-com-ooc2-TC1005C006.html" title="http://coc.kciprojects.com/ooc2/TC1005C006.html">http://coc.kciprojects.com/ooc2/TC1005C006.html</a><p class="counts">
+	    <span class="count error">2 errors</span>
+	    <span class="count warning">0 warnings</span>
+	    <span class="count notice">0 notices</span>
+	  </p>
+	</li><li class="page hasErrors"><a class="pageLink" href="coc-kciprojects-com-ooc2-TC1005C007.html" title="http://coc.kciprojects.com/ooc2/TC1005C007.html">http://coc.kciprojects.com/ooc2/TC1005C007.html</a><p class="counts">
+	    <span class="count error">2 errors</span>
+	    <span class="count warning">0 warnings</span>
+	    <span class="count notice">0 notices</span>
+	  </p>
+	</li><li class="page hasErrors"><a class="pageLink" href="coc-kciprojects-com-ooc2-TC1005C008.html" title="http://coc.kciprojects.com/ooc2/TC1005C008.html">http://coc.kciprojects.com/ooc2/TC1005C008.html</a><p class="counts">
+	    <span class="count error">1 errors</span>
+	    <span class="count warning">0 warnings</span>
+	    <span class="count notice">0 notices</span>
+	  </p>
+	</li><li class="page hasErrors"><a class="pageLink" href="coc-kciprojects-com-ooc2-TC1005C009.html" title="http://coc.kciprojects.com/ooc2/TC1005C009.html">http://coc.kciprojects.com/ooc2/TC1005C009.html</a><p class="counts">
+	    <span class="count error">1 errors</span>
+	    <span class="count warning">0 warnings</span>
+	    <span class="count notice">0 notices</span>
+	  </p>
+	</li><li class="page hasErrors"><a class="pageLink" href="coc-kciprojects-com-ooc2-TC1005C010.html" title="http://coc.kciprojects.com/ooc2/TC1005C010.html">http://coc.kciprojects.com/ooc2/TC1005C010.html</a><p class="counts">
+	    <span class="count error">1 errors</span>
+	    <span class="count warning">0 warnings</span>
+	    <span class="count notice">0 notices</span>
+	  </p>
+	</li><li class="page hasWarnings"><a class="pageLink" href="coc-kciprojects-com-ooc2-TC1005C011.html" title="http://coc.kciprojects.com/ooc2/TC1005C011.html">http://coc.kciprojects.com/ooc2/TC1005C011.html</a><p class="counts">
+	    <span class="count error">0 errors</span>
+	    <span class="count warning">1 warnings</span>
+	    <span class="count notice">0 notices</span>
+	  </p>
+	</li><li class="page hasErrors"><a class="pageLink" href="coc-kciprojects-com-ooc2-TC1112A001.html" title="http://coc.kciprojects.com/ooc2/TC1112A001.html">http://coc.kciprojects.com/ooc2/TC1112A001.html</a><p class="counts">
+	    <span class="count error">1 errors</span>
+	    <span class="count warning">0 warnings</span>
+	    <span class="count notice">0 notices</span>
+	  </p>
+	</li><li class="page hasErrors"><a class="pageLink" href="coc-kciprojects-com-ooc2-TC1112A002.html" title="http://coc.kciprojects.com/ooc2/TC1112A002.html">http://coc.kciprojects.com/ooc2/TC1112A002.html</a><p class="counts">
+	    <span class="count error">1 errors</span>
+	    <span class="count warning">0 warnings</span>
+	    <span class="count notice">0 notices</span>
+	  </p>
+	</li><li class="page"><span class="pageLink" title="http://coc.kciprojects.com/ooc2/TC1214A001.html">http://coc.kciprojects.com/ooc2/TC1214A001.html</span><p class="counts">
+	    <span class="count error">0 errors</span>
+	    <span class="count warning">0 warnings</span>
+	    <span class="count notice">0 notices</span>
+	  </p>
+	</li><li class="page hasErrors"><a class="pageLink" href="coc-kciprojects-com-ooc2-TC1214B002.html" title="http://coc.kciprojects.com/ooc2/TC1214B002.html">http://coc.kciprojects.com/ooc2/TC1214B002.html</a><p class="counts">
+	    <span class="count error">1 errors</span>
+	    <span class="count warning">0 warnings</span>
+	    <span class="count notice">0 notices</span>
+	  </p>
+	</li><li class="page hasErrors"><a class="pageLink" href="coc-kciprojects-com-ooc2-TC1310B001.html" title="http://coc.kciprojects.com/ooc2/TC1310B001.html">http://coc.kciprojects.com/ooc2/TC1310B001.html</a><p class="counts">
+	    <span class="count error">1 errors</span>
+	    <span class="count warning">0 warnings</span>
+	    <span class="count notice">0 notices</span>
+	  </p>
+	</li><li class="page hasErrors"><a class="pageLink" href="coc-kciprojects-com-ooc2-TC1310D001.html" title="http://coc.kciprojects.com/ooc2/TC1310D001.html">http://coc.kciprojects.com/ooc2/TC1310D001.html</a><p class="counts">
+	    <span class="count error">3 errors</span>
+	    <span class="count warning">0 warnings</span>
+	    <span class="count notice">0 notices</span>
+	  </p>
+	</li>      </ul>
+    </main>
+    <script>
+      const togglePages = (btn, pageQuery) => {
+	  const className = 'hidden';
+	  document.getElementById(btn).classList.toggle(className);
+	  document.querySelectorAll(pageQuery).forEach(page => {
+	      page.classList.toggle(className);
+	  });
+      };
+
+      document.getElementById('pa11yIssues').addEventListener('click', () => togglePages('pa11yIssues', '.page.hasErrors, .page.hasWarnings, .page.hasNotices'));
+      document.getElementById('pageErrors').addEventListener('click', () => togglePages('pageErrors', '.page.pageError'));
+      document.getElementById('noIssues').addEventListener('click', () => togglePages('noIssues', '.page:not(.hasErrors):not(.hasWarnings):not(.hasNotices):not(.pageError)'));
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js@2.8.0"
+	    integrity="sha384-QzN1ywg2QLsf72ZkgRHgjkB/cfI4Dqjg6RJYQUqH6Wm8qp/MvmEYn+2NBsLnhLkr"
+	    crossorigin="anonymous"></script>
+    <script>
+      var ctx = document.getElementById('accessibilityChart').getContext('2d');
+
+      // following plugin courtesy of https://stackoverflow.com/questions/20966817/how-to-add-text-inside-the-doughnut-chart-using-chart-js
+      Chart.pluginService.register({
+	  beforeDraw: function (chart) {
+	      if (chart.config.options.elements.center) {
+		  //Get ctx from string
+		  var ctx = chart.chart.ctx;
+
+		  //Get options from the center object in options
+		  var centerConfig = chart.config.options.elements.center;
+		  var fontStyle = centerConfig.fontStyle || 'Arial';
+		  var txt = centerConfig.text;
+		  var color = centerConfig.color || '#000';
+		  var sidePadding = centerConfig.sidePadding || 20;
+		  var sidePaddingCalculated = (sidePadding/100) * (chart.innerRadius * 2)
+		  //Start with a base font of 30px
+		  ctx.font = "30px " + fontStyle;
+
+		  //Get the width of the string and also the width of the element minus 10 to give it 5px side padding
+		  var stringWidth = ctx.measureText(txt).width;
+		  var elementWidth = (chart.innerRadius * 2) - sidePaddingCalculated;
+
+		  // Find out how much the font can grow in width.
+		  var widthRatio = elementWidth / stringWidth;
+		  var newFontSize = Math.floor(30 * widthRatio);
+		  var elementHeight = (chart.innerRadius * 2);
+
+		  // Pick a new font size so it will not be larger than the height of label.
+		  var fontSizeToUse = Math.min(newFontSize, elementHeight);
+
+		  //Set font settings to draw it correctly.
+		  ctx.textAlign = 'center';
+		  ctx.textBaseline = 'middle';
+		  var centerX = ((chart.chartArea.left + chart.chartArea.right) / 2);
+		  var centerY = ((chart.chartArea.top + chart.chartArea.bottom) / 2);
+		  ctx.font = fontSizeToUse+"px " + fontStyle;
+		  ctx.fillStyle = color;
+
+		  //Draw text in center
+		  ctx.fillText(txt, centerX, centerY);
+	      }
+	  }
+      });
+
+
+      var chart = new Chart(ctx, {
+	  // The type of chart we want to create
+	  type: 'doughnut',
+
+	  // The data for our dataset
+	  data: {
+	      labels: ['Passing URLs', 'URLs With Issues'],
+	      datasets: [{
+		  label: 'Accessibility Score',
+		  backgroundColor: ['green', 'Grey'],
+		  // borderColor: '',
+		  // borderWidth: '5px',
+		  data: [23, 78]
+	      }]
+	  },
+
+	  options: {
+	      cutoutPercentage: 75,
+	      elements: {
+		  center: {
+		      text: '23%',
+		      color: 'green', //Default black
+		      fontStyle: 'Helvetica', //Default Arial
+		      sidePadding: 15 //Default 20 (as a percentage)
+		  }
+	      }
+	  }
+      });
+    </script>
+  </body>
+
+</html>
