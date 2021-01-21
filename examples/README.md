@@ -6,10 +6,8 @@ Go to the [GitHub Playbook-Automation published page](https://akingkci.github.io
 
 <hr>
 
-## Overview
-This repository presents multiple examples of integrating accessibility into various levels of test automation via different test strategies and using various open source vendor tools.
 
-### Automated Accessibility Testing Vendors / Tools
+## Automated Accessibility Testing Vendors / Tools
 
   * ***Axe core***
     * Basic examples
