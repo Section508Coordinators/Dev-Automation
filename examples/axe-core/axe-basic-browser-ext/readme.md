@@ -1,6 +1,7 @@
 # axe-core basic examples: Browser extension
 
 <hr>
+
 Go to the [GitHub Playbook-Automation published page](https://section508coordinators.github.io/Dev-Automation/)
 
 <hr>
