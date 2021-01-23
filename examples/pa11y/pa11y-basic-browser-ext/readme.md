@@ -33,6 +33,7 @@ This  tool, Accessibility Auditor, is not a browser extension for pa11y, but rat
 1. Using your preferred browser, navigate to the web page you want to test, then run the Accessibility Auditor bookmarklet to scan the current page.
 
 <hr>
+
 # More Information
 
 For more information about the bookmarklet, go here: https://squizlabs.github.io/HTML_CodeSniffer/. For more information on the HTML_CodeSniffer WCAG ruleset, go here: https://squizlabs.github.io/HTML_CodeSniffer/Standards/WCAG2/
