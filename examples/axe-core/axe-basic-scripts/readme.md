@@ -74,7 +74,7 @@ A full list of axe-core rules (test logic) can be found here: https://github.com
 
 ## Full API reference for developers
 
-More comprehensive guidance on the axe-core engine can be found in the [Axe JavaScript Accessibility API](https://github.com/dequelabs/axe-core/blob/develop/doc/API.md). <hr>
+More comprehensive guidance on the axe-core engine can be found in the [Axe JavaScript Accessibility API](https://github.com/dequelabs/axe-core/blob/develop/doc/API.md). 
 
 <hr>
 
