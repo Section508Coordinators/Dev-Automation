@@ -32,6 +32,4 @@ This tool provides the tester with testing capability from within a web browser.
 
 <hr>
 
-## End
-
 01/21/2021 | 09:17p
