@@ -32,9 +32,10 @@ This example uses the following technology stack:
 
 In a command window, run: `pa11y [options] <url>`
 
-The MS Word document in this repository entitled '01_pa11y-CLI-Commands.docx' provides detailed and multiple examples of accessibility testing using the pa11y CLI.https://akingkci.github.io/Dev-Automation/)
+The MS Word document in this repository entitled '01_pa11y-CLI-Commands.docx' provides detailed and multiple examples of accessibility testing using the pa11y CLI.
 
 <hr>
+
 # More Information
 
 For more information on syntax for using this example, see the pa11y syntax information here:https://github.com/pa11y/pa11y
