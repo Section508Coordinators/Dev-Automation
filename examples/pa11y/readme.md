@@ -6,7 +6,7 @@ Go to the [GitHub Playbook-Automation published page](https://section508coordina
 
 <hr>
 
-* Basic examples
+### Basic examples
 
  1. [Browser extensions](https://github.com/Section508Coordinators/Dev-Automation/tree/master/examples/pa11y/pa11y-basic-browser-ext)
 
@@ -14,7 +14,7 @@ Go to the [GitHub Playbook-Automation published page](https://section508coordina
  
  3. [Scripting](https://github.com/Section508Coordinators/Dev-Automation/tree/master/examples/pa11y/pa11y-basic-scripts)
  
- Advanced examples
+### Advanced examples
  
  1. [Pa11y custom project1](https://github.com/Section508Coordinators/Dev-Automation/tree/master/examples/pa11y/pa11y-advanced-project1)
         
