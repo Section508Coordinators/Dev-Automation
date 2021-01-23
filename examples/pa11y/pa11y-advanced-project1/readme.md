@@ -1,7 +1,9 @@
 # pa11y advanced examples: Project 1
 
 <hr>
-Go to the [GitHub Playbook-Automation published page](https://akingkci.github.io/Dev-Automation/)
+
+Go to the [GitHub Playbook-Automation published page](https://section508coordinators.github.io/Dev-Automation/)
+
 <hr>
 
 
@@ -115,4 +117,5 @@ The /bin/ directory contains multiple "custom-pa11y" files that showcase differe
 For more information on syntax for using this custom example, see the pa11y-ci syntax information here: https://github.com/pa11y/pa11y-ci 
 
 <hr>
-01/18/2021 | 10:58p
+
+01/22/2021 | 09:40p
