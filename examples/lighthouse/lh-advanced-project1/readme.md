@@ -1,7 +1,9 @@
 # lighthouse advanced examples: Project 1
 
 <hr>
-Go to the [GitHub Playbook-Automation published page](https://akingkci.github.io/Dev-Automation/)
+
+Go to the [GitHub Playbook-Automation published page](https://section508coordinators.github.io/Dev-Automation/)
+
 <hr>
 
 
@@ -102,5 +104,5 @@ For more information on lighthouse syntax, go here: https://github.com/GoogleChr
 
 <hr>
 
-01/20/2021 | 08:47p
+01/22/2021 | 09:56p
 
