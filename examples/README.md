@@ -8,7 +8,7 @@ Go to the [GitHub Playbook-Automation published page](https://section508coordina
 
 ### Automated Accessibility Testing Vendors / Tools
 
-    * ***Axe core***
+* ***Axe core***
     * Basic examples
         1. [Browser extensions](https://github.com/Section508Coordinators/Dev-Automation/tree/master/examples/axe-core/axe-basic-browser-ext)
         2. [Command line interface (CLI)](https://github.com/Section508Coordinators/Dev-Automation/tree/master/examples/axe-core/axe-basic-cli)
