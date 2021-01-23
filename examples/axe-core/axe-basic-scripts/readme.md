@@ -76,7 +76,6 @@ A full list of axe-core rules (test logic) can be found here: https://github.com
 
 More comprehensive guidance on the axe-core engine can be found in the [Axe JavaScript Accessibility API](https://github.com/dequelabs/axe-core/blob/develop/doc/API.md). <hr>
 
+<hr>
 
-## End
-
-01/17/2021 | 02:15p
+01/222/2021 | 09:22p
