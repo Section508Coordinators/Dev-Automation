@@ -1,7 +1,8 @@
 # pa11y basic examples: Koa11y
 
 <hr>
-Go to the [GitHub Playbook-Automation published page](https://akingkci.github.io/Dev-Automation/)
+
+Go to the [GitHub Playbook-Automation published page](https://section508coordinators.github.io/Dev-Automation/)
 
 <hr>
 
@@ -43,4 +44,4 @@ For more information on Koa11y go here (Video): https://youtu.be/yoJDb018Edc.
 
 <hr>
 
-01/18/2021 | 12:41p
+01/22/2021 | 09:45p
