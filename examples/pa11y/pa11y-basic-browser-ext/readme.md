@@ -1,7 +1,8 @@
 # pa11y basic examples: Browser extension
 
 <hr>
-Go to the [GitHub Playbook-Automation published page](https://akingkci.github.io/Dev-Automation/)
+
+Go to the [GitHub Playbook-Automation published page](https://section508coordinators.github.io/Dev-Automation/)
 
 <hr>
 
@@ -36,6 +37,7 @@ This  tool, Accessibility Auditor, is not a browser extension for pa11y, but rat
 
 For more information about the bookmarklet, go here: https://squizlabs.github.io/HTML_CodeSniffer/. For more information on the HTML_CodeSniffer WCAG ruleset, go here: https://squizlabs.github.io/HTML_CodeSniffer/Standards/WCAG2/
 
-# End
+<hr>
 
-01/18/2021 | 01:02p
+
+01/22/2021 | 09:42p
