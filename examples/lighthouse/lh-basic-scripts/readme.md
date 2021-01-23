@@ -5,6 +5,7 @@
 Go to the [GitHub Playbook-Automation published page](https://section508coordinators.github.io/Dev-Automation/)
 
 <hr>
+
 ## lighthouse: programmatic usage
 
 The scripts (JavaScript) in this project are meant to provide relatively simple examples, on which you can build, of how to use the pa11y  accessibility engine for accessibility testing using various configurations and rulesets - to include Deque's axe-core and SQIZ Lab's HTML CodeSniffer.  
@@ -36,8 +37,6 @@ Perform the following steps to setup your environment to run the examples
 The scripts will present different scenarios based on their internal configurations as follows:
 
 - *Script 1*:`01_lighthouse_BasicScript.js`: This script will:
-  - 
-  - 
   - 
 
 ## Usage/Syntax
