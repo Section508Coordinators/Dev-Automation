@@ -96,7 +96,7 @@ The /bin/ directory contains multiple "custom-axe" files that showcase different
 
 # More information
 
-For more information on syntax for using this custom example, see the pa11y-ci syntax information here: https://github.com/pa11y/pa11y-ci 
+More comprehensive guidance on the axe-core engine can be found in the [Axe JavaScript Accessibility API](https://github.com/dequelabs/axe-core/blob/develop/doc/API.md). 
 
 <hr>
 
