@@ -2,7 +2,7 @@
 
 <hr>
 
-Go to the [GitHub Playbook-Automation published page](https://akingkci.github.io/Dev-Automation/)
+Go to the [GitHub Playbook-Automation published page](https://section508coordinators.github.io/Dev-Automation/)
 
 <hr>
 
@@ -54,7 +54,8 @@ In a Git Bash window, run: `node <script_name>`
 
 # More Information
 
-For more information on pa11y usage and syntax, go here:https://github.com/pa11y/pa11y 
+For more information on pa11y usage and syntax, go here: https://github.com/pa11y/pa11y 
 
 <hr>
-01/18/2021 | 08:27p
+
+01/22/2021 | 09:44p
