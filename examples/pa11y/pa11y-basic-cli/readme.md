@@ -38,7 +38,7 @@ The MS Word document in this repository entitled '01_pa11y-CLI-Commands.docx' pr
 
 # More Information
 
-For more information on syntax for using this example, see the pa11y syntax information here:https://github.com/pa11y/pa11y
+For more information on syntax for using this example, see the pa11y syntax information here: https://github.com/pa11y/pa11y
 
 <hr>
 
