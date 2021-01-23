@@ -37,5 +37,5 @@ This repository presents multiple examples of integrating accessibility into var
         
 <hr>
 
-01/22/2021 | 08:14p
+01/22/2021 | 09:00p
 
