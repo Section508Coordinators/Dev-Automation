@@ -6,16 +6,18 @@ Go to the [GitHub Playbook-Automation published page](https://section508coordina
 
 <hr>
 
-  * Basic examples
+* Basic examples
 
-      * Koa11y UI
-      * Browser extensions
-      * Command line interface (CLI)
-      * Scripting
-  * Advanced examples
+ 1. [Browser extensions](https://github.com/Section508Coordinators/Dev-Automation/tree/master/examples/pa11y/pa11y-basic-browser-ext)
 
-      * Custom pa11y project 1
-
+ 2. [Command line interface (CLI)](https://github.com/Section508Coordinators/Dev-Automation/tree/master/examples/pa11y/pa11y-basic-cli)
+ 
+ 3. [Scripting](https://github.com/Section508Coordinators/Dev-Automation/tree/master/examples/pa11y/pa11y-basic-scripts)
+ 
+ Advanced examples
+ 
+ 1. [Pa11y custom project1](https://github.com/Section508Coordinators/Dev-Automation/tree/master/examples/pa11y/pa11y-advanced-project1)
+        
 <hr>
 
 01/18/2021 | 08:29p
