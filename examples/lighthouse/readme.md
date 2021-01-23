@@ -6,8 +6,6 @@ Go to the [GitHub Playbook-Automation published page](https://section508coordina
 
 <hr>
 
-* ***Google Lighthouse test engine***
-
 ### Basic examples
 
  1. [Browser extensions](https://github.com/Section508Coordinators/Dev-Automation/tree/master/examples/lighthouse/lh-basic-browser-ext)
