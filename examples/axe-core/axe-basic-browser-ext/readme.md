@@ -1,13 +1,13 @@
 # axe-core basic examples: Browser extension
 
 <hr>
-Go to the [GitHub Playbook-Automation published page](https://akingkci.github.io/Dev-Automation/)
+Go to the [GitHub Playbook-Automation published page](https://section508coordinators.github.io/Dev-Automation/)
 
 <hr>
 
 ## axe browser extensions
 
-This tool provides the tester with...
+This tool provides the tester with testing capability from within a web browser.
 
 <hr>
 
@@ -33,4 +33,4 @@ This tool provides the tester with...
 
 ## End
 
-01/17/2021 | 12:03a
+01/21/2021 | 09:17p
