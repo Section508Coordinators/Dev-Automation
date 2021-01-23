@@ -10,7 +10,7 @@ Go to the [GitHub Playbook-Automation published page](https://section508coordina
 
 This tool provides the tester with a command line interface for axe-core accessibility library to run accessibly tests.
 
-The MS Word document in this repository entitled '01_axe-CLI-Commands.docx' provides detailed and multiple examples of accessibility testing using the axe CLI.https://akingkci.github.io/Dev-Automation/)
+The MS Word document in this repository entitled '01_axe-CLI-Commands.docx' provides detailed and multiple examples of accessibility testing using the axe CLI.
 
 <hr>
 
@@ -36,10 +36,8 @@ The MS Word document in this repository entitled '01_axe-CLI-Commands.docx' prov
 
 In a command window, run: `axe <web_page_to_test>`
 
-The MS Word document in this repository entitled '01_axe-CLI-Commands.docx' provides detailed and multiple examples of accessibility testing using the axe CLI.https://akingkci.github.io/Dev-Automation/)
+The MS Word document in this repository entitled '01_axe-CLI-Commands.docx' provides detailed and multiple examples of accessibility testing using the axe CLI.
 
 <hr>
 
-## End
-
-01/16/2021 | 10:21p
+01/22/2021 | 09:20p
