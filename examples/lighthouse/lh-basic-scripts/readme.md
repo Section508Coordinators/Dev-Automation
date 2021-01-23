@@ -33,11 +33,9 @@ Perform the following steps to setup your environment to run the examples
 
 ### Example scripts
 
-
 The scripts will present different scenarios based on their internal configurations as follows:
 
-- *Script 1*:`01_lighthouse_BasicScript.js`: This script will:
-  - 
+***Script 1***: `01_lighthouse_BasicScript.js`: This script will:
 
 ## Usage/Syntax
 
