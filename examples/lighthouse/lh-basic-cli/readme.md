@@ -1,7 +1,8 @@
 # lighthouse basic examples: CLI
 
 <hr>
-Go to the [GitHub Playbook-Automation published page](https://akingkci.github.io/Dev-Automation/)
+
+Go to the [GitHub Playbook-Automation published page](https://section508coordinators.github.io/Dev-Automation/)
 
 <hr>
 
@@ -43,8 +44,7 @@ For more information on syntax for using this example, see the information here:
 https://github.com/GoogleChrome/lighthouse
 
 
-
 <hr>
 
-01/19/2021 | 04:34p
+01/22/2021 | 09:53p
 
