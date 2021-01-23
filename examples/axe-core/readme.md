@@ -2,16 +2,13 @@
 
 <hr>
 
-Go to the [GitHub Playbook-Automation published page](https://akingkci.github.io/Dev-Automation/)
+Go to the [GitHub Playbook-Automation published page](https://section508coordinators.github.io/Dev-Automation/)
 
 <hr>
 
-  * Basic examples
-
-      * Browser extensions
-      * Command line interface (CLI)
-      * Scripting
-  * Advanced examples
-
-      * Custom axe project 1 example
-
+    * Basic examples
+        1. [Browser extensions](https://github.com/Section508Coordinators/Dev-Automation/tree/master/examples/axe-core/axe-basic-browser-ext)
+        2. [Command line interface (CLI)](https://github.com/Section508Coordinators/Dev-Automation/tree/master/examples/axe-core/axe-basic-cli)
+        3. [Scripting](https://github.com/Section508Coordinators/Dev-Automation/tree/master/examples/axe-core/axe-basic-scripts)
+    * Advanced examples
+        1. [Axe-core custom project1](https://github.com/Section508Coordinators/Dev-Automation/tree/master/examples/axe-core/axe-advanced-project1)
