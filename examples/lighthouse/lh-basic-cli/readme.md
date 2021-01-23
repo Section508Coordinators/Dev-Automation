@@ -33,7 +33,7 @@ This example uses the following technology stack:
 
 In a command window, run: `lighthouse <web site url>`
 
-The MS Word document in this repository entitled '01_Lighthouse-CLI-Commands.docx' provides detailed and multiple examples of accessibility testing using the lighthouse CLI.https://akingkci.github.io/Dev-Automation/)
+The MS Word document in this repository entitled '01_Lighthouse-CLI-Commands.docx' provides detailed and multiple examples of accessibility testing using the lighthouse CLI.
 
 <hr>
 
