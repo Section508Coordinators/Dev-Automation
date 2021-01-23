@@ -1,7 +1,8 @@
 # pa11y basic examples: CLI
 
 <hr>
-Go to the [GitHub Playbook-Automation published page](https://akingkci.github.io/Dev-Automation/)
+
+Go to the [GitHub Playbook-Automation published page](https://section508coordinators.github.io/Dev-Automation/)
 
 <hr>
 
@@ -40,5 +41,5 @@ For more information on syntax for using this example, see the pa11y syntax info
 
 <hr>
 
-01/18/2021 | 01:25p
+01/221/2021 | 09:42p
 
