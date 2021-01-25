@@ -6,7 +6,7 @@ Go to the [GitHub Playbook-Automation published page](https://section508coordina
 
 <hr>
 
-##axe-core library: Scripting using Selenium WebDriver
+## axe-core library: Scripting using Selenium WebDriver
 
 The scripts (JavaScript) in this project are meant to provide relatively simple examples, on which you can build, of how to use the axe-core accessibility engine for accessibility testing using Selenium WebDriver as well as both the Chrome and Firefox browser engines.  
 
