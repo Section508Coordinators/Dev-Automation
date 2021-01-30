@@ -134,7 +134,7 @@ Command: `axe https://section508coordinators.github.io/BaselineTestPages2/test-c
 
 ***Console window output:***
 
-![Example 1](image-20210130170108657.png)
+![Example 1](ex1.png)
 
 
 
@@ -148,7 +148,7 @@ Command: `axe https://section508coordinators.github.io/BaselineTestPages2/test-c
 
 ***Console window output:***
 
-![Example 2](image-20210130180059092.png)
+![Example 2](ex2.png)
 
 
 
@@ -162,7 +162,7 @@ Command: `axe https://section508coordinators.github.io/BaselineTestPages2/test-c
 
 ***Console window output:***
 
-![Example 3](image-20210130180513911.png)
+![Example 3](ex3.png)
 
  
 
