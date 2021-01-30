@@ -154,7 +154,7 @@ Command: `axe https://section508coordinators.github.io/BaselineTestPages2/test-c
 
 <hr>
 
-## Example 3
+#### Example 3
 
 <u>Description</u>: One-page test using OAST-recommended rules only
 
