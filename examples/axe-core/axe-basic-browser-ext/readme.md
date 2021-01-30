@@ -8,28 +8,34 @@ Go to the [GitHub Playbook-Automation published page](https://section508coordina
 
 ## axe browser extensions
 
-This tool provides the tester with testing capability from within a web browser.
+The Axe web browser extension tool is a free tool from Deque Systems that offers developers and testers with a relatively quick and easy way to test for accessibility within a development or production environment via their web browser.
+
+The tool currently integrates with Chrome, Firefox, and Edge with extended features being available via the Chrome extension.
 
 <hr>
 
 ## Technology stack
 
-- Chrome desktop (offers guided testing)
+- Google Chrome desktop (offers guided testing)
 
-- Firefox
+- Mozilla Firefox
 
-- Edge
+- Microsoft Edge
 
   
 
 ## Setup
 
-1. 
+Setup is described via the appropriate browser's "store" at the following locations:
+
+1. [Chrome web store](https://chrome.google.com/webstore/detail/axe-web-accessibility-tes/lhdoppojpmngadmnindnejefpokejbdd?hl=en-US)
+2. [Firefox web store](https://addons.mozilla.org/en-US/firefox/addon/axe-devtools/)
+3. [Edge web store](https://microsoftedge.microsoft.com/addons/detail/axe-web-accessibility-t/kcenlimkmjjkdfcaleembgmldmnnlfkn)
 
 ## Usage/Syntax
 
-1. 
+See individual browser extension.
 
 <hr>
 
-01/21/2021 | 09:17p
+01/30/2021 | 02:52p
