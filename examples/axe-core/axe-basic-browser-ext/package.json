@@ -1,9 +1,0 @@
-{
-  "name": "axe-basic-browser-extension",
-  "version": "1.0.0",
-  "description": "Example of using axe-core for accessiblity testing within a web browser extension.",
-  "main": "index.js",
-  "author": "Alan King",
-  "license": "MIT",
-  "private": true
-}
