@@ -6,10 +6,27 @@ Go to the [GitHub Playbook-Automation published page](https://section508coordina
 
 <hr>
 
+## Tool: repository asset heading
 
-# repository asset description
+[Description of what this folder/repository provides] 
 
 This project is meant to demonstrate multiple ways in which developers can use and combine various axe-core API functionality and other vendor tools. 
+
+<hr>
+## Automated tools and rulesets
+
+Because automated tools provide the tester with the efficiency of pass/fail conclusions,  it is critical to thoroughly assess that logic – also known as its ***rules***. A tool’s collective rules or ruleset should be assessed to determine its accuracy as well as the degree to which its logic aligns with your organization’s ***target accessibility standard***. In the case of DHS, the target accessibility standard to which the automated tools on this site are compared are as follows:
+
+#### DHS target accessibility standard
+
+- [The Section 508 ICT Testing Baseline for Web (October 2020 | version 3.0)](https://section508coordinators.github.io/ICTTestingBaseline/) (ICT Baseline)
+- [Trusted Tester: Section 508  Conformance Test Process for Web (June 2019 | version 5.0)](https://section508coordinators.github.io/TrustedTester/) (TTv5)
+
+#### Ruleset assessments and recommended rules
+
+As one might suspect, not all automated tool rulesets on the market perfectly align with the pass/fail success criteria as expressed by the DHS standard. However upon analysis, DHS OAST has identified specific rules, for specific vendor accessibility ruleset libraries, that provide value in identifying accessibility to the DHS Standard.   
+
+Those analyses of vendor accessibility rulesets and the OAST ruleset recommendations reside in the following folder on this site: https://github.com/Section508Coordinators/Dev-Automation/tree/master/rulesets.
 
 <hr>
 
@@ -20,15 +37,6 @@ This example uses the following technology stack:
 - Nodejs 6+
 - Git
 - axe-Puppeteer
-
-## DHS OAST Ruleset Analysis
-
-The following ruleset analyses artifacts were used as the basis for test configurations for this example to maintain as much alignment with TTv5 as possible and can be used for future customizations you wish to perform. These analyses, in the /docs/ folder, are based on the axe-core 3.5 ruleset and the DHS ICT Web Baseline 3.0 and Trusted Tester v 5.
-
-2. **TTv5-friendly rules**: In order to prevent the Pa11y engine from running all rules in a given ruleset by default, the developer must specify the ruleset, and then explicitly and individually exclude, by rule name, any rules that should not run. This analysis presents a filterable spreadsheet that lists all rules to exclude for both axe-core and HTML CodeSniffer as being unfriendly to TTv5.
-3. **Pa11y config file**: This is a zip archive with a pa11y configuration file (.pa11yci.json) completed to show the syntax for only using preferred rules by populating all desired excluded files in the configuration file. This file is a valid list of excluded files as of axe version 3.5 and HTML Code Sniffer 2.5.1.
-
----
 
 ## Setup
 
@@ -85,6 +93,6 @@ More comprehensive guidance on the axe-core engine can be found...
 
 <hr>
 
-00/00/2021 | 00:00p | template version: 01/30/2021 03:00p
+00/00/2021 | 00:00p | template version: 01/30/2021 04:27p
 
 
