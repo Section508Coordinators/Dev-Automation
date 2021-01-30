@@ -6,11 +6,11 @@ Go to the [GitHub Playbook-Automation published page](https://section508coordina
 
 <hr>
 
-## Tool: axe-core CLI
+## Tool: @axe-core/cli
 
-The axe-core CLI tool provides the tester with a command line interface for axe-core accessibility library to run accessibly tests.
+The  @axe-core/cli tool provides the tester with a command line interface for axe-core accessibility library to run accessibly tests.
 
-This folder presents fully functioning examples of how to use the axe-core CLI tool for quick and easy accessibility testing.
+This folder presents fully functioning examples of how to use the @axe-core/cli tool for quick and easy accessibility testing.
 
 <hr>
 
@@ -192,8 +192,9 @@ Command: `axe https://section508coordinators.github.io/BaselineTestPages2/test-c
 
 ## More information
 
-More information on the axe-core  CLI can be found here: https://github.com/dequelabs/axe-cli  
+More information on the axe-core CLI can be found here: https://github.com/dequelabs/axe-core-npm/tree/develop/packages/cli.
 
 <hr>
 
-01/30/2021 | 06:09p
+01/30/2021 | 06:25p
+
