@@ -169,8 +169,9 @@ Command: `axe https://section508coordinators.github.io/BaselineTestPages2/test-c
 ## Tips
 
 1. Always be aware of the currently published version of the axe-core library. If you want to run with the most current version – which will likely have you up to date on the latest rules and bug fixes, be sure to periodically update your copy of the library and note the axe-core version message when running CLI: “*`Running axe-core <library version> in <selected browser*>`”
-
 2. Be wary of using the --tags option. Results obtained by OAST through testing are questionable. OAST has recommended testing using individual rules in favor of using tags.
+
+<hr>
 
 ## Appendix
 
