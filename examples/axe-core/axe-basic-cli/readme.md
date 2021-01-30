@@ -134,7 +134,7 @@ Command: `axe https://section508coordinators.github.io/BaselineTestPages2/test-c
 
 ***Console window output:***
 
-![image-20210130170108657](C:\Users\aking\AppData\Roaming\Typora\typora-user-images\image-20210130170108657.png)
+![Example 1](image-20210130170108657.png)
 
 
 
@@ -148,7 +148,7 @@ Command: `axe https://section508coordinators.github.io/BaselineTestPages2/test-c
 
 ***Console window output:***
 
-![image-20210130180059092](C:\Users\aking\AppData\Roaming\Typora\typora-user-images\image-20210130180059092.png)
+![Example 2](image-20210130180059092.png)
 
 
 
@@ -162,7 +162,7 @@ Command: `axe https://section508coordinators.github.io/BaselineTestPages2/test-c
 
 ***Console window output:***
 
-![image-20210130180513911](C:\Users\aking\AppData\Roaming\Typora\typora-user-images\image-20210130180513911.png)
+![Example 3](image-20210130180513911.png)
 
  
 
