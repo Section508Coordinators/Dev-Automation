@@ -16,6 +16,7 @@ This folder presents fully functioning examples of how to use this tool for quic
 
 ## Automated tools and rulesets
 
+
 Because automated tools provide the tester with the efficiency of pass/fail conclusions, it is critical to thoroughly assess that logic – also known as its ***rules***. A tool’s collective rules or ruleset should be assessed to determine its accuracy as well as the degree to which its logic aligns with your organization’s ***target accessibility standard***. In the case of DHS, the target accessibility standard to which the automated tools on this site are compared are as follows:
 
 #### DHS target accessibility standard
@@ -96,19 +97,19 @@ pa11y ./path/to/your/file.html
 pa11y --reporter csv http://example.com > report.csv
 ```
 
-#### Run Pa11y with the Section508 ruleset
+#### Run pa11y with the Section508 ruleset
 
 ```
 pa11y --standard Section508 http://example.com
 ```
 
-#### Run Pa11y using [aXe](https://www.axe-core.org/) as a [test runner](https://github.com/pa11y/pa11y#runners)
+#### Run pa11y using [aXe](https://www.axe-core.org/) as a [test runner](https://github.com/pa11y/pa11y#runners)
 
 ```
 pa11y --runner axe http://example.com
 ```
 
-#### Run Pa11y using [aXe](https://www.axe-core.org/) *and* [HTML CodeSniffer](http://squizlabs.github.com/HTML_CodeSniffer/) as [test runners](https://github.com/pa11y/pa11y#runners):
+#### Run pa11y using [aXe](https://www.axe-core.org/) *and* [HTML CodeSniffer](http://squizlabs.github.com/HTML_CodeSniffer/) as [test runners](https://github.com/pa11y/pa11y#runners):
 
 ```
 pa11y --runner axe --runner htmlcs http://example.com
