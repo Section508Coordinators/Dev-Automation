@@ -21,6 +21,7 @@ By combining the axe-core API library with the underlying [Pa11y test engine](ht
 - **HTML Reporting/Scoring**: Examples of extending the simple HTML report offered by the open source tool to provide a simple scoring model for mass scan results. This is done by using the HTML report switch (-h).
 
 <hr>
+
 ## Automated tools and rulesets
 
 Because automated tools provide the tester with the efficiency of pass/fail conclusions, it is critical to thoroughly assess that logic – also known as its ***rules***. A tool’s collective rules or ruleset should be assessed to determine its accuracy as well as the degree to which its logic aligns with your organization’s ***target accessibility standard***. In the case of DHS, the target accessibility standard to which the automated tools on this site are compared are as follows:
