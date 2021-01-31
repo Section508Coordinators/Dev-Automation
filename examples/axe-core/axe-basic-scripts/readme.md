@@ -60,6 +60,7 @@ Perform the following steps to setup your environment to run the examples:
       2. Install Gecko driver and ensure it is in your PATH statement
 
 <hr>
+
 ## Usage/Syntax
 
 In a Git Bash window, run: `node <script_name>`
