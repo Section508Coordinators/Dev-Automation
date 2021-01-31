@@ -215,7 +215,7 @@ Description: Single page default test runner (HTML Code Sniffer) and all default
 Command: `pa11y https://section508coordinators.github.io/BaselineTestPages2/test-cases/TC1005C001.html` 
  ***Console window output:*** 
 
-![Example 1: Command Window](C:\Users\aking\Documents\github\section508coordinators\dev-automation\examples\pa11y\pa11y-basic-cli\pic1.png)
+![Example 1: Command Window](pic1.png)
 
 <hr>
 
@@ -227,11 +227,11 @@ Command: `pa11y https://section508coordinators.github.io/BaselineTestPages2/test
 
 ***Console window output:*** 
 
-![Examkple 2 Command Window](C:\Users\aking\Documents\github\section508coordinators\dev-automation\examples\pa11y\pa11y-basic-cli\pic2a.png)
+![Examkple 2 Command Window](pic2a.png)
 
  ***Resulting HTML Report Files***
 
-![Resulting HTML report files](C:\Users\aking\Documents\github\section508coordinators\dev-automation\examples\pa11y\pa11y-basic-cli\pic2b.png)
+![Resulting HTML report files](pic2b.png)
 
 
 
@@ -244,11 +244,11 @@ Command: `pa11y https://section508coordinators.github.io/BaselineTestPages2/test
 <u>Command</u>: `pa11y ///C:/_test/TC1005C001.html --runner axe --ignore "region;landmark-one-main" --reporter html > myReport.html`
 
 ***Console window output:\***
- ![Example 3 Command Window](C:\Users\aking\Documents\github\section508coordinators\dev-automation\examples\pa11y\pa11y-basic-cli\pic3.jpg)
+ ![Example 3 Command Window](pic3.jpg)
 
 ***Subsequent HTML results file:*** 
 
-![Example 3 HTML results file](C:\Users\aking\Documents\github\section508coordinators\dev-automation\examples\pa11y\pa11y-basic-cli\pic3b)
+![Example 3 HTML results file](pic3b)
 
 
 
