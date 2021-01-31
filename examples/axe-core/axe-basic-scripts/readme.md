@@ -6,11 +6,30 @@ Go to the [GitHub Playbook-Automation published page](https://section508coordina
 
 <hr>
 
-## axe-core library: Scripting using Selenium WebDriver
+## Tool: axe-core library: Scripting w/Selenium WebDriver
 
 The scripts (JavaScript) in this project are meant to provide relatively simple examples, on which you can build, of how to use the axe-core accessibility engine for accessibility testing using Selenium WebDriver as well as both the Chrome and Firefox browser engines.  
 
-## Technology stack
+<hr>
+
+## Automated tools and rulesets
+
+Because automated tools provide the tester with the efficiency of pass/fail conclusions, it is critical to thoroughly assess that logic – also known as its ***rules***. A tool’s collective rules or ruleset should be assessed to determine its accuracy as well as the degree to which its logic aligns with your organization’s ***target accessibility standard***. In the case of DHS, the target accessibility standard to which the automated tools on this site are compared are as follows:
+
+#### DHS target accessibility standard
+
+- [The Section 508 ICT Testing Baseline for Web (October 2020 | version 3.0)](https://section508coordinators.github.io/ICTTestingBaseline/) (ICT Baseline)
+- [Trusted Tester: Section 508 Conformance Test Process for Web (June 2019 | version 5.0)](https://section508coordinators.github.io/TrustedTester/) (TTv5)
+
+#### Ruleset assessments and recommended rules
+
+Not all automated tool rulesets on the market perfectly align with the pass/fail success criteria as expressed by the DHS standard. However upon analysis, DHS OAST has identified specific rules, for specific vendor accessibility ruleset libraries, that provide value in identifying accessibility to the DHS Standard.
+
+Those analyses of vendor accessibility rulesets and the OAST ruleset recommendations reside in the following folder on this site: https://github.com/Section508Coordinators/Dev-Automation/tree/master/rulesets.
+
+<hr>
+
+## Technology requirements
 
 These examples use the following technology stack:
 
@@ -41,14 +60,6 @@ Perform the following steps to setup your environment to run the examples:
       2. Install Gecko driver and ensure it is in your PATH statement
 
 <hr>
-
-### Example scripts
-
-- Script 1: Example of a basic script that calls the *Firefox* browser engine
-  - `01_axe-core_BasicScript.js`
-- Script 2: Example of a basic script that calls the *Chrome* headless engine
-  - `02_axe-core_BasicScript.js`
-
 ## Usage/Syntax
 
 In a Git Bash window, run: `node <script_name>`
@@ -60,22 +71,31 @@ In response, the script 1 will:
 
 <hr>
 
-# More Information
+### Example scripts
+
+- Script 1: Example of a basic script that calls the *Firefox* browser engine
+  - `01_axe-core_BasicScript.js`
+- Script 2: Example of a basic script that calls the *Chrome* headless engine
+  - `02_axe-core_BasicScript.js`
+
+<hr>
+
+## More Information
 
 See the resources below for more information that may be helpful in further customizing the examples for your organization's use:
 
-## Axe-core and Selenium WebDriver
+#### Axe-core and Selenium WebDriver
 
 More information on axe-core accessibility scripting to the Selenium WebDriverJS can be found at the [Deque GitHub WebDriverJs](https://github.com/dequelabs/axe-core-npm/tree/develop/packages/webdriverjs) repository.
 
-## Axe-core accessibility rules
+#### Axe-core accessibility rules
 
 A full list of axe-core rules (test logic) can be found here: https://github.com/dequelabs/axe-core/blob/develop/doc/rule-descriptions.md. 
 
-## Full API reference for developers
+#### Full API reference for developers
 
 More comprehensive guidance on the axe-core engine can be found in the [Axe JavaScript Accessibility API](https://github.com/dequelabs/axe-core/blob/develop/doc/API.md). 
 
 <hr>
 
-01/222/2021 | 09:22p
+01/30/2021 | 09:27p
