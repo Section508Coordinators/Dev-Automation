@@ -81,6 +81,7 @@ Usage: pa11y [options] <url>
 Review the many examples below of implementing the pa11y CLI tool.
 
 <hr>
+
 #### Run an accessibility test against a URL
 
 ```
