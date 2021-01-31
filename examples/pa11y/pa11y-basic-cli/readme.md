@@ -13,6 +13,7 @@ This tool provides the tester with a command line interface that accesses the pa
 This folder presents fully functioning examples of how to use this tool for quick and easy accessibility testing.
 
 <hr>
+
 ## Automated tools and rulesets
 
 Because automated tools provide the tester with the efficiency of pass/fail conclusions, it is critical to thoroughly assess that logic – also known as its ***rules***. A tool’s collective rules or ruleset should be assessed to determine its accuracy as well as the degree to which its logic aligns with your organization’s ***target accessibility standard***. In the case of DHS, the target accessibility standard to which the automated tools on this site are compared are as follows:
