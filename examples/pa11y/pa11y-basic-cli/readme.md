@@ -213,36 +213,42 @@ results(results); // Called with the results of a test run
 Description: Single page default test runner (HTML Code Sniffer) and all default rules:
 
 Command: `pa11y https://section508coordinators.github.io/BaselineTestPages2/test-cases/TC1005C001.html` 
- ***Console window output:*** ![img](file:///C:/Users/aking/AppData/Local/Temp/msohtmlclip1/01/clip_image002.jpg)
+ ***Console window output:*** 
 
-
+![Example 1: Command Window](C:\Users\aking\Documents\github\section508coordinators\dev-automation\examples\pa11y\pa11y-basic-cli\pic1.png)
 
 <hr>
 
 #### Example 2
 
-<u>Description</u>: Single page test, specific preferred rules only, results saved as an HTML file with the name ***myReport.html\***.
+<u>Description</u>: Single page test, specific preferred rules only, results saved as an HTML file with the name **myReport.html**.
 
 <u>Command</u>: `pa11y $ pa11y https://section508coordinators.github.io/BaselineTestPages2/test-cases/TC1005C001.html --runner axe --ignore "region;landmark-one-main" --reporter html > myReport.html`
 
-***Console window output:*** ![img](file:///C:/Users/aking/AppData/Local/Temp/msohtmlclip1/01/clip_image002.jpg)
+***Console window output:*** 
+
+![Examkple 2 Command Window](C:\Users\aking\Documents\github\section508coordinators\dev-automation\examples\pa11y\pa11y-basic-cli\pic2a.png)
 
  ***Resulting HTML Report Files***
 
- ![img](file:///C:/Users/aking/AppData/Local/Temp/msohtmlclip1/01/clip_image004.jpg)
+![Resulting HTML report files](C:\Users\aking\Documents\github\section508coordinators\dev-automation\examples\pa11y\pa11y-basic-cli\pic2b.png)
+
+
 
 <hr>
 
 #### Example 3
 
-Single page test against a file on the local file system (not hosted on web site), specific preferred rules only, results saved as an HTML file with the name ***myReport.html\***.
+<u>Description</u>: Single page test against a file on the local file system (not hosted on web site), specific preferred rules only, results saved as an HTML file with the name **myReport.html**.
 
-pa11y ///C:/_test/TC1005C001.html --runner axe --ignore "region;landmark-one-main" --reporter html > myReport.html
+<u>Command</u>: `pa11y ///C:/_test/TC1005C001.html --runner axe --ignore "region;landmark-one-main" --reporter html > myReport.html`
 
 ***Console window output:\***
- ![img](file:///C:/Users/aking/AppData/Local/Temp/msohtmlclip1/01/clip_image002.jpg)
+ ![Example 3 Command Window](C:\Users\aking\Documents\github\section508coordinators\dev-automation\examples\pa11y\pa11y-basic-cli\pic3.jpg)
 
-***Subsequent HTML results file:*** ![img](file:///C:/Users/aking/AppData/Local/Temp/msohtmlclip1/01/clip_image004.jpg)
+***Subsequent HTML results file:*** 
+
+![Example 3 HTML results file](C:\Users\aking\Documents\github\section508coordinators\dev-automation\examples\pa11y\pa11y-basic-cli\pic3b)
 
 
 
