@@ -12,7 +12,7 @@ Go to the [GitHub Playbook-Automation published page](https://section508coordina
 
 Lighthouse is integrated directly into the Chrome Desktop browser DevTools, under the "Lighthouse" panel.
 
-**Installation**: install the desktop version of the Chrome browser.
+**Installation**: install [Chrome](https://www.google.com/chrome/browser).
 
 **Run it**: open Chrome DevTools, select the Lighthouse panel, and hit "Generate report".
 
