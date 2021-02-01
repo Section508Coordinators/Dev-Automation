@@ -1,4 +1,4 @@
-# lighthouse basic examples: Browser extension
+# lighthouse basic examples: Browser extension/DevTools
 
 <hr>
 
