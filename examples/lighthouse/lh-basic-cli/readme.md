@@ -66,13 +66,14 @@ This example uses the following technology stack:
 Review the examples below of implementing the lighthouse CLI.
 
 <hr>
+
 #### Lighthouse
 
 `lighthouse <url>`
 
 See flag descriptions below.
 
-#####  Logging:
+#### Logging:
 
 ```
   --verbose  Displays verbose logging  [boolean] [default: false]
