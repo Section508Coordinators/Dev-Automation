@@ -66,8 +66,9 @@ This example uses the following technology stack:
 Review the examples below of implementing the lighthouse CLI.
 
 <hr>
+### Lighthouse CLI
 
-#### Lighthouse
+#### Basic syntax
 
 `lighthouse <url>`
 
@@ -111,57 +112,173 @@ See flag descriptions below.
 
  
 
- 
+#####  Output:
 
-Output:
-
- --output    Reporter for the results, supports multiple values            [choices: "json", "html", "csv"] [default: "html"]
-
- --output-path The file path to output the results. Use 'stdout' to write to stdout.
-
-​         If using JSON output, default is stdout.
-
-​         If using HTML or CSV output, default is a file in the working directory with a name based on the test URL and date.
-
-​         If using multiple outputs, --output-path is appended with the standard extension for each output type. "reports/my-run" -> "reports/my-run.report.html", "reports/my-run.report.json", etc.
-
-​         Example: --output-path=./lighthouse-results.html
-
- --view     Open HTML report in your browser                                             [boolean]
+```
+--output       Reporter for the results, supports multiple values. choices: "json", "html", "csv"  [array] [default: ["html"]]
+--output-path  The file path to output the results. Use 'stdout' to write to stdout.
+                   If using JSON output, default is stdout.
+                   If using HTML or CSV output, default is a file in the working directory with a name based on the test URL and date.
+                   If using multiple outputs, --output-path is appended with the standard extension for each output type. "reports/my-run" -> "reports/my-run.report.html", "reports/my-run.report.json", etc.
+                   Example: --output-path=./lighthouse-results.html  [string]
+--view         Open HTML report in your browser  [boolean] [default: false]
+```
 
  
+
+##### Options:
+
+```
+--version                            Show version number  [boolean]
+--help                               Show help  [boolean]
+--cli-flags-path                     The path to a JSON file that contains the desired CLI flags to apply. Flags specified at the command line will still override the file-based ones.
+--locale                             The locale/language the report should be formatted in
+--blocked-url-patterns               Block any network requests to the specified URL patterns  [array]
+--disable-storage-reset              Disable clearing the browser cache and other storage APIs before a run  [boolean]
+--throttling-method                  Controls throttling method  [string] [choices: "devtools", "provided", "simulate"]
+--throttling
+--throttling.rttMs                   Controls simulated network RTT (TCP layer)
+--throttling.throughputKbps          Controls simulated network download throughput
+--throttling.requestLatencyMs        Controls emulated network RTT (HTTP layer)
+--throttling.downloadThroughputKbps  Controls emulated network download throughput
+--throttling.uploadThroughputKbps    Controls emulated network upload throughput
+--throttling.cpuSlowdownMultiplier   Controls simulated + emulated CPU throttling
+--extra-headers                      Set extra HTTP Headers to pass with request
+  --precomputed-lantern-data-path      Path to the file where lantern simulation data should be read from, overwriting the lantern observed estimates for RTT and server latency.  [string]
+  --lantern-data-output-path           Path to the file where lantern simulation data should be written to, can be used in a future run with the `precomputed-lantern-data-path` flag.  [string]
+--plugins                            Run the specified plugins  [array]
+--channel  [string] [default: "cli"]
+--chrome-ignore-default-flags  [boolean] [default: false]
+```
+
+##### Examples:
+
+```
+lighthouse <url> --view                                                                          Opens the HTML report in a browser after the run completes
+lighthouse <url> --config-path=./myconfig.js                                                     Runs Lighthouse with your own configuration: custom audits, report generation, etc.
+lighthouse <url> --output=json --output-path=./report.json --save-assets                         Save trace, screenshots, and named JSON report.
+lighthouse <url> --screenEmulation.disabled --throttling-method=provided --no-emulatedUserAgent  Disable device emulation and all throttling
+lighthouse <url> --chrome-flags="--window-size=412,660"                                          Launch Chrome with a specific window size
+lighthouse <url> --quiet --chrome-flags="--headless"                                             Launch Headless Chrome, turn off logging
+lighthouse <url> --extra-headers "{\"Cookie\":\"monster=blue\", \"x-men\":\"wolverine\"}"        Stringify'd JSON HTTP Header key/value pairs to send in requests
+lighthouse <url> --extra-headers=./path/to/file.json                                             Path to JSON file of HTTP Header key/value pairs to send in requests
+lighthouse <url> --only-categories=performance,pwa                                               Only run the specified categories. Available categories: accessibility, best-practices, performance, pwa, seo
+```
+
+<hr>
+
+
+
+### Lighthouse batch
+
+#### All syntax
+
+```
+lighthouse-batch [options]
 
 Options:
+  -V, --version                 output the version number
+  -s, --sites [sites]           a comma delimited list of site urls to analyze with Lighthouse
+  -f, --file [path]             an input file with a site url per-line to analyze with Lighthouse
+  -p, --params <params>         extra parameters to pass to lighthouse cli for each execution e.g. -p "--perf --quiet"
+  -h, --html                    generate an html report alongside the json report
+  --csv                         generate a csv report alongside the json report
+  -o, --out [out]               the output folder to place reports, defaults to './report/lighthouse'
+  --score <threshold>           average score for each site to meet (1-100)
+  --accessibility <threshold>   accessibility score for each site to meet (1-100)
+  --best-practices <threshold>  best practices score for each site to meet (1-100)
+  --seo <threshold>             seo score for each site to meet (1-100)
+  --pwa <threshold>             pwa score for each site to meet (1-100)
+  --fail-fast                   fail as soon as a budget threshold is not met
+  -g, --use-global              use a global lighthouse install instead of the dependency version
+  -v, --verbose                 enable verbose logging
+  --no-report                   remove individual json reports for each site
+  --print                       print the final summary to stdout
+  -h, --help                    output usage information
+```
 
- --help            Show help                                                 [boolean]
+<hr>
 
- --version           Show version number                                            [boolean]
+## Examples
 
- --cli-flags-path       The path to a JSON file that contains the desired CLI flags to apply.
+#### Example 1
 
-​                Flags specified at the command line will still override the file-based ones.
+Description: Runs only the audit (test) for accessibility only against one URL, launches a visual instance of Chrome briefly while testing the page then closes chrome and writes a report to your local machine file system. All the while the command window scrolls progress log of all processing going on as it happens:
 
- --blocked-url-patterns    Block any network requests to the specified URL patterns                           [array]
+Command: `lighthouse https://section508coordinators.github.io/BaselineTestPages2/test-cases/TC1005C001.html --only-categories=accessibility` 
 
- --disable-storage-reset    Disable clearing the browser cache and other storage APIs before a run                   [boolean]
+***Console window output:***
 
- --throttling-method         Controls throttling method     [choices: "devtools", "provided", "simulate"]
+ ![img](file:///C:/Users/aking/AppData/Local/Temp/msohtmlclip1/01/clip_image002.jpg)
 
- --throttling.rttMs          Controls simulated network RTT (TCP layer)
-
- --throttling.throughputKbps     Controls simulated network download throughput
-
- --throttling.requestLatencyMs    Controls emulated network RTT (HTTP layer)
-
- --throttling.downloadThroughputKbps Controls emulated network download throughput
-
- --throttling.uploadThroughputKbps  Controls emulated network upload throughput
-
- --throttling.cpuSlowdownMultiplier  Controls simulated + emulated CPU throttling
-
- --extra-headers        Set extra HTTP Headers to pass with request                                 [string]
+***Report that is written to file system:*** 
+ ![img](file:///C:/Users/aking/AppData/Local/Temp/msohtmlclip1/01/clip_image004.jpg)
 
 
+
+<hr>
+
+#### Example 2
+
+Description: Runs only the audits (tests) for accessibility against one URL, runs a headless instance of Chrome, sends no processing feedback to command window, and automatically opens the report written to the file system in your browser when done:
+
+Command: `lighthouse https://section508coordinators.github.io/BaselineTestPages2/test-cases/TC1005C001.html --only-categories=accessibility --quiet --chrome-flags="--headless" --view` 
+
+***Console window output:***
+
+![img](file:///C:/Users/aking/AppData/Local/Temp/msohtmlclip1/01/clip_image002.jpg)
+
+***Report that opens automatically in browser:***
+
+ ![img](file:///C:/Users/aking/AppData/Local/Temp/msohtmlclip1/01/clip_image004.jpg)
+
+
+
+<hr>
+
+#### Example 3
+
+Description: Runs only the audits (tests) for accessibility against multiple URLs, runs a headless instance of Chrome, sends no processing feedback to command window, and automatically opens all reports written to the file system in your browser as they finish:
+
+Command: `Lighthouse-batch -s https://section508coordinators.github.io/BaselineTestPages2/test-cases/TC1005C001.html,https://section508coordinators.github.io/BaselineTestPages2/test-cases/TC1005C004.html --html --params "--only-categories=accessibility --quiet --view"`
+
+***Console window output:***
+
+![img](file:///C:/Users/aking/AppData/Local/Temp/msohtmlclip1/01/clip_image002.jpg)
+ ***Subsequent HTML results files with URLs in top left to indicate which site URL it is the results for:\*** 
+ ![img](file:///C:/Users/aking/AppData/Local/Temp/msohtmlclip1/01/clip_image004.jpg)
+ ![img](file:///C:/Users/aking/AppData/Local/Temp/msohtmlclip1/01/clip_image006.jpg)
+
+ <hr>
+
+#### Example 4
+
+Description: Runs a batch of multiple URLs that are pulled from a separate ***siteFile.txt\*** file of URLs, only the audits (tests) for accessibility, runs a headless instance of Chrome, sends no processing feedback to command window, and automatically opens all reports written to the file system in your browser as they finish:
+
+Command: `Lighthouse-batch --file siteFile.txt --html --params "--only-categories=accessibility --quiet --view"`
+
+***Console window output:***
+ ![img](file:///C:/Users/aking/AppData/Local/Temp/msohtmlclip1/01/clip_image002.jpg)
+
+***Contents of siteFile.txt (5 URLs):***
+
+- https://section508coordinators.github.io/BaselineTestPages2/test-cases/TC1112A001.html
+- https://section508coordinators.github.io/BaselineTestPages2/test-cases/TC1112A002.html
+- https://section508coordinators.github.io/BaselineTestPages2/test-cases/TC0813C001.html
+- https://section508coordinators.github.io/BaselineTestPages2/test-cases/TC1005C004.html
+- https://section508coordinators.github.io/BaselineTestPages2/test-cases/TC1005C005.html
+
+
+
+<hr>
+
+# Notes
+
+Chrome is run with the following flags to support the widest set of execution environments, including docker containers `--chrome-flags="--no-sandbox --headless --disable-gpu"`. You can replace these with your own by passing `--chrome-flags` as extra parameters. e.g.
+
+```
+--params "--chrome-flags=\"--no-sandbox --disable-gpu\""
+```
 
 
 
@@ -169,16 +286,16 @@ Options:
 
 # More Information
 
-For more information on syntax for using this example, see the information here:
-
-
-
 For more information on Lighthouse, see https://developers.google.com/web/tools/lighthouse/.
 
 https://github.com/GoogleChrome/lighthouse
 
 
+
+For more information on Lighthouse batch, see: https://www.npmjs.com/package/lighthouse-batch
+
+
 <hr>
 
-02/01/2021 | 12:30p
+02/02/2021 | 03:07p
 
