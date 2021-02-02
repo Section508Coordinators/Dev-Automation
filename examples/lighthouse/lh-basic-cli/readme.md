@@ -210,10 +210,13 @@ Command: `lighthouse https://section508coordinators.github.io/BaselineTestPages2
 
 ***Console window output:***
 
- ![img](file:///C:/Users/aking/AppData/Local/Temp/msohtmlclip1/01/clip_image002.jpg)
+![image-20210202151932725](pic_ex1_001.png)
 
-***Report that is written to file system:*** 
- ![img](file:///C:/Users/aking/AppData/Local/Temp/msohtmlclip1/01/clip_image004.jpg)
+***Report that is written to file system:***
+
+
+
+![image-20210202151950772](pic_ex1_002.png)
 
 
 
