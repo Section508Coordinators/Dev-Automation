@@ -210,13 +210,13 @@ Command: `lighthouse https://section508coordinators.github.io/BaselineTestPages2
 
 ***Console window output:***
 
-![image-20210202151932725](pic_ex1_001.png)
+![Example 1 console window output](pic_ex1_001.png)
 
 ***Report that is written to file system:***
 
 
 
-![image-20210202151950772](pic_ex1_002.png)
+![Report that is written to file system](pic_ex1_002.png)
 
 
 
@@ -230,13 +230,13 @@ Command: `lighthouse https://section508coordinators.github.io/BaselineTestPages2
 
 ***Console window output:***
 
-![image-20210202152514672](pic_ex2_001.png)
+![Example 2 console window output](pic_ex2_001.png)
 
 
 
 ***Report that opens automatically in browser:***
 
-![image-20210202152533622](pic_ex2_002.png)
+![Example 2 report that opens automatically in browser](pic_ex2_002.png)
 
 
 
@@ -250,13 +250,13 @@ Command: `Lighthouse-batch -s https://section508coordinators.github.io/BaselineT
 
 ***Console window output:***
 
-![image-20210202152857096](pic_ex3_001.png)
+![Example 3 console window output](pic_ex3_001.png)
 
 ***Subsequent HTML results files with URLs in top left to indicate which site URL it is the results for:***
 
-![image-20210202152911140](pic_ex3_002.png)
+![Example 3 subsequent HTML file for URL 1](pic_ex3_002.png)
 
-![image-20210202152924555](pic_ex3_003.png)
+![Example 3 subsequent HTML file for URL 2](pic_ex3_003.png)
 
 
 
@@ -269,7 +269,8 @@ Description: Runs a batch of multiple URLs that are pulled from a separate ***si
 Command: `Lighthouse-batch --file siteFile.txt --html --params "--only-categories=accessibility --quiet --view"`
 
 ***Console window output:***
- ![img](file:///C:/Users/aking/AppData/Local/Temp/msohtmlclip1/01/clip_image002.jpg)
+
+![Example 4 console window output](pic_ex4_001.png)
 
 ***Contents of siteFile.txt (5 URLs):***
 
@@ -308,5 +309,5 @@ For more information on Lighthouse batch, see: https://www.npmjs.com/package/lig
 
 <hr>
 
-02/02/2021 | 03:07p
+02/02/2021 | 03:35p
 
