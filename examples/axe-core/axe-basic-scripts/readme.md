@@ -74,9 +74,9 @@ In response, the script 1 will:
 
 ### Example scripts
 
-- Script 1: Example of a basic script that calls the *Firefox* browser engine
+- <u>Script 1</u>: Example of a basic script that calls the *Firefox* browser engine
   - `01_axe-core_BasicScript.js`
-- Script 2: Example of a basic script that calls the *Chrome* headless engine
+- <u>Script 2</u>: Example of a basic script that calls the *Chrome* headless engine
   - `02_axe-core_BasicScript.js`
 
 <hr>
