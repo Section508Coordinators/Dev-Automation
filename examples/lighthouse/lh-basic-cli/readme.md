@@ -230,11 +230,13 @@ Command: `lighthouse https://section508coordinators.github.io/BaselineTestPages2
 
 ***Console window output:***
 
-![img](file:///C:/Users/aking/AppData/Local/Temp/msohtmlclip1/01/clip_image002.jpg)
+![image-20210202152514672](pic_ex2_001.png)
+
+
 
 ***Report that opens automatically in browser:***
 
- ![img](file:///C:/Users/aking/AppData/Local/Temp/msohtmlclip1/01/clip_image004.jpg)
+![image-20210202152533622](pic_ex2_002.png)
 
 
 
@@ -248,10 +250,15 @@ Command: `Lighthouse-batch -s https://section508coordinators.github.io/BaselineT
 
 ***Console window output:***
 
-![img](file:///C:/Users/aking/AppData/Local/Temp/msohtmlclip1/01/clip_image002.jpg)
- ***Subsequent HTML results files with URLs in top left to indicate which site URL it is the results for:\*** 
- ![img](file:///C:/Users/aking/AppData/Local/Temp/msohtmlclip1/01/clip_image004.jpg)
- ![img](file:///C:/Users/aking/AppData/Local/Temp/msohtmlclip1/01/clip_image006.jpg)
+![image-20210202152857096](pic_ex3_001.png)
+
+***Subsequent HTML results files with URLs in top left to indicate which site URL it is the results for:***
+
+![image-20210202152911140](pic_ex3_002.png)
+
+![image-20210202152924555](pic_ex3_003.png)
+
+
 
  <hr>
 
