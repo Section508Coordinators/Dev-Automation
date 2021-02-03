@@ -67,7 +67,9 @@ This example uses the following technology stack:
 Review the examples below of implementing the lighthouse CLI.
 
 <hr>
+
 ### Lighthouse CLI
+
 
 #### Basic syntax
 
