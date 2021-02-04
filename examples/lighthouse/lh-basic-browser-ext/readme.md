@@ -4,6 +4,8 @@
 Go to the [GitHub Playbook-Automation published page](https://section508coordinators.github.io/Dev-Automation/)
 
 <hr>
+
+
 ## Tool: lighthouse in Chrome DevTools
 
 Lighthouse is integrated directly into the Chrome Desktop browser DevTools, under the "Lighthouse" panel.
@@ -15,6 +17,8 @@ Lighthouse is integrated directly into the Chrome Desktop browser DevTools, unde
 The Chrome extension was available prior to Lighthouse being available in Chrome Developer Tools, and offers similar functionality.
 
 <hr>
+
+
 ## Technology requirements
 
 Google Chrome desktop
