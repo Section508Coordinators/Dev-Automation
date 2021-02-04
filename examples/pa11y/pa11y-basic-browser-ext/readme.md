@@ -14,7 +14,7 @@ This  tool, Accessibility Auditor, is not a browser extension for pa11y, but rat
 
 ## Technology stack
 
-- Chrome desktop (offers guided testing)
+- Chrome desktop
 
 - Firefox
 
