@@ -41,5 +41,5 @@ For more information about the bookmarklet, go here: https://squizlabs.github.io
 For more information on the HTML_CodeSniffer WCAG ruleset, go here: https://squizlabs.github.io/HTML_CodeSniffer/Standards/WCAG2/
 
 <hr>
-01/30/2021 | 09:40p
+02/05/2021 | 10:37p
 
