@@ -8,7 +8,7 @@ Go to the [GitHub Playbook-Automation published page](https://section508coordina
 
 ## Tool: Accessibility Auditor Bookmarklet
 
-This  tool, Accessibility Auditor, is not a browser extension for pa11y, but rather an extension that tests using the [HTML CodeSniffer ruleset](https://squizlabs.github.io/HTML_CodeSniffer/Standards/WCAG2/), which is the default ruleset that the pa11y engine also happens to use.
+This  tool, Accessibility Auditor, is not a browser extension tool made by pa11y, but rather a browser extension (bookmarklet) that peformes accessibility tests using the [HTML CodeSniffer ruleset](https://squizlabs.github.io/HTML_CodeSniffer/Standards/WCAG2/), which just happens to be the ruleset that the pa11y engine uses by default.
 
 <hr>
 
