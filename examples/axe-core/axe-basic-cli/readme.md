@@ -8,7 +8,7 @@ Go to the [GitHub Playbook-Automation published page](https://section508coordina
 
 ## Tool: @axe-core/cli
 
-The  @axe-core/cli tool provides the tester with a command line interface for axe-core accessibility library to run accessibly tests.
+The  @axe-core/cli tool provides the tester with a command line interface for axe-core accessibility library to run accessibility tests.
 
 This folder presents fully functioning examples of how to use the @axe-core/cli tool for quick and easy accessibility testing.
 
@@ -47,7 +47,7 @@ Those analyses of vendor accessibility rulesets and the OAST ruleset recommendat
       1. Requires Chrome browser version 59+
       2. Install Chromedriver that corresponds to your Chrome version
    2. **Other browsers**
-      1. Install any other browser and browser driver you want to experiment with - outside of the included  examples.
+      1. Install any other browser and browser driver you want to experiment with - outside of the included examples.
 
 ## Usage/Syntax
 
@@ -98,12 +98,12 @@ To output the test results to STDOUT, provide the --stdout flag. This flag has t
   - `axe --stdout <url>`
 - To pipe the results to a file:
   - `axe --stdout www.deque.com > your_file.json`
-- To pipe the results to a JSON-parsing program for further processing, do:
+- To pipe the results to a JSON-parsing program for further processing:
   - `axe --stdout www.deque.com | jq ".[0].violations"`
 
 #### Defining the scope of a test
 
-If you want to only test a specific area of a page, or wish to exclude some part of a page you can do so using the --include and --exclude flags and pass it a CSS selector:
+If you want to only test a specific area of a page, or wish to exclude some part of a page,  you can do so using the --include and --exclude flags and pass it a CSS selector as follows:
 
 - `axe www.deque.com --include "#main" --exclude "#aside`
 - You may pass multiple selectors with a comma-delimited string. For example:
@@ -111,7 +111,7 @@ If you want to only test a specific area of a page, or wish to exclude some part
 
 #### Custom axe-core versions
 
-Axe-cli will look for locally available versions of axe-core. If the directory from where you start axe-cli has an axe.js file, or has a node_modules directory with axe-core installed in it. Axe-cli will use this version of axe-core instead of the default version installed globally.
+Axe-cli will look for locally available versions of axe-core. If the directory from where you start axe-cli has an axe.js file, or has a node_modules directory with axe-core installed in it, axe-cli will use this version of axe-core instead of the default version installed globally.
 
 To specify the exact file axe-core file axe-cli should use, you can use the --axe-source flag (-a for short), with a relative or absolute path to the file.
 
@@ -119,7 +119,7 @@ To specify the exact file axe-core file axe-cli should use, you can use the --ax
 
 #### Custom Chrome Flags
 
-When using the Headless Chrome browser, you may provide any number of flags to configure how the browser functions.  Options are passed by name, without their leading -- prefix. For example, to provide the --no-sandbox --disable-setuid-sandbox --disable-dev-shm-usage flags to the Chrome binary, you'd do:
+When using the Headless Chrome browser, you may provide any number of flags to configure how the browser functions.  Options are passed by name, without their leading -- prefix. For example, to provide the --no-sandbox --disable-setuid-sandbox --disable-dev-shm-usage flags to the Chrome binary, execute the following:
 
 - `axe --chrome-options="no-sandbox,disable-setuid-sandbox,disable-dev-shm-usage" www.deque.com`
    
@@ -168,7 +168,7 @@ Command: `axe https://section508coordinators.github.io/BaselineTestPages2/test-c
 
 ## Tips
 
-1. Always be aware of the currently published version of the axe-core library. If you want to run with the most current version – which will likely have you up to date on the latest rules and bug fixes, be sure to periodically update your copy of the library and note the axe-core version message when running CLI: “`Running axe-core <library version> in <selected browser>`”
+1. Always be aware of the currently published version of the axe-core library. If you want to run with the most current version – which will likely have you up to date on the latest rules and bug fixes, be sure to periodically update your copy of the library and note the axe-core version message when running CLI, e.g. “`Running axe-core <library version> in <selected browser>`”
 2. Be wary of using the --tags option. Results obtained by OAST through testing are questionable. OAST has recommended testing using individual rules in favor of using tags.
 
 <hr>
