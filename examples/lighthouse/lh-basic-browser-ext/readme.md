@@ -6,15 +6,19 @@ Go to the [GitHub Playbook-Automation published page](https://section508coordina
 <hr>
 
 
-## Tool: lighthouse in Chrome DevTools
+**<u>NOTE:</u>** The Google Lighthouse tool runs within a web browser in two different forms as two different tools; (1) within the DevTools portion of the Chrome desktop web browser, and (2) as a browser extension.
 
-Lighthouse is integrated directly into the Chrome Desktop browser DevTools, under the "Lighthouse" panel.
+
+
+## Tool 1: lighthouse in Chrome DevTools
+
+Lighthouse can run as integrated directly into the Chrome Desktop browser DevTools, under the "Lighthouse" panel in the Chrome browser.
 
 <hr>
 
-## Tool: Chrome extension
+## Tool 2: Chrome extension
 
-The Chrome extension was available prior to Lighthouse being available in Chrome Developer Tools, and offers similar functionality.
+Before Lighthouse became available as a tool within the DevTools portion of the Chrome browser, it was available as a Chrome extension and offered similar functionality. Although this Chrome extension is still available, most prefer the version above that runs in the DevTools portion of the Chrome desktop browser.
 
 <hr>
 
@@ -26,7 +30,7 @@ Google Chrome desktop
 
 ## Setup
 
-See setup above depending on whether you are using the Chrome extension or the DevTools version of lighthouse in Chrome.
+See the appropriate setup below depending on whether you are using the Chrome extension or the DevTools version of lighthouse in Chrome.
 
 ### DevTools
 
@@ -53,4 +57,4 @@ See the instructions [HERE](https://developers.google.com/web/tools/lighthouse/#
 For more information about the Chrome extension or DevTools version running in Chrome, see the following: https://developers.google.com/web/tools/lighthouse/ 
 
 <hr>
-02/04/2021 | 06:26p
+02/10/2021 | 05:42p
