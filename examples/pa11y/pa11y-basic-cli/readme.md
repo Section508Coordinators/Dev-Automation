@@ -172,7 +172,7 @@ The command-line tool can report test results in a few different ways using the 
 - `csv`: output test results as     comma-separated values
 - `json`: output test results as a JSON     array
 
-The Pa11y team maintain some additional reporters which can be installed separately via `npm`:
+The Pa11y team maintains additional reporters which can be installed separately via `npm`:
 
 - [`html`](https://github.com/pa11y/pa11y-reporter-html): output test results in a self-contained HTML     format (`npm     install pa11y-reporter-html`)
 - [`tsv`](https://github.com/pa11y/pa11y-reporter-tsv): output test results as tab-separated values (`npm install pa11y-reporter-tsv`)
