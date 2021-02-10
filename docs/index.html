@@ -73,12 +73,23 @@
 
 <!-- View project on GitHub -->        
 <h2>Overview</h2>
-<img style="padding-left:10px;" src="img/automation-main.jpg" alt="Automation" width="225" height="250" align="right"/>            
-<p>This group of repositories present examples of integrating Section 508/accessibility into test automation. Multiple, open source vendor tools are represented in the examples below.</p>
+<img style="padding-left:10px;" src="img/automation-main.jpg" alt="Automation" width="225" height="250" align="right"/>
+<p>This repository presents explanations and fully functioning code examples of several semi and fully automated open source accessibility test tools. These tools fall into multiple technical and strategic categories of use for assessing ICT for Section 508/accessibility conformance in the Software Engineering Life Cycle. </p>
+<p>The purpose of this resource is to provide additional support and fully-functioning examples to DHS components who wish to strategically integrate accessibility test automation, and other DevOps principles, into their software engineering life cycle.</p>
+<h3>Complexity level and testing strategy</h3>
+<p>With “complexity” defined as level of knowledge required for use, installation logistics involved, and level of test results feedback presented to the user, the tools presented in this repository present a wide range of complexity on a continuum from the relatively simple to the highly complex. Specifically, the tools range from browser plug-ins, to command line interface (CLI) tools, to API information for full scripting, as well as a few examples that OAST developed that displays how some of these accessibility open source tools can be extended to provide greater functionality. </p>
+<p>Regarding testing strategy, the tools presented on this resource are suitable for integrating accessibility into developer unit testing, accessibility integration testing, or Q.A./regression testing for accessibility – depending on the tool and method of integration. </p>
+<p>Given the range of complexity of tools and range of testing approach possible, the technical team can select the type of tool and strategy for integration that works best for them.</p>
+<h3>Automated tools  and rulesets</h3>
+<p>Not all accessibility standards can be tested using automation. For criteria that can be tested through automation, third party rules (pass/fail criteria) are not always fully in alignment with the DHS Trusted Tester pass/fail criteria.  To help teams integrate test automation and implement it in a way that uses rules that align as closely as possible to Trusted Tester, OAST has reviewed the rulesets for axe-core and HTML Code Sniffer and has made recommendations for which of those rules should be used for testing in order to be as “Trusted Tester friendly” as possible regarding test results.  Those recommended rules are identified and presentred in this resource.. Use of these rules does not completely eliminate all false positives in regard to Trusted Tester success criteria, however it does minimize them and can provide value in identifing low-hanging fruit and systemic accessibility issues for large scope ICT, such as websites.</p>
+<h2>Using the  examples</h2>
+<p>To take advantage of examples, we recommend you fork the  Dev-Automation repository and then focus on the example(s) of interest via the  local copy of the repository you created via the fork.</p>
+<h3>Prerequisites  for using the automation examples</h3>
+<p>The examples presented in this resource assumes  knoweledge and experience with GitHub and knowlege of any testing frameworks into which you want to integrate any of the accessibilty test libraries presented in this resource.</p>
 <h2>Test automation examples</h2>
+<p>The following folders and repositories present examples of the axe core, pa11y, and Google lighthouse automated accessibility test tools:</p>
 
-<h3>Axe-core </h3>
-<p>The following folders and repositories present examples of axe core library accessibility test automation:</p>
+<h3>Axe-core</h3>
 <ul>
   <li>Basic examples
     <ol>
@@ -94,7 +105,6 @@
   </li>
 </ul>
 <h3>Pa11y</h3>
-<p>The following folders and repositories present examples of the Pa11y test engine:</p>
 <ul>
   <li>Basic examples
     <ol>
@@ -111,7 +121,6 @@
   </li>
 </ul>
 <h3>Google Lighthouse</h3>
-<p>The following folders and repositories present examples of the lighthouse test engine:</p>
 <ul>
   <li>Basic examples
     <ol>
@@ -123,9 +132,10 @@
   <li>Advanced examples
     <ol>
       <li><a href="https://github.com/Section508Coordinators/Dev-Automation/tree/master/examples/lighthouse/lh-advanced-project1">Lighthouse custom project 1</a>  </li>
-    </ol>
+      </ol>
   </li>
-</ul>
+  </ul>
+<p>&nbsp;</p>
         </div>
         <div class="col-md-3 d-none d-md-block" id="sidebar">
           <nav id="toc" data-toggle="toc" class="sticky-top" style="z-index:1"></nav>
@@ -146,7 +156,7 @@
 <!-- Playbook Footer -->
 <div class="pbfooterDiv">
 
-<p>Updated: <!-- #BeginDate format:fAm3a -->Tuesday 02/02/2021 9:09 PM<!-- #EndDate --> | Template Version: 07/12/2020 02:00p</p>
+<p>Updated: <!-- #BeginDate format:fAm3a -->Wednesday 02/10/2021 4:50 PM<!-- #EndDate --> | Template Version: 07/12/2020 02:00p</p>
 
 </div>
 <!-- Playbook Footer -->
