@@ -20,11 +20,38 @@ Also note that assessment of rulesets is an ongoing activity at OAST. Below are 
 
 #### Rules to use in testing
 
-[In process]
+| Rule  Name                  | Rule version |
+| --------------------------- | ------------ |
+| aria-allowed-role           | 3.5          |
+| aria-hidden-focus           | 3.5          |
+| aria-input-field-name       | 3.5          |
+| aria-toggle-field-name      | 3.5          |
+| button-name                 | 3.5          |
+| color-contrast              | 3.5          |
+| document-title              | 3.5          |
+| duplicate-id                | 3.5          |
+| empty-heading               | 3.5          |
+| form-field-multiple-labels  | 3.5          |
+| frame-title                 | 3.5          |
+| frame-title-unique          | 3.5          |
+| html-has-lang               | 3.5          |
+| html-lang-valid             | 3.5          |
+| image-alt                   | 3.5          |
+| input-button-name           | 3.5          |
+| input-image-alt             | 3.5          |
+| label                       | 3.5          |
+| link-name                   | 3.5          |
+| list                        | 3.5          |
+| listitem                    | 3.5          |
+| role-img-alt                | 3.5          |
+| scope-attr-valid            | 3.5          |
+| scrollable-region-focusable | 3.5          |
+| td-headers-attr             | 3.5          |
+| valid-lang                  | 3.5          |
 
 #### Rules to avoid in testing
 
-When using the pa11y engine tools, the developer/tester indicates the desired rules for testing by configuring the test engine to cite the test library  to use (i.e.., axe or HTMLCS) and then citing the the ***rules to ignore*** from the ruleset when testing.  Below is the list of rules to ignore when configuring tests using the pa11y engine in order to use Trusted Tester friendly rules:
+When using the pa11y engine tools, the developer/tester indicates the desired rules for testing by configuring the test engine to cite the test library  to use (i.e. , axe or HTMLCS) and then citing the the ***rules to ignore*** from the ruleset when testing.  Below is the list of rules to ignore when configuring tests using the pa11y engine in order to use Trusted Tester friendly rules:
 
 | Rule name                           | Rule version |
 | ----------------------------------- | ------------ |
@@ -127,5 +154,5 @@ When using the pa11y engine tools, the developer/tester indicates the desired ru
 
 <hr>
 
-02/11/2021 | 02:27:p
+02/11/2021 | 04:16:p
 
