@@ -10,9 +10,9 @@ Go to the [GitHub Playbook-Automation published page](https://section508coordina
 
 Not all accessibility standards can be tested using automation alone. For criteria that *can* be tested through automation, third party rules (pass/fail criteria) are not always in full alignment with the DHS Trusted Tester pass/fail criteria. To help teams integrate test automation and implement it in a way that uses rules that align as closely as possible to Trusted Tester criteria, OAST has reviewed the rulesets for the ***axe-core*** and ***HTML Code Sniffer*** accessibility libraries and made recommendations for which of those rules more closely align.
 
-Note that in applying rules within some test tools, the developer/tester can identify which rule names to use from a given ruleset.  In other cases, the developer/tester indicates the desired rules in a bit of a reverse procedure where then citing the ruleset to use and then identifying the rules to be ignored from that ruleset and thereby testing against the desired rules.  Because of this, below we have identified the preferred rules for the accessibility libraries, as well as the list of rules to be ignored for each.
+When applying selected rules within some test tools presented on this site, the developer/tester can take the straightforward approach of configuring the tool to use only the desired rules - which can be identified by their rule name.  In other cases, the developer/tester must take different approach. Instead identifying the rule name they want to use in testing, they must cite the ruleset library and then list the rules they want to exclude from testing, where the balance of the rules in the ruleset will then be used as the desired rules when testing.  For your convenience, we have listed the rules below in those two different formats of "Rules to use in testing" and "Rules to avoid in testing".
 
-Note that assessment of these rules is an ongoing activity at OAST. Below are the most recent assessments as of April 15 2020.
+Also note that assessment of rulesets is an ongoing activity at OAST. Below are the most recent assessments as of April 15 2020.
 
 <hr>
 
@@ -22,7 +22,7 @@ Note that assessment of these rules is an ongoing activity at OAST. Below are th
 
 [In process]
 
-#### Rules to avoid (ignore) in testing
+#### Rules to avoid in testing
 
 When using the pa11y engine tools, the developer/tester indicates the desired rules for testing by configuring the test engine to cite the test library  to use (i.e.., axe or HTMLCS) and then citing the the ***rules to ignore*** from the ruleset when testing.  Below is the list of rules to ignore when configuring tests using the pa11y engine in order to use Trusted Tester friendly rules:
 
@@ -96,7 +96,7 @@ When using the pa11y engine tools, the developer/tester indicates the desired ru
 
 [In process]
 
-#### Rules to avoid (ignore) in testing
+#### Rules to avoid in testing
 
 | Rule name                                                 | Rule version |
 | --------------------------------------------------------- | ------------ |
@@ -127,5 +127,5 @@ When using the pa11y engine tools, the developer/tester indicates the desired ru
 
 <hr>
 
-02/11/2021 | 11:47:a
+02/11/2021 | 02:27:p
 
