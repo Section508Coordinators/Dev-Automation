@@ -49,7 +49,7 @@ Also note that assessment of rulesets is an ongoing activity at OAST. Below are 
 | td-headers-attr             | 3.5          |
 | valid-lang                  | 3.5          |
 
-#### Rules to avoid in testing
+#### Rules to avoid in Trusted Tester testing
 
 When using the pa11y engine tools, the developer/tester indicates the desired rules for testing by configuring the test engine to cite the test library  to use (i.e. , axe or HTMLCS) and then citing the the ***rules to ignore*** from the ruleset when testing.  Below is the list of rules to ignore when configuring tests using the pa11y engine in order to use Trusted Tester friendly rules:
 
