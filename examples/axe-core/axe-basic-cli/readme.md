@@ -128,7 +128,7 @@ When using the Headless Chrome browser, you may provide any number of flags to c
 
 #### Example 1
 
-<u>Description</u>: One page test, Firefox browser, default axe- ruleset
+<u>Description</u>: One page test, Firefox browser, default axe-core ruleset
 
 Command: `axe https://section508coordinators.github.io/BaselineTestPages2/test-cases/TC1005C001.html --browser firefox`
 
