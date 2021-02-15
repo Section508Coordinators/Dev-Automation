@@ -35,21 +35,24 @@ Those analyses of vendor accessibility rulesets and the OAST ruleset recommendat
 This example uses the following technology stack:
 
 - Nodejs 6+
+
 - Git
+
 - axe-Puppeteer
+
 - Commander
+
 - Globby
+
 - pa11y-ci-reporter-html
+
 - protocolify
+
 - puppeteer
+
 - sitemapper
 
-## DHS OAST Ruleset Analysis
-
-The following ruleset analyses artifacts were used as the basis for test configurations for this example to maintain as much alignment with TTv5 as possible and can be used for future customizations you wish to perform. These analyses, in the /docs/ folder, are based on the axe-core 3.5 ruleset and the DHS ICT Web Baseline 3.0 and Trusted Tester v 5.
-
-1. **TTv5-friendly rules**: In order to prevent the Pa11y engine from running all rules in a given ruleset by default, the developer must specify the ruleset, and then explicitly and individually exclude, by rule name, any rules that should not run. This analysis presents a filterable spreadsheet that lists all rules to exclude for both axe-core and HTML CodeSniffer as being unfriendly to TTv5.
-2. **Pa11y config file**: This is a zip archive with a pa11y configuration file (.pa11yci.json) completed to show the syntax for only using preferred rules by populating all desired excluded files in the configuration file. This file is a valid list of excluded files as of axe version 3.5 and HTML Code Sniffer 2.5.1.
+  
 
 ---
 
