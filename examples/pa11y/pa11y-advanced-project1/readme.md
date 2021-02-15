@@ -19,6 +19,7 @@ This project is meant to demonstrate multiple ways in which developers can use a
 - **HTML Reporting/Scoring**: Examples of writing test results to the command window or an HTML report. Also, extending the simple HTML report offered by the open source tool to provide a basic scoring model for mass scan results. This is done by using the HTML report switch (-h).
 
 <hr>
+
 ## Automated tools and rulesets
 
 #### Ruleset assessments and recommended rules
