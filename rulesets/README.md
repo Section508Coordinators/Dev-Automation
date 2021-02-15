@@ -5,7 +5,9 @@
 Go to the [GitHub Playbook-Automation published page](https://section508coordinators.github.io/Dev-Automation/)
 
 <hr>
+
 ## Rulesets (pass/fail criteria)
+
 
 Some of the more powerful automated tools presented on this GitHub resource allow the user to pick and choose the individual, underlying rules used for testing. When automated tools have this feature, the user can exercise much more control over the quality and relevance of test results.
 
@@ -199,5 +201,5 @@ When using the pa11y engine tools, the developer/tester indicates the desired ru
 
 <hr>
 
-02/15/2021 | 01:45:p
+02/15/2021 | 03:17:p
 
