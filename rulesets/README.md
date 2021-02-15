@@ -121,7 +121,39 @@ When using the pa11y engine tools, the developer/tester indicates the desired ru
 
 #### Rules to use in testing
 
-[In process]
+| Rule name                                                    | Rule version |
+| ------------------------------------------------------------ | ------------ |
+| WCAG2AA.Principle1.Guideline1_4.1_4_3.G18                    | 2.5.1        |
+| WCAG2AA.Principle1.Guideline1_4.1_4_3.G145                   | 2.5.1        |
+| WCAG2AA.Principle4.Guideline4_1.4_1_2.H91.InputText.Name     | 2.5.1        |
+| WCAG2AA.Principle4.Guideline4_1.4_1_2.H91.InputFile.Name     | 2.5.1        |
+| WCAG2AA.Principle4.Guideline4_1.4_1_2.H91.InputPassword.Name | 2.5.1        |
+| WCAG2AA.Principle4.Guideline4_1.4_1_2.H91.InputCheckbox.Name | 2.5.1        |
+| WCAG2AA.Principle4.Guideline4_1.4_1_2.H91.InputRadio.Name    | 2.5.1        |
+| WCAG2AA.Principle4.Guideline4_1.4_1_2.H91.Select.Name        | 2.5.1        |
+| WCAG2AA.Principle4.Guideline4_1.4_1_2.H91.Textarea.Name      | 2.5.1        |
+| WCAG2AA.Principle1.Guideline1_3.1_3_1.F68                    | 2.5.1        |
+| WCAG2AA.Principle2.Guideline2_4.2_4_2.H25.1.NoTitleEl        | 2.5.1        |
+| WCAG2AA.Principle2.Guideline2_4.2_4_2.H25.1.EmptyTitle       | 2.5.1        |
+| WCAG2AA.Principle1.Guideline1_3.1_3_1.H43.IncorrectAttr      | 2.5.1        |
+| WCAG2AA.Principle1.Guideline1_3.1_3_1.H43.MissingHeaderIds   | 2.5.1        |
+| WCAG2AA.Principle1.Guideline1_3.1_3_1.H43.MissingHeadersAttrs | 2.5.1        |
+| WCAG2AA.Principle1.Guideline1_3.1_3_1.H43,H63                | 2.5.1        |
+| WCAG2AA.Principle1.Guideline1_3.1_3_1.H43.HeadersRequired    | 2.5.1        |
+| WCAG2AA.Principle1.Guideline1_3.1_3_1.H39.3.LayoutTable      | 2.5.1        |
+| WCAG2AA.Principle1.Guideline1_3.1_3_1.H42.2                  | 2.5.1        |
+| WCAG2AA.Principle4.Guideline4_1.4_1_2.H91.A.NoContent        | 2.5.1        |
+| WCAG2AA.Principle4.Guideline4_1.4_1_2.H91.A.EmptyNoId        | 2.5.1        |
+| WCAG2AA.Principle4.Guideline4_1.4_1_2.H91.Button.Name        | 2.5.1        |
+| WCAG2AA.Principle4.Guideline4_1.4_1_2.H91.Li.Name            | 2.5.1        |
+| WCAG2AA.Principle4.Guideline4_1.4_1_2.H91.InputButton.Name   | 2.5.1        |
+| WCAG2AA.Principle4.Guideline4_1.4_1_2.H91.InputImage.Name    | 2.5.1        |
+| WCAG2AA.Principle3.Guideline3_1.3_1_1.H57.3.Lang             | 2.5.1        |
+| WCAG2AA.Principle3.Guideline3_1.3_1_2.H58.1.Lang             | 2.5.1        |
+| WCAG2AA.Principle2.Guideline2_4.2_4_1.H64.1                  | 2.5.1        |
+| WCAG2AA.Principle4.Guideline4_1.4_1_1.F77                    | 2.5.1        |
+
+
 
 #### Rules to avoid in testing
 
