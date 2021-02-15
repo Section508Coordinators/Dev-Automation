@@ -10,6 +10,18 @@ Go to the [GitHub Playbook-Automation published page](https://section508coordina
 
 The scripts (JavaScript) in this project are meant to provide relatively simple examples, on which you can build, of how to use the pa11y  accessibility engine for accessibility testing using various configurations and rulesets - to include Deque's axe-core and SQIZ Lab's HTML CodeSniffer.  
 
+<hr>
+
+## Automated tools and rulesets
+
+#### Ruleset assessments and recommended rules
+
+This tool allows the user to pick and choose the individual, underlying rules for testing. Not all automated tool rulesets on the market perfectly align with the pass/fail success criteria as expressed by the DHS standard. However upon analysis, DHS OAST has identified specific rules, for specific vendor accessibility ruleset libraries, that provide value in identifying accessibility to the DHS Standard.
+
+Those analyses of vendor accessibility rulesets and the OAST ruleset recommendations reside in the following folder on this site: https://github.com/Section508Coordinators/Dev-Automation/tree/master/rulesets.
+
+<hr>
+
 ## Technology requirements
 
 These examples use the following technology stack:
