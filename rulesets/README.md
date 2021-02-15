@@ -5,14 +5,27 @@
 Go to the [GitHub Playbook-Automation published page](https://section508coordinators.github.io/Dev-Automation/)
 
 <hr>
-
 ## Rulesets (pass/fail criteria)
 
-Not all accessibility standards can be tested using automated rules alone. For criteria that *can* be tested through automation, third party rules (pass/fail criteria) are not always in full alignment with the DHS Trusted Tester pass/fail criteria. To help teams integrate test automation and implement it in a way that uses rules that align as closely as possible to Trusted Tester criteria, OAST has reviewed the rulesets for the ***axe-core*** and ***HTML Code Sniffer*** accessibility libraries and made recommendations for which of those rules more closely align.
+Some of the more powerful automated tools presented on this GitHub resource allow the user to pick and choose the individual, underlying rules used for testing. When automated tools have this feature, the user can exercise much more control over the quality and relevance of test results.
 
-When applying selected rules within some test tools presented on this site, the developer/tester can take the straightforward approach of configuring the tool to use only the desired rules - which can be identified by their rule name.  In other cases, the developer/tester must take a different approach. Instead of identifying the rule name they want to use in testing, they must cite the ruleset library and then list the rules they want to exclude from testing, where the balance of the rules in the ruleset will then be used as the desired rules when testing.  For your convenience, the rules listed below are arranged in two different formats of "Rules to use in testing" and "Rules to avoid in Trusted Tester testing".
+Not all accessibility standards can be tested using automated rules alone. For criteria that *can* be tested through automation, third party rules (pass/fail criteria) are not always in full alignment with the DHS Trusted Tester pass/fail criteria. To help teams integrate test automation and implement it in a way that uses rules that align as closely as possible to Trusted Tester success criteria, OAST has reviewed the rulesets below for the ***axe-core*** and ***HTML Code Sniffer*** accessibility libraries and made recommendations for which of those rules more closely align to the Trusted Tester methodology.
 
-Also note that assessment of rulesets is an ongoing activity. Below are the most recent assessments of the axe-core and HTML Code sniffer rules as of April 15 2020.
+### Choosing *Trusted Tester-friendly* automated rules
+
+When using automated tools, there will likely always be some instances where the automated tool will present a test result that you will not consider as *actionable* for one reason or another.  Whether or not a result is actionable is usually dependent on the accessibility standard your organization uses as its target accessibility criteria. In the case of DHS, this target accessibility standard is the [Section 508 ICT Testing Baseline version 3](https://section508coordinators.github.io/ICTTestingBaseline/) and the [Trusted Tester Section 508 Conformance Test Process for Web version 5](https://section508coordinators.github.io/TrustedTester/) methodology from which it is derived. Therefore the information on this page will assume Trusted Tester as the organization's target accessibility criteria. 
+
+Test results that are not actionable are also referred to as "noise" in test results. Noise usually comes from one or more of three sources:
+
+1. **False positives**: These are instances where the tool indicates an accessibility failure where, according to your target criteria, none should be cited.
+2. **False negatives**:  These are instances where the tool indicates there is no accessibility failure where, according to your target criteria, there should be one cited.
+3. **Out of scope:** These are instances where the tool tests for criteria that are not tested by your organization's target accessibility criteria. 
+
+### When *Out of Scope* provides value
+
+Organizations may want to maximize efficiency and noise reduction when using automated rules and only include rules that specifically align with their target criteria . However there may be instances where a rule is out of scope for the target criteria (Trusted Tester), but provides some other positive, actionable value such as identifying bad coding practices. In these cases, it may be advantageous to include these rules as well. 
+
+Note that assessment of automated rulesets is an ongoing activity. Below OAST's most recent assessments of the axe-core and HTML Code sniffer rules as of April 15 2020.
 
 <hr>
 
@@ -49,7 +62,7 @@ Also note that assessment of rulesets is an ongoing activity. Below are the most
 | td-headers-attr             | 3.5          |
 | valid-lang                  | 3.5          |
 
-#### Rules to avoid in Trusted Tester testing
+#### Rules to avoid in testing
 
 When using the pa11y engine tools, the developer/tester indicates the desired rules for testing by configuring the test engine to cite the test library  to use (i.e. , axe or HTMLCS) and then citing the the ***rules to ignore*** from the ruleset when testing.  Below is the list of rules to ignore when configuring tests using the pa11y engine in order to use Trusted Tester friendly rules:
 
