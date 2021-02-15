@@ -27,7 +27,7 @@ Test results that are not actionable are also referred to as "noise" in test res
 
 Organizations may want to maximize efficiency and noise reduction when using automated rules and only include rules that specifically align with their target criteria. However there may be instances where a rule is out of scope for the target criteria (Trusted Tester), but provides some other positive, actionable value such as identifying bad coding practices. In these cases, it may be advantageous to include these rules as well. 
 
-Note that assessment of automated rulesets is an ongoing activity. Below OAST's most recent assessments of the axe-core and HTML Code sniffer rules as of April 15 2020.
+Note that assessment of automated rulesets is an ongoing activity. Below are OAST's most recent assessments of the axe-core and HTML Code sniffer rules as of April 15 2020.
 
 <hr>
 
