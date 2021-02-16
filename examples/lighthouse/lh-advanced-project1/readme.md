@@ -53,7 +53,7 @@ This example uses the following technology stack:
 
 ## Setup
 
-Node.js needs to be available on your system. 
+Git and Node.js needs to be available on your system. 
 
 ```sh
 npm -g install
