@@ -58,7 +58,7 @@ This example uses the following technology stack:
 
 ## Setup
 
-Node.js needs to be available on your system. Also, there is a peer dependency on puppeteer. This means that in addition to running `npm install` you will need to run `npm install puppeteer`.
+Git and Node.js needs to be available on your system. Also, there is a peer dependency on puppeteer. This means that in addition to running `npm install` you will need to run `npm install puppeteer`.
 
 ```sh
 npm install
