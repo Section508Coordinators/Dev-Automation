@@ -46,11 +46,11 @@ const config = {
 	urls: [
 		// Hard-code URLs for testing here
 
-		//"https://section508coordinators.github.io/BaselineTestPages2/test-cases/TC1005C001.html",
-		//"https://section508coordinators.github.io/BaselineTestPages2/test-cases/TC1005C002.html",
-		//"https://section508coordinators.github.io/BaselineTestPages2/test-cases/TC1005C003.html",
-		//"https://section508coordinators.github.io/BaselineTestPages2/test-cases/TC1005C004.html",
-		//"https://section508coordinators.github.io/BaselineTestPages2/test-cases/TC1005C007.html"
+		"https://section508coordinators.github.io/BaselineTestPages2/test-cases/TC1005C001.html",
+		"https://section508coordinators.github.io/BaselineTestPages2/test-cases/TC1005C002.html",
+		"https://section508coordinators.github.io/BaselineTestPages2/test-cases/TC1005C003.html",
+		"https://section508coordinators.github.io/BaselineTestPages2/test-cases/TC1005C004.html",
+		"https://section508coordinators.github.io/BaselineTestPages2/test-cases/TC1005C007.html"
 
 	],
 	axeConfig: {

@@ -92,8 +92,8 @@ This will run an accessibility test against a test web site of multiple web page
 
 The /bin/ directory contains multiple "custom-axe" files that showcase different features via their configuration settings as follows. Use any desired combinations of switch commands on the base .js files below:
 
-- **Execute all axe rules when testing**: `01-custom-axe.js`
-- **Execute only certain rules that are TTv5 friendly**: `02-custom-axe.js`
+- **Execute all axe rules when testing internally configured "hard coded" URLs**: `node 01-custom-axe.js -h <HTML_report_name>`
+- **Execute only certain rules that are TTv5 friendly**: `node 02-custom-axe.js -h <HTML_report_name>`
 
 <hr>
 
