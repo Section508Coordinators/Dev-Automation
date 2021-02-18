@@ -44,6 +44,16 @@ let commandLineUrls = globby.sync(commander.args, {nonull: true}).map(protocolif
 
 const config = {
 	urls: [
+		
+		
+		// Hard-code URLs for testing here
+
+		"https://section508coordinators.github.io/BaselineTestPages2/test-cases/TC1005C001.html",
+		"https://section508coordinators.github.io/BaselineTestPages2/test-cases/TC1005C002.html",
+		"https://section508coordinators.github.io/BaselineTestPages2/test-cases/TC1005C003.html",
+		"https://section508coordinators.github.io/BaselineTestPages2/test-cases/TC1005C004.html",
+		"https://section508coordinators.github.io/BaselineTestPages2/test-cases/TC1005C007.html"
+		
 		// // First url requires login. The concept here is that a 'url' in this
 		// // list can either be a string url or a function that takes a
 		// // puppeteer browser that can be used to perform some actions before
