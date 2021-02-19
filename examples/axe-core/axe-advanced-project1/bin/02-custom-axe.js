@@ -125,19 +125,6 @@ const config = {
 		// disableOtherRules: true,     //////// if true, only use our rules
 		////////////////////////////// define new rules or override existing
 		 rules: [
-		 //{
-		// 	// 	id: '',
-		// 	// 	// selector: string;
-		// 	// 	// excludeHidden?: boolean;
-		// 	// 	// enabled?: boolean;
-		// 	// 	// pageLevel?: boolean;
-		// 	// 	// any?: string[];
-		// 	// 	// all?: string[];
-		// 	// 	// none?: string[];
-		// 	// 	// tags: string[];
-		// 	// 	// matches: string;
-		//}
-
 
 		 	//********************************************
 		 	//*** START OF TTv5-Friendly and verified ****
