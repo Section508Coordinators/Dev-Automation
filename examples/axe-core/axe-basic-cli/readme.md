@@ -1,10 +1,10 @@
 # axe-core basic examples: CLI
 
-<hr>
+---
 
 Go to the [GitHub Playbook-Automation published page](https://section508coordinators.github.io/Dev-Automation/)
 
-<hr>
+---
 
 ## Tool: @axe-core/cli
 
@@ -12,7 +12,7 @@ The  @axe-core/cli tool provides the tester with a command line interface for ax
 
 This folder presents fully functioning examples of how to use the @axe-core/cli tool for quick and easy accessibility testing.
 
-<hr>
+---
 
 ## Automated tools and rulesets
 
@@ -22,7 +22,7 @@ This tool allows the user to pick and choose the individual, underlying rules fo
 
 Those analyses of vendor accessibility rulesets and the OAST ruleset recommendations reside in the following folder on this site: https://github.com/Section508Coordinators/Dev-Automation/tree/master/rulesets.
 
-<hr>
+---
 
 ## Technology requirements
 
@@ -129,9 +129,7 @@ Command: `axe https://section508coordinators.github.io/BaselineTestPages2/test-c
 
 ![Example 1](ex1.png)
 
-
-
-<hr>
+---
 
 #### Example 2
 
@@ -143,9 +141,8 @@ Command: `axe https://section508coordinators.github.io/BaselineTestPages2/test-c
 
 ![Example 2](ex2.png)
 
+---
 
-
-<hr>
 
 #### Example 3
 
@@ -181,13 +178,13 @@ Command: `axe https://section508coordinators.github.io/BaselineTestPages2/test-c
 | experimental  | Cutting-edge techniques                     |
 | cat           | Category mappings used by Deque (see below) |
 
- <hr>
+---
 
 ## More information
 
 More information on the axe-core CLI can be found here: https://github.com/dequelabs/axe-core-npm/tree/develop/packages/cli.
 
-<hr>
+---
 
-02/01/2021 | 01:25p
+02/19/2021 | 10:26a
 

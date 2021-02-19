@@ -1,10 +1,11 @@
 # lighthouse basic examples: CLI
 
-<hr>
+---
 
 Go to the [GitHub Playbook-Automation published page](https://section508coordinators.github.io/Dev-Automation/)
 
-<hr>
+---
+
 Google lighthouse provides 2 tools that execute accessibility (and other) testing from the command line as described below.
 
 ## Tool: Lighthouse CLI
@@ -17,7 +18,8 @@ Supports executing [Lighthouse](https://developers.google.com/web/tools/lighthou
 
 Also writes out the full `json` report for each site and optionally an `html` report.
 
-<hr>
+---
+
 ## Automated tools and rulesets
 
 #### Ruleset assessments and recommended rules
@@ -26,9 +28,7 @@ This tool allows the user to pick and choose the individual, underlying rules fo
 
 Those analyses of vendor accessibility rulesets and the OAST ruleset recommendations reside in the following folder on this site: https://github.com/Section508Coordinators/Dev-Automation/tree/master/rulesets.
 
-
-
-<hr>
+---
 
 ## Technology requirements
 
@@ -60,7 +60,7 @@ This example uses the following technology stack:
 
 Review the examples below of implementing the lighthouse CLI.
 
-<hr>
+---
 
 ### Lighthouse CLI
 
@@ -106,7 +106,6 @@ See flag descriptions below.
 --skip-audits                  Run everything except these audits  [array]
 --budget-path                  The path to the budget.json file for LightWallet.  [string]
 ```
-
  
 
 #####  Output:
@@ -120,7 +119,6 @@ See flag descriptions below.
                    Example: --output-path=./lighthouse-results.html  [string]
 --view         Open HTML report in your browser  [boolean] [default: false]
 ```
-
  
 
 ##### Options:
@@ -162,9 +160,7 @@ lighthouse <url> --extra-headers=./path/to/file.json                            
 lighthouse <url> --only-categories=performance,pwa                                               Only run the specified categories. Available categories: accessibility, best-practices, performance, pwa, seo
 ```
 
-<hr>
-
-
+---
 
 ### Lighthouse batch
 
@@ -194,7 +190,7 @@ Options:
   -h, --help                    output usage information
 ```
 
-<hr>
+---
 
 ## Examples
 
@@ -214,9 +210,7 @@ Command: `lighthouse https://section508coordinators.github.io/BaselineTestPages2
 
 ![Report that is written to file system](pic_ex1_002.png)
 
-
-
-<hr>
+---
 
 #### Example 2
 
@@ -234,9 +228,7 @@ Command: `lighthouse https://section508coordinators.github.io/BaselineTestPages2
 
 ![Example 2 report that opens automatically in browser](pic_ex2_002.png)
 
-
-
-<hr>
+---
 
 #### Example 3
 
@@ -254,9 +246,7 @@ Command: `Lighthouse-batch -s https://section508coordinators.github.io/BaselineT
 
 ![Example 3 subsequent HTML file for URL 2](pic_ex3_003.png)
 
-
-
- <hr>
+---
 
 #### Example 4
 
@@ -276,9 +266,7 @@ Command: `Lighthouse-batch --file siteFile.txt --html --params "--only-categorie
 - https://section508coordinators.github.io/BaselineTestPages2/test-cases/TC1005C004.html
 - https://section508coordinators.github.io/BaselineTestPages2/test-cases/TC1005C005.html
 
-
-
-<hr>
+---
 
 # Notes
 
@@ -288,9 +276,7 @@ Chrome is run with the following flags to support the widest set of execution en
 --params "--chrome-flags=\"--no-sandbox --disable-gpu\""
 ```
 
-
-
-<hr>
+---
 
 # More Information
 
@@ -299,11 +285,9 @@ For more information on Lighthouse, see https://developers.google.com/web/tools/
 https://github.com/GoogleChrome/lighthouse
 
 
-
 For more information on Lighthouse batch, see: https://www.npmjs.com/package/lighthouse-batch
 
+---
 
-<hr>
-
-02/15/2021 | 03:59p
+02/19/2021 | 10:32a
 

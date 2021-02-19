@@ -1,10 +1,10 @@
 # pa11y basic examples: Koa11y
 
-<hr>
+---
 
 Go to the [GitHub Playbook-Automation published page](https://section508coordinators.github.io/Dev-Automation/)
 
-<hr>
+---
 
 ## Koa11y
 
@@ -35,13 +35,13 @@ Enter the URL to test, select the desired "Standards Format" and report format "
 
 ![Koa11y](https://open-indy.github.io/Koa11y/_img/screenshot-win.png)
 
-<hr>
+---
 
 # More Information
 
 
 For more information on Koa11y go here (Video): https://youtu.be/yoJDb018Edc.
 
-<hr>
+---
 
-01/22/2021 | 09:45p
+02/19/2021 | 10:38a

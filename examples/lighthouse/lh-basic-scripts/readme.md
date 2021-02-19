@@ -1,10 +1,10 @@
 # lighthouse basic examples: Scripting
 
-<hr>
+---
 
 Go to the [GitHub Playbook-Automation published page](https://section508coordinators.github.io/Dev-Automation/)
 
-<hr>
+---
 
 ## lighthouse: programmatic usage
 
@@ -18,7 +18,7 @@ This tool allows the user to pick and choose the individual, underlying rules fo
 
 Those analyses of vendor accessibility rulesets and the OAST ruleset recommendations reside in the following folder on this site: https://github.com/Section508Coordinators/Dev-Automation/tree/master/rulesets.
 
-<hr>
+---
 
 ## Technology requirements
 
@@ -39,13 +39,13 @@ Perform the following steps to setup your environment to run the examples
 2. Install lighthouse: `npm install -g lighthouse`
 2. Reboot
 
-<hr>
+---
 
 ## Usage/Syntax
 
 In a Git Bash window, run: `node <script_name>`
 
-<hr>
+---
 
 ### Example scripts
 
@@ -71,7 +71,7 @@ The scripts will present different scenarios based on their internal configurati
 
   - launches a headless instance of Chrome and sends no results to command window
 
-<hr>
+---
 
 # More Information
 
@@ -81,6 +81,6 @@ For more information on google lighthouse scripting, go here
 - Programmatic use: https://github.com/GoogleChrome/lighthouse/blob/HEAD/docs/readme.md#using-programmatically
 - Lighthouse configuration: https://github.com/GoogleChrome/lighthouse/blob/HEAD/docs/
 
-<hr>
+---
 
-02/02/2021 | 08:07p
+02/19/2021 | 10:33a

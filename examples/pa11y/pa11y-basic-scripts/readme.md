@@ -1,16 +1,16 @@
 # pa11y basic examples: Scripting
 
-<hr>
+---
 
 Go to the [GitHub Playbook-Automation published page](https://section508coordinators.github.io/Dev-Automation/)
 
-<hr>
+---
 
 ## pa11y: Scripting using JavaScript
 
 The scripts (JavaScript) in this project are meant to provide relatively simple examples, on which you can build, of how to use the pa11y  accessibility engine for accessibility testing using various configurations and rulesets - to include Deque's axe-core and SQIZ Lab's HTML CodeSniffer.  
 
-<hr>
+---
 
 ## Automated tools and rulesets
 
@@ -20,7 +20,7 @@ This tool allows the user to pick and choose the individual, underlying rules fo
 
 Those analyses of vendor accessibility rulesets and the OAST ruleset recommendations reside in the following folder on this site: https://github.com/Section508Coordinators/Dev-Automation/tree/master/rulesets.
 
-<hr>
+---
 
 ## Technology requirements
 
@@ -38,7 +38,7 @@ Perform the following steps to setup your environment to run the examples
 2. Install pa11y: `npm install -g pa11y`
 2. Reboot
 
-<hr>
+---
 
 ### Example scripts
 
@@ -62,12 +62,12 @@ The scripts will present different scenarios based on their internal configurati
 
 In a Git Bash window, run: `node <script_name>`
 
-<hr>
+---
 
 # More Information
 
 For more information on pa11y usage and syntax, go here: https://github.com/pa11y/pa11y 
 
-<hr>
+---
 
-01/22/2021 | 09:44p
+02/19/2021 | 10:37a

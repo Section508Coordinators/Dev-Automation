@@ -1,10 +1,10 @@
 # axe-core advanced examples: Project 1
 
-<hr>
+---
 
 Go to the [GitHub Playbook-Automation published page](https://section508coordinators.github.io/Dev-Automation/)
 
-<hr>
+---
 
 
 # Tool: Custom extended functionality
@@ -20,7 +20,7 @@ By combining the axe-core API library with the underlying [Pa11y test engine](ht
 
 - **HTML Reporting/Scoring**: Examples of extending the simple HTML report offered by the open source tool to provide a simple scoring model for mass scan results. This is done by using the HTML report switch (-h).
 
-<hr>
+---
 
 ## Automated tools and rulesets
 
@@ -101,8 +101,8 @@ The /bin/ directory contains multiple "custom-axe" files that showcase different
 
 More comprehensive guidance on the axe-core engine can be found in the [Axe JavaScript Accessibility API](https://github.com/dequelabs/axe-core/blob/develop/doc/API.md). 
 
-<hr>
+---
 
-01/30/2021 | 09:33p
+02/19/2021 | 10:24p
 
 

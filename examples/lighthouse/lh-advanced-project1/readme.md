@@ -1,10 +1,10 @@
 # lighthouse advanced examples: Project 1
 
-<hr>
+---
 
 Go to the [GitHub Playbook-Automation published page](https://section508coordinators.github.io/Dev-Automation/)
 
-<hr>
+---
 
 
 # lighthouse: Customizing functionality
@@ -15,7 +15,7 @@ This project is meant to demonstrate multiple ways in which developers can use a
 - **Individual rule selection**: The underlying ruleset used by lighthouse is the Deque axe-core ruleset.  If you don't want to use all axe-core rules usually used by lighthouse but would rather use a subset of preferred rules, you do this by using the "onlyAudits:" configuration option and then cite the rules to be used.
 - **HTML Reporting/Scoring**: Examples of writing test results to the command window or an HTML report. Also, extending the simple HTML report offered by the open source tool to provide a basic scoring model for mass scan results. This is done by using the HTML report switch (-h).
 
-<hr>
+---
 
 ## Automated tools and rulesets
 
@@ -26,8 +26,7 @@ This tool allows the user to pick and choose the individual, underlying rules fo
 
 Those analyses of vendor accessibility rulesets and the OAST ruleset recommendations reside in the following folder on this site: https://github.com/Section508Coordinators/Dev-Automation/tree/master/rulesets.
 
-<hr>
-
+---
 
 ## Technology requirements
 
@@ -46,7 +45,6 @@ This example uses the following technology stack:
 - protocolify
 - puppeteer
 - typescript
-
 
 
 ---
@@ -104,13 +102,13 @@ The /bin/ directory contains multiple "custom-lighthouse" files that showcase di
   - Uses the "-s" switch to override the hard coded URLs within the script and rather use a sitemap.xml file to  specify the URLs to test with.
   - Instead of using all axe-core rules, uses the "onlyAudits:" option to specify rules to use for testing
 
-<hr>
+---
 
 # More information
 
 For more information on lighthouse syntax, go here: https://github.com/GoogleChrome/lighthouse.
 
-<hr>
+---
 
-02/15/2021 | 03:58p
+02/19/2021 | 10:29a
 

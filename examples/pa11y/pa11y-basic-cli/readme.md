@@ -1,10 +1,10 @@
 # pa11y basic examples: CLI
 
-<hr>
+---
 
 Go to the [GitHub Playbook-Automation published page](https://section508coordinators.github.io/Dev-Automation/)
 
-<hr>
+---
 
 ## Tool: pa11y CLI
 
@@ -12,7 +12,7 @@ This tool provides the tester with a command line interface that accesses the pa
 
 This folder presents fully functioning examples of how to use this tool for quick and easy accessibility testing.
 
-<hr>
+---
 
 ## Automated tools and rulesets
 
@@ -23,7 +23,7 @@ This tool allows the user to pick and choose the individual, underlying rules fo
 
 Those analyses of vendor accessibility rulesets and the OAST ruleset recommendations reside in the following folder on this site: https://github.com/Section508Coordinators/Dev-Automation/tree/master/rulesets.
 
-<hr>
+---
 
 ## Technology requirements
 
@@ -34,7 +34,7 @@ This example uses the following technology stack:
 - Git (Bash window)
 - [Pa11y 4](https://github.com/pa11y/pa11y/tree/4.x)+
 
-<hr>
+---
 
 ## Setup
 
@@ -72,10 +72,9 @@ Usage: pa11y [options] <url>
 ```
 
 
-
 Review the many examples below of implementing the pa11y CLI tool.
 
-<hr>
+---
 
 #### Run an accessibility test against a URL
 
@@ -199,7 +198,7 @@ info(message); // Called when an information message is reported
 results(results); // Called with the results of a test run
 ```
 
- <hr>
+---
 
 ## Examples
 
@@ -212,7 +211,7 @@ Command: `pa11y https://section508coordinators.github.io/BaselineTestPages2/test
 
 ![Example 1: Command Window](pic1.png)
 
-<hr>
+---
 
 #### Example 2
 
@@ -228,9 +227,7 @@ Command: `pa11y https://section508coordinators.github.io/BaselineTestPages2/test
 
 ![Resulting HTML report files](pic2b.png)
 
-
-
-<hr>
+---
 
 #### Example 3
 
@@ -245,15 +242,13 @@ Command: `pa11y https://section508coordinators.github.io/BaselineTestPages2/test
 
 ![Example 3 HTML results file](pic3b)
 
-
-
-<hr>
+---
 
 ## More Information
 
 For more information on syntax for using this example, see the pa11y syntax information here: https://github.com/pa11y/pa11y
 
-<hr>
+---
 
-01/30/2021 | 10:00p
+02/19/2021 | 10:37a
 

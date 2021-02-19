@@ -1,11 +1,10 @@
 # pa11y advanced examples: Project 1
 
-<hr>
+---
 
 Go to the [GitHub Playbook-Automation published page](https://section508coordinators.github.io/Dev-Automation/)
 
-<hr>
-
+---
 
 # pa11y engine: Customizing functionality
 
@@ -18,7 +17,7 @@ This project is meant to demonstrate multiple ways in which developers can use a
 
 - **HTML Reporting/Scoring**: Examples of writing test results to the command window or an HTML report. Also, extending the simple HTML report offered by the open source tool to provide a basic scoring model for mass scan results. This is done by using the HTML report switch (-h).
 
-<hr>
+---
 
 ## Automated tools and rulesets
 
@@ -28,7 +27,7 @@ This tool allows the user to pick and choose the individual, underlying rules fo
 
 Those analyses of vendor accessibility rulesets and the OAST ruleset recommendations reside in the following folder on this site: https://github.com/Section508Coordinators/Dev-Automation/tree/master/rulesets.
 
-<hr>
+---
 
 ## Technology requirements
 
@@ -51,7 +50,6 @@ This example uses the following technology stack:
 - puppeteer
 
 - sitemapper
-
   
 
 ---
@@ -123,12 +121,12 @@ The /bin/ directory contains multiple "custom-pa11y" files that showcase differe
   - Uses the "-s" switch to override the hard coded URLs within the script but rather use a sitemap.xml file to  specify the URLs to test with.
   - Using the -h switch on the command, this example writes the test results to an HTML report as opposed to the *command window*. Reports will write to the "/bin/" folder using the report name specified in the command switch ("HTML_Custom-Rules-Report").
 
-<hr>
+---
 
 # More information
 
 For more information on syntax for using this custom example, see the pa11y-ci syntax information here: https://github.com/pa11y/pa11y-ci 
 
-<hr>
+---
 
-01/22/2021 | 09:40p
+02/19/2021 | 10:35a

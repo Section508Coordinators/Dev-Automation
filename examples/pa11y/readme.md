@@ -1,10 +1,10 @@
 # pa11y examples
 
-<hr>
+---
 
 Go to the [GitHub Playbook-Automation published page](https://section508coordinators.github.io/Dev-Automation/)
 
-<hr>
+---
 
 ### Basic examples
 
@@ -17,6 +17,6 @@ Go to the [GitHub Playbook-Automation published page](https://section508coordina
 
  1. [Pa11y custom project1](https://github.com/Section508Coordinators/Dev-Automation/tree/master/examples/pa11y/pa11y-advanced-project1)
         
-<hr>
+---
 
-02/02/2021 | 09:07p
+02/19/2021 | 10:34a

@@ -1,10 +1,10 @@
 # axe-core examples
 
-<hr>
+---
 
 Go to the [GitHub Playbook-Automation published page](https://section508coordinators.github.io/Dev-Automation/)
 
-<hr>
+---
 
 
 ### Basic examples
@@ -12,7 +12,7 @@ Go to the [GitHub Playbook-Automation published page](https://section508coordina
  1. [Browser extensions](https://github.com/Section508Coordinators/Dev-Automation/tree/master/examples/axe-core/axe-basic-browser-ext)
 
  2. [Command line interface (CLI)](https://github.com/Section508Coordinators/Dev-Automation/tree/master/examples/axe-core/axe-basic-cli)
- 
+
  3. [Scripting](https://github.com/Section508Coordinators/Dev-Automation/tree/master/examples/axe-core/axe-basic-scripts)
         
 ### Advanced examples
