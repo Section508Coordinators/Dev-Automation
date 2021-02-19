@@ -178,7 +178,6 @@ Command: `axe https://section508coordinators.github.io/BaselineTestPages2/test-c
 | experimental  | Cutting-edge techniques                     |
 | cat           | Category mappings used by Deque (see below) |
 
----
 
 ## More information
 
