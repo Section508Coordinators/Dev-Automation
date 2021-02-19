@@ -1,11 +1,8 @@
 #!/usr/bin/env node
 'use strict';
 
-//
-//*** THIS VERSION TESTS ONLY AGAINST RULES BELOW (STARTING WITH LINE 129) 
-//    THAT HAVE A SETTING OF "enabled: true" 
-//
-
+// 02/19/2021 axe
+// 02-custom-axe.js
 
 const customAxe = require('..');
 const pkg = require('../package.json');
@@ -45,16 +42,6 @@ let commandLineUrls = globby.sync(commander.args, {nonull: true}).map(protocolif
 
 const config = {
 	urls: [
-        
-        
-		// Hard-code URLs for testing here. Comment these out if using sitemap to assign URLs
-
-		"https://section508coordinators.github.io/BaselineTestPages2/test-cases/TC1005C001.html",
-		"https://section508coordinators.github.io/BaselineTestPages2/test-cases/TC1005C002.html",
-		"https://section508coordinators.github.io/BaselineTestPages2/test-cases/TC1005C003.html",
-		"https://section508coordinators.github.io/BaselineTestPages2/test-cases/TC1005C004.html",
-		"https://section508coordinators.github.io/BaselineTestPages2/test-cases/TC1005C007.html"
-        
 		// // First url requires login. The concept here is that a 'url' in this
 		// // list can either be a string url or a function that takes a
 		// // puppeteer browser that can be used to perform some actions before
@@ -200,6 +187,7 @@ const config = {
 		 	{id: 'landmark-main-is-top-level', enabled: false},
 		 	{id: 'landmark-no-duplicate-banner', enabled: false},
 		 	{id: 'landmark-no-duplicate-contentinfo', enabled: false},
+		 	{id: 'landmark-no-duplicate-main', enabled: false},
 		 	{id: 'landmark-one-main', enabled: false},
 		 	{id: 'landmark-unique', enabled: false},
 		 	{id: 'layout-table', enabled: false},
