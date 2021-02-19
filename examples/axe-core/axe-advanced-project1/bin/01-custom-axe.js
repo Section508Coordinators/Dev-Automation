@@ -44,7 +44,7 @@ let commandLineUrls = globby.sync(commander.args, {nonull: true}).map(protocolif
 
 const config = {
 	urls: [
-		// Hard-code URLs for testing here
+		// Hard-code URLs for testing here. Comment these out if using sitemap to assign URLs
 
 		"https://section508coordinators.github.io/BaselineTestPages2/test-cases/TC1005C001.html",
 		"https://section508coordinators.github.io/BaselineTestPages2/test-cases/TC1005C002.html",
