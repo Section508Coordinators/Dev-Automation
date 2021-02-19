@@ -84,9 +84,9 @@ Options:
 
 In a git bash window, run the following command from the /bin/ directory:
 
-`node custom-axe.js -s http://coc.kciprojects.com/xml/kci-sitemap.xml -h --HTML_axe-Report -x '.*(pdf|jpg|png)$'`
+`node custom-axe -s https://section508coordinators.github.io/Dev-Automation/sitemaps/hhs-mini-sitemap.xml -h HTML_Report -x '.*(pdf|jpg|png)$'`
 
-This will run an accessibility test against a test web site of multiple web pages and create a folder with the name "***--HTML_Report***" within the  "\bin\\" folder. Opening the index.html of that report will present you with test results and scoring.
+This will run an accessibility test against a site map file of a small number of URLs, using the default axe-core rules, and create a folder with the name "***HTML_Report***" within the  "\bin\\" folder. Opening the index.html of that report will present you with test results and scoring.
 
 ## Pre-configured examples
 
