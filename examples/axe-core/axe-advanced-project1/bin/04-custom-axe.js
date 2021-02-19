@@ -2,7 +2,7 @@
 'use strict';
 
 // 02/19/2021 axe
-// 01-custom-axe.js
+// 04-custom-axe.js
 
 const customAxe = require('..');
 const pkg = require('../package.json');
@@ -42,18 +42,7 @@ let commandLineUrls = globby.sync(commander.args, {nonull: true}).map(protocolif
 
 const config = {
 	urls: [
-
-		// Hard-code URLs for testing here
-
-		"https://section508coordinators.github.io/BaselineTestPages2/test-cases/TC1005C001.html",
-		"https://section508coordinators.github.io/BaselineTestPages2/test-cases/TC1005C002.html",
-		"https://section508coordinators.github.io/BaselineTestPages2/test-cases/TC1005C003.html",
-		"https://section508coordinators.github.io/BaselineTestPages2/test-cases/TC1005C004.html",
-		"https://section508coordinators.github.io/BaselineTestPages2/test-cases/TC1005C007.html"
-
-
 		// // First url requires login. The concept here is that a 'url' in this
-
 		// // list can either be a string url or a function that takes a
 		// // puppeteer browser that can be used to perform some actions before
 		// // returning the actual URL to run lighthouse against.
@@ -128,7 +117,6 @@ const config = {
 		 	//*** START OF TTv5-Friendly and verified ****
 		 	//********************************************
 			
-			/*
 			{id: 'aria-allowed-role', enabled: true},
 			{id: 'aria-hidden-focus', enabled: true},
 			{id: 'aria-input-field-name', enabled: true},
@@ -225,7 +213,6 @@ const config = {
 		 	{id: 'svg-img-alt', enabled: false},
 		 	{id: 'identical-links-same-purpose', enabled: false},
 		 	{id: 'image-redundant-alt', enabled: false}
-		 	*/
 		 ],
 		// locale?: Locale;
 		// axeVersion: ''
