@@ -1,8 +1,8 @@
 # lighthouse basic examples: Browser extension/DevTools
 
 <hr>
-Go to the [GitHub Playbook-Automation published page](https://section508coordinators.github.io/Dev-Automation/)
 
+Go to the [GitHub Playbook-Automation published page](https://section508coordinators.github.io/Dev-Automation/)
 
 <hr>
 
