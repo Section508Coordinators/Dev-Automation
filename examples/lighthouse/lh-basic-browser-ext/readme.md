@@ -49,9 +49,9 @@ See the appropriate setup below depending on whether you are using the Chrome ex
 
 ## Usage/Syntax
 
-See the instructions [HERE](https://developers.google.com/web/tools/lighthouse/#devtools) on using the DevTools lighthouse tool.
+Lighthouse DevTools instructions are [HERE](https://developers.google.com/web/tools/lighthouse/#devtools) 
 
-See the instructions [HERE](https://developers.google.com/web/tools/lighthouse/#extension) on using the Chrome extension tool.
+Chrome extension tool instructions are [HERE](https://developers.google.com/web/tools/lighthouse/#extension) 
 
 <hr>
 
@@ -60,4 +60,5 @@ See the instructions [HERE](https://developers.google.com/web/tools/lighthouse/#
 For more information about the Chrome extension or DevTools version running in Chrome, see the following: https://developers.google.com/web/tools/lighthouse/ 
 
 <hr>
-02/10/2021 | 05:42p
+02/19/2021 | 10:16a
+
