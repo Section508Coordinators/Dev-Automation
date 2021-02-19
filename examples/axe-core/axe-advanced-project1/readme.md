@@ -30,7 +30,7 @@ This tool allows the user to pick and choose the individual, underlying rules fo
 
 Those analyses of vendor accessibility rulesets and the OAST ruleset recommendations reside in [rulesets folder](/rulesets) on this site.
 
-<hr>
+---
 
 ## Technology requirements
 
