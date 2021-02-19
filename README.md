@@ -33,7 +33,7 @@ This repository presents multiple examples of integrating accessibility into var
         2. [Command line interface (CLI)](/examples/lighthouse/lh-basic-cli)
         3. [Scripting](/examples/lighthouse/lh-basic-scripts)
     * Advanced examples
-        1. [Lighthouse custom project 1]/examples/lighthouse/lh-advanced-project1)
+        1. [Lighthouse custom project 1](/examples/lighthouse/lh-advanced-project1)
         
 ---
 
