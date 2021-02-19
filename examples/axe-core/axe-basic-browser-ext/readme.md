@@ -1,10 +1,10 @@
 # axe-core basic examples: Browser extension
 
-<hr>
+---
 
 Go to the [GitHub Playbook-Automation published page](https://section508coordinators.github.io/Dev-Automation/)
 
-<hr>
+---
 
 ## axe browser extensions
 
@@ -12,7 +12,7 @@ The Axe web browser extension tool is a free tool from Deque Systems that offers
 
 The tool currently integrates with Chrome, Firefox, and Edge with extended features being available via the Chrome extension.
 
-<hr>
+---
 
 ## Technology stack
 
@@ -43,6 +43,6 @@ See below for more information and basic usage:
 - Overview: https://www.youtube.com/watch?v=owBCWftVB7E&feature=youtu.be
 - Getting started: https://www.youtube.com/watch?reload=9&v=FtVLATTZU78&feature=youtu.be 
 
-<hr>
+---
 
-02/19/2021 | 10:08a
+02/19/2021 | 10:`08a`
