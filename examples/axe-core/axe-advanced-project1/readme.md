@@ -90,10 +90,22 @@ This will run an accessibility test against a site map file of a small number of
 
 ## Pre-configured examples
 
-The /bin/ directory contains multiple "custom-axe" files that showcase different features via their configuration settings as follows. Use any desired combinations of switch commands on the base .js files below:
+The /bin/ directory contains multiple "custom-axe" files that showcase different functionality and features via their configuration settings as shown below. 
 
-- **Execute all axe rules when testing internally configured "hard coded" URLs**: `node 01-custom-axe.js -h <HTML_report_name>`
-- **Execute only certain rules that are TTv5 friendly**: `node 02-custom-axe.js -h <HTML_report_name>`
+Instances where the syntax calls for a sitemap.xml file containing URLs to test, you can use the test sitemap file below in the syntax example, or point to your own sitemap.xml file:
+
+- **Script: 01-custom-axe.js**
+  - <u>Description</u>: Executes tests against internally "hard coded" URLs within the script file and runs all default axe-core rules
+  - <u>Syntax</u>:  `node 01-custom-axe.js -h <HTML_report_name>`
+- **Script: 02-custom-axe.js**
+  - <u>Description:</u>  Executes tests against internally "hard coded" URLs within the script file and only tests against preferred rules that are Trusted Tester friendly
+  - <u>Syntax</u>: `node 02-custom-axe.js -h <HTML_report_name>`
+- **Script: 03-custom-axe.js**
+  - <u>Description</u>: Executes tests against URLs in a sitemap file and runs all default axe-core rules. You must provide a pointer to a sitemap file or use the test sitemap file in the syntax example.
+  - <u>Syntax</u>: `node 03-custom-axe -s https://section508coordinators.github.io/Dev-Automation/sitemaps/hhs-mini-sitemap.xml -h <HTML_report_name> -x '.*(pdf|jpg|png)$' `
+- **Script: 04-custom-axe.js**
+  - <u>Description</u>: Executes tests against URLs in a sitemap file and runs only preferred axe-core rules that are Trusted tester friendly. You must provide a pointer to a sitemap file or use the test sitemap file in the syntax example.
+  - <u>Syntax</u>: `node 04-custom-axe -s https://section508coordinators.github.io/Dev-Automation/sitemaps/hhs-mini-sitemap.xml -h <HTML_report_name> -x '.*(pdf|jpg|png)$'`
 
 <hr>
 
@@ -103,6 +115,6 @@ More comprehensive guidance on the axe-core engine can be found in the [Axe Java
 
 ---
 
-02/19/2021 | 10:24p
+02/19/2021 | 03:23p
 
 
