@@ -3,7 +3,10 @@
 <hr>
 Go to the [GitHub Playbook-Automation published page](https://section508coordinators.github.io/Dev-Automation/)
 
+
 <hr>
+
+
 
 
 **<u>NOTE:</u>** The Google Lighthouse tool runs within a web browser in two different forms as two different tools; (1) within the DevTools portion of the Chrome desktop web browser, and (2) as a browser extension.
