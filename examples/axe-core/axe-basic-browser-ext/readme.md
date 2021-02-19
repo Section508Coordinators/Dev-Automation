@@ -38,11 +38,11 @@ See individual browser extension.
 
 ## More information
 
-Visit this location for more information and basic usage:
+See below for more information and basic usage:
 
 - Overview: https://www.youtube.com/watch?v=owBCWftVB7E&feature=youtu.be
 - Getting started: https://www.youtube.com/watch?reload=9&v=FtVLATTZU78&feature=youtu.be 
 
 <hr>
 
-02/19/2021 | 10:05a
+02/19/2021 | 10:08a
