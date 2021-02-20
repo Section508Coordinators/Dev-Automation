@@ -54,7 +54,8 @@ This example uses the following technology stack:
 Git and Node.js needs to be available on your system. 
 
 ```sh
-npm -g install
+npm install
+npm install puppeteer --no-save
 ```
 
 
@@ -110,5 +111,5 @@ For more information on lighthouse syntax, go here: https://github.com/GoogleChr
 
 ---
 
-02/19/2021 | 10:29a
+02/20/2021 | 04:19p
 
