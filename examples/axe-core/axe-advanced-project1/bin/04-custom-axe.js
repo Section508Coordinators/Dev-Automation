@@ -117,7 +117,8 @@ const config = {
 		 	//*** START OF TTv5-Friendly and verified ****
 		 	//********************************************
 			
-			{id: 'aria-allowed-role', enabled: true},
+			{id: 'aria-allowed-role', enabled: true}, 
+			{id: 'aria-valid-attr-value', enabled: true},
 			{id: 'aria-hidden-focus', enabled: true},
 			{id: 'aria-input-field-name', enabled: true},
 			{id: 'aria-toggle-field-name', enabled: true},

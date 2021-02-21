@@ -128,6 +128,7 @@ const config = {
 		 	//********************************************
 			
 			{id: 'aria-allowed-role', enabled: true},
+			{id: 'aria-valid-attr-value', enabled: true},
 			{id: 'aria-hidden-focus', enabled: true},
 			{id: 'aria-input-field-name', enabled: true},
 			{id: 'aria-toggle-field-name', enabled: true},
