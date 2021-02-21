@@ -1,8 +1,14 @@
 #!/usr/bin/env node
 'use strict';
 
-// 02/19/2021 axe
+//
+// 02/21/2021 axe
 // 03-custom-axe.js
+// Executes tests against URLs in a sitemap file and runs all default axe-core rules. 
+// You must provide a pointer to a sitemap file or use the test sitemap file in the 
+// syntax example on GitHub:
+//      - https://section508coordinators.github.io/Dev-Automation/sitemaps/test-sitemap.xml
+//
 
 const customAxe = require('..');
 const pkg = require('../package.json');
@@ -46,140 +52,9 @@ const config = {
         // using a sitemap.xml file to cite URLs for testing.
 	],
 	axeConfig: {
-		// branding: {
-		// 	brand: '';
-		// 	application: '';
-		// },
-		// reporter: ReporterVersion,
-		/////////////////////////////// tags can be used to select groups of tests
-		// tags: [
-		// 	"best-practice",
-		// 	"cat.keyboard",
-		// 	"cat.time-and-media",
-		// 	"wcag2a",
-		// 	"wcag121",
-		// 	"section508",
-		// 	"section508.22.a"
-		// ],
-		//////////////////////////// can define new checks or override existing
-		// checks: [
-		// 	// {
-		// 	// 	id: '',
-		// 	// 	// evaluate: Function | string;
-		// 	// 	// after?: Function | string;
-		// 	// 	// options?: any;
-		// 	// 	// matches: '',
-		// 	// 	enabled: true,
-		// 	// }
-		// ],
-		// disableOtherRules: true,     //////// if true, only use our rules
-		////////////////////////////// define new rules or override existing
+
 		 rules: [
              
-            // Here, enable the rules you want to test and disable the ones you want to exclude:
-             
-		 	//********************************************
-		 	//*** START OF TTv5-Friendly and verified ****
-		 	//********************************************
-			
-			/*
-			{id: 'aria-allowed-role', enabled: true},
-			{id: 'aria-hidden-focus', enabled: true},
-			{id: 'aria-input-field-name', enabled: true},
-			{id: 'aria-toggle-field-name', enabled: true},
-			{id: 'button-name', enabled: true},
-			{id: 'color-contrast', enabled: true},
-			{id: 'document-title', enabled: true},
-			{id: 'duplicate-id', enabled: true},
-			{id: 'empty-heading', enabled: true},
-			{id: 'form-field-multiple-labels', enabled: true},
-			{id: 'frame-title', enabled: true},
-			{id: 'frame-title-unique', enabled: true},
-			{id: 'html-has-lang', enabled: true},
-		 	{id: 'html-lang-valid', enabled: true},
-		 	{id: 'image-alt', enabled: true},
-		 	{id: 'input-button-name', enabled: true},
-		 	{id: 'input-image-alt', enabled: true},
-		 	{id: 'label', enabled: true},
-		 	{id: 'link-name', enabled: true},
-		 	{id: 'list', enabled: true},
-		 	{id: 'listitem', enabled: true},
-		 	{id: 'role-img-alt', enabled: true},
-		 	{id: 'scope-attr-valid', enabled: true},
-		 	{id: 'scrollable-region-focusable', enabled: true},
-		 	{id: 'td-headers-attr', enabled: true},
-		 	{id: 'valid-lang', enabled: true},
-
-		 	//**********************************************
-		 	//*** START OF Rules to Turn Off for Testing ***
-		 	//**********************************************
-
-		 	{id: 'accesskeys', enabled: false},
-		 	{id: 'aria-valid-attr-value', enabled: false},
-		 	{id: 'aria-valid-attr', enabled: false},
-		 	{id: 'audio-caption', enabled: false},
-		 	{id: 'autocomplete-valid', enabled: false},
-		 	{id: 'avoid-inline-spacing', enabled: false},
-		 	{id: 'blink', enabled: false},
-		 	{id: 'bypass', enabled: false},
-		 	{id: 'checkboxgroup', enabled: false},
-		 	{id: 'duplicate-id-active', enabled: false},
-		 	{id: 'duplicate-id-aria', enabled: false},
-			{id: 'landmark-one-main', enabled: false},
-			{id: 'region', enabled: false},		 	
-		 	{id: 'area-alt', enabled: false},
-		 	{id: 'aria-allowed-attr', enabled: false},		 	
-		 	{id: 'aria-dpub-role-fallback', enabled: false},
-		 	{id: 'aria-hidden-body', enabled: false},
-		 	{id: 'aria-required-attr', enabled: false},
-		 	{id: 'aria-required-children', enabled: false},
-		 	{id: 'aria-required-parent', enabled: false},
-		 	{id: 'aria-roledescription', enabled: false},
-			{id: 'aria-roles', enabled: false},
-		 	{id: 'css-orientation-lock', enabled: false},
-		 	{id: 'definition-list', enabled: false},
-		 	{id: 'dlitem', enabled: false},
-		 	{id: 'focus-order-semantics', enabled: false},		 	
-		 	{id: 'frame-tested', enabled: false},
-		 	{id: 'heading-order', enabled: false},
-		 	{id: 'hidden-content', enabled: false},
-		 	{id: 'html-xml-lang-mismatch', enabled: false},		 	
-		 	{id: 'img-redundant-alt', enabled: false},
-		 	{id: 'label-content-name-mismatch', enabled: false},
-		 	{id: 'label-title-only', enabled: false},		 	
-		 	{id: 'landmark-banner-is-top-level', enabled: false},
-		 	{id: 'landmark-complementary-is-top-level', enabled: false},
-		 	{id: 'landmark-contentinfo-is-top-level', enabled: false},
-		 	{id: 'landmark-main-is-top-level', enabled: false},
-		 	{id: 'landmark-no-duplicate-banner', enabled: false},
-		 	{id: 'landmark-no-duplicate-contentinfo', enabled: false},
-		 	{id: 'landmark-no-duplicate-main', enabled: false},
-		 	{id: 'landmark-one-main', enabled: false},
-		 	{id: 'landmark-unique', enabled: false},
-		 	{id: 'layout-table', enabled: false},
-			{id: 'link-in-text-block', enabled: false},
-		 	{id: 'marquee', enabled: false},
-		 	{id: 'meta-refresh', enabled: false},
-		 	{id: 'meta-viewport-large', enabled: false},
-		 	{id: 'meta-viewport', enabled: false},
-		 	{id: 'object-alt', enabled: false},
-		 	{id: 'p-as-heading', enabled: false},
-		 	{id: 'page-has-heading-one', enabled: false},
-		 	{id: 'radiogroup', enabled: false},
-		 	{id: 'region', enabled: false},		 	
-		 	{id: 'server-side-image-map', enabled: false},
-		 	{id: 'skip-link', enabled: false},
-		 	{id: 'tabindex', enabled: false},
-		 	{id: 'table-duplicate-name', enabled: false},
-		 	{id: 'table-fake-caption', enabled: false},
-		 	{id: 'td-has-header', enabled: false},		 	
-		 	{id: 'th-has-data-cells', enabled: false},
-		 	{id: 'video-caption', enabled: false},
-		 	{id: 'video-description', enabled: false},
-		 	{id: 'svg-img-alt', enabled: false},
-		 	{id: 'identical-links-same-purpose', enabled: false},
-		 	{id: 'image-redundant-alt', enabled: false}
-		 	*/
 		 ],
 		// locale?: Locale;
 		// axeVersion: ''
