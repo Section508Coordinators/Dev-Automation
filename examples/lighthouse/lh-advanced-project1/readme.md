@@ -13,7 +13,7 @@ This project is meant to demonstrate multiple ways in which developers can use a
 
 - **URL Scanning**: Using the "URLs:" option, cite the identity and number of URLs to test against from within the script itself or use the sitemap switch (-s)  to use a sitemap.xml file of URLs to test against.
 - **Individual rule selection**: The underlying ruleset used by lighthouse is the Deque axe-core ruleset.  If you don't want to use all axe-core rules usually used by lighthouse but would rather use a subset of preferred rules, you do this by using the "skipAudits:" configuration option to exclude the rule(s) to be used.
-- **HTML Reporting/Scoring**: Examples of writing accessibility test results to an HTML report that can be configured with custom features to meet your organization's needs - such as a list of failed rules and  a basic scoring model for mass scan results. This is done by using the HTML report switch (-h).
+- **HTML Reporting/Scoring**: using the HTML report switch (-h), this example provides summaries of rules that fail accessibility and  a simple scoring model for mass scan results. 
 
 ---
 

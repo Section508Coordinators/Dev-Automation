@@ -14,11 +14,9 @@ This project is meant to demonstrate one of multiple ways in which developers ca
 By combining the axe-core API library with the underlying [Pa11y test engine](https://github.com/pa11y/pa11y), this example broadens the possibilities when performing accessibility testing and reporting to maximize effectiveness. These features include:
 
 - **URL Scanning**: Using the "URLs:" option, cite the identity and number of URLs to test against from within the script itself or use the sitemap switch (-s)  to use a sitemap.xml file of URLs to test against.
-- **Accessibility Standards**: Using the "standard:" option, indicate which accessibility standard rules to use for testing.
-- **Ruleset**: Using the "runners:" option, indicate which vendor ruleset you wish to use. Pa11y allows you to select one or combine multiple rulesets. Pa11y currently supports axe-core, HTML CodeSniffer, and custom rulesets created to match the Pa11y engine requirements.
-- **Individual rule selection**: By default, pa11y will use all rules in an identified ruleset for testing. If you don't want Pa11y to use all rules but rather use a subset of preferred rules, you do this by citing which rules you want pa11y to ***ignore***.  You do this in Pa11y by using the "ignore:" configuration option. 
+- **Individual rule selection**: Using the "rules:" option, enable or disable the underlying rules you want to use for testing. 
 
-- **HTML Reporting/Scoring**: Examples of extending the simple HTML report offered by the open source tool to provide a simple scoring model for mass scan results. This is done by using the HTML report switch (-h).
+- **HTML Reporting/Scoring**: Using the HTML report switch (-h), this example provides summaries of rules that fail accessibility and  a simple scoring model for mass scan results. 
 
 ---
 
