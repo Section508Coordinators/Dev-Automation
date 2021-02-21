@@ -42,45 +42,8 @@ let commandLineUrls = globby.sync(commander.args, {nonull: true}).map(protocolif
 
 const config = {
 	urls: [
-		// // First url requires login. The concept here is that a 'url' in this
-		// // list can either be a string url or a function that takes a
-		// // puppeteer browser that can be used to perform some actions before
-		// // returning the actual URL to run lighthouse against.
-		// async (puppet) => {
-		// 	// log into site before running tests and push the post login page onto
-		// 	const page = await puppet.newPage();
-		// 	await page.goto('http://testing-ground.scraping.pro/login');
-		// 	await page.waitForSelector('#usr', {visible: true});
-
-		// 	// Fill in and submit login form.
-		// 	const emailInput = await page.$('#usr');
-		// 	await emailInput.type('admin');
-		// 	const passwordInput = await page.$('#pwd');
-		// 	await passwordInput.type('12345');
-		// 	const submitButton = await page.$('input[type=submit]');
-
-		// 	await Promise.all([
-		// 		submitButton.click(),
-		// 		page.waitForNavigation(),
-		// 	]);
-
-		// 	if (page.url() != 'http://testing-ground.scraping.pro/login?mode=welcome') {
-		// 		console.error('login failed!');
-		// 	} else {
-		// 		console.log('login succeeded');
-		// 		const cookies = await page.cookies();
-		// 		for (var key in cookies) {
-		// 			console.log(`found cookie ${cookies[key].name}`);
-		// 		}
-		// 	}
-		// 	await page.close();
-
-		// 	return 'http://testing-ground.scraping.pro/login?mode=welcome';
-		// },
-		// 'http://testing-ground.scraping.pro/table',
-		// 'http://testing-ground.scraping.pro/blocks',
-		// 'http://testing-ground.scraping.pro/textlist',
-		// 'http://testing-ground.scraping.pro/invalid'
+        // Use this section to "hard-code" URLs you want to test for accessibility when you are not
+        // using a sitemap.xml file to cite URLs for testing.
 	],
 	axeConfig: {
 		// branding: {
@@ -112,7 +75,9 @@ const config = {
 		// disableOtherRules: true,     //////// if true, only use our rules
 		////////////////////////////// define new rules or override existing
 		 rules: [
-
+             
+            // Here, enable the rules you want to test and disable the ones you want to exclude:
+             
 		 	//********************************************
 		 	//*** START OF TTv5-Friendly and verified ****
 		 	//********************************************
