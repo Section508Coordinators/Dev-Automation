@@ -12,8 +12,8 @@ Go to the [GitHub Playbook-Automation published page](https://section508coordina
 This project is meant to demonstrate multiple ways in which developers can use and combine various lighthouse test engine functionality using different configurations as follows:
 
 - **URL Scanning**: Using the "URLs:" option, cite the identity and number of URLs to test against from within the script itself or use the sitemap switch (-s)  to use a sitemap.xml file of URLs to test against.
-- **Individual rule selection**: The underlying ruleset used by lighthouse is the Deque axe-core ruleset.  If you don't want to use all axe-core rules usually used by lighthouse but would rather use a subset of preferred rules, you do this by using the "onlyAudits:" configuration option and then cite the rules to be used.
-- **HTML Reporting/Scoring**: Examples of writing test results to the command window or an HTML report. Also, extending the simple HTML report offered by the open source tool to provide a basic scoring model for mass scan results. This is done by using the HTML report switch (-h).
+- **Individual rule selection**: The underlying ruleset used by lighthouse is the Deque axe-core ruleset.  If you don't want to use all axe-core rules usually used by lighthouse but would rather use a subset of preferred rules, you do this by using the "skipAudits:" configuration option to exclude the rule(s) to be used.
+- **HTML Reporting/Scoring**: Examples of writing accessibility test results to an HTML report that can be configured with custom features to meet your organization's needs - such as a list of failed rules and  a basic scoring model for mass scan results. This is done by using the HTML report switch (-h).
 
 ---
 
