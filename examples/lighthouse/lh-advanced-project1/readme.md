@@ -98,7 +98,7 @@ Options:
 
 In a git bash window, run the following command from the /bin/ directory:
 
-`node custom-lighthouse.js -s http://coc.kciprojects.com/xml/kci2-sitemap.xml -h --HTML_LH-Report -x '.*(pdf|jpg|png)$'`
+`node custom-lighthouse.js -s https://section508coordinators.github.io/Dev-Automation/sitemaps/test-sitemap.xml -h HTML_LH-Report -x '.*(pdf|jpg|png)$'`
 
 This will run an accessibility test against a test web site of multiple web pages and create a folder with the name "***--HTML_LH-Report***" within the  "\bin\\" folder. Opening the index.html of that report will present you with test results and scoring.
 
@@ -116,10 +116,10 @@ Instances where the syntax calls for a sitemap.xml file containing URLs to test,
   - <u>Syntax</u>: `node 02-custom-lighthouse.js -h <HTML_report_name>`
 - **Script: 03-custom-lighthouse.js**
   - <u>Description</u>: Executes tests against URLs in a sitemap file and runs all default lighthouse (axe-core) rules. You must provide a pointer to a sitemap file or use the test sitemap file in the syntax example.
-  - <u>Syntax</u>: `node 03-custom-lighthouse -s https://section508coordinators.github.io/Dev-Automation/sitemaps/test-sitemap.xml -h 03-HTML_Report -x '.*(pdf|jpg|png)$' `
+  - <u>Syntax</u>: `node 03-custom-lighthouse -s https://section508coordinators.github.io/Dev-Automation/sitemaps/test-sitemap.xml -h <HTML_report_name> -x '.*(pdf|jpg|png)$' `
 - **Script: 04-custom-lighthouse.js**
   - <u>Description</u>: Executes tests against URLs in a sitemap file and runs only preferred lighthouse (axe-core) rules that are Trusted Tester friendly. You must provide a pointer to a sitemap file or use the test sitemap file in the syntax example.
-  - <u>Syntax</u>: `node 04-custom-lighthouse -s https://section508coordinators.github.io/Dev-Automation/sitemaps/test-sitemap.xml -h 04-HTML_Report -x '.*(pdf|jpg|png)$'`
+  - <u>Syntax</u>: `node 04-custom-lighthouse -s https://section508coordinators.github.io/Dev-Automation/sitemaps/test-sitemap.xml -h <HTML_report_name> -x '.*(pdf|jpg|png)$'`
 
 ---
 
@@ -129,5 +129,5 @@ For more information on lighthouse syntax, go here: https://github.com/GoogleChr
 
 ---
 
-02/20/2021 | 08:55p
+02/21/2021 | 03:03p
 
