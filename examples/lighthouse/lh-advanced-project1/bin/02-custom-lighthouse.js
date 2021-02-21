@@ -93,7 +93,7 @@ const config = {
 					'aria-tooltip-name',
 					'aria-treeitem-name',
 					'aria-valid-attr',
-					'aria-valid-attr-value',
+//					'aria-valid-attr-value',
 					'bypass',
 					'custom-controls-labels',
 					'custom-controls-roles',
