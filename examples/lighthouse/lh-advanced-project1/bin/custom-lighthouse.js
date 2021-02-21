@@ -3,13 +3,13 @@
 
 //
 //02/20/2021
-//02-custom-lighthouse.js
+//custom-lighthouse.js
 //----------------------------
 //******* DESCRIPTION ********
 //----------------------------
 //[1]-Runs tests against URLs embedded in this script file
-//[2]-Only runs tests against preferred lighthouse (axe-core) rules that are
-//    the most Trusted Tester friendly.
+//[2]-Only tests against preferred axe-core rules that are the most 
+//    Trusted Tester friendly
 //
 //==================================================================
 

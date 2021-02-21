@@ -3,12 +3,12 @@
 
 //
 //02/20/2021
-//02-custom-lighthouse.js
+//04-custom-lighthouse.js
 //----------------------------
 //******* DESCRIPTION ********
 //----------------------------
-//[1]-Runs tests against URLs embedded in this script file
-//[2]-Only runs tests against preferred lighthouse (axe-core) rules that are
+//[1]-Runs tests against URLs cited in an external sitemap.xml file
+//[2]-Only run tests against preferred lighthouse (axe-core) rules that are
 //    the most Trusted Tester friendly.
 //
 //==================================================================
@@ -54,22 +54,7 @@ const urls = globby.sync(commander.args, {
 
 const config = {
 	urls: [
-
-		// Hard-code URLs for testing here. Note that if this script is run
-		// with a sitemap.xml switch, the URLs in this hard-coded list below
-		// will be added to the list of URLs cited in the sitemap.xml file for
-		// testing:
-
-		"https://www.hhs.gov/az/a/index.html",
-		"https://www.hhs.gov/about/index.html",
-		"https://www.hhs.gov/programs/index.html",
-		"https://www.hhs.gov/regulations/index.html",
-		"https://www.hhs.gov/about/news/coronavirus/index.html",
-		"https://www.hhs.gov/opioids/",
-		"https://www.hhs.gov/surgeongeneral/reports-and-publications/tobacco/index.html",
-		"https://www.hhs.gov/healthcare/index.html",
-		"https://www.hhs.gov/grants/index.html",
-		"https://www.hhs.gov/health.gov/our-work/physical-activity"
+		//no static embedded URLs.
 		],
 
 	lighthouse: {

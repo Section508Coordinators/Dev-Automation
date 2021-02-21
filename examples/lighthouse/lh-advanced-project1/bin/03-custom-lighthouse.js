@@ -3,13 +3,12 @@
 
 //
 //02/20/2021
-//02-custom-lighthouse.js
+//03-custom-lighthouse.js
 //----------------------------
 //******* DESCRIPTION ********
 //----------------------------
-//[1]-Runs tests against URLs embedded in this script file
-//[2]-Only runs tests against preferred lighthouse (axe-core) rules that are
-//    the most Trusted Tester friendly.
+//[1]-Runs tests against URLs cited in a sitemap.xml file
+//[2]-Runs tests against all default lighthouse (axe-core) rules 
 //
 //==================================================================
 
@@ -54,12 +53,12 @@ const urls = globby.sync(commander.args, {
 
 const config = {
 	urls: [
-
+		/*
 		// Hard-code URLs for testing here. Note that if this script is run
 		// with a sitemap.xml switch, the URLs in this hard-coded list below
 		// will be added to the list of URLs cited in the sitemap.xml file for
 		// testing:
-
+		/*
 		"https://www.hhs.gov/az/a/index.html",
 		"https://www.hhs.gov/about/index.html",
 		"https://www.hhs.gov/programs/index.html",
@@ -70,54 +69,15 @@ const config = {
 		"https://www.hhs.gov/healthcare/index.html",
 		"https://www.hhs.gov/grants/index.html",
 		"https://www.hhs.gov/health.gov/our-work/physical-activity"
+		*/
 		],
-
+		
 	lighthouse: {
 		config: {
 			// desktop accessibility scan
 			extends: 'lighthouse:default',
 			settings: {
-				onlyCategories: ['accessibility'],
-				skipAudits: [
-					'accesskeys',
-					'aria-allowed-attr',
-					'aria-command-name',
-					'aria-hidden-body',
-					'aria-meter-name',
-					'aria-progressbar-name',
-					'aria-required-attr',
-					'aria-required-children',
-					'aria-required-parent',
-					'aria-roles',
-					'aria-toggle-field-name',
-					'aria-tooltip-name',
-					'aria-treeitem-name',
-					'aria-valid-attr',
-					'aria-valid-attr-value',
-					'bypass',
-					'custom-controls-labels',
-					'custom-controls-roles',
-					'definition-list',
-					'dlitem',
-					'duplicate-id-active',
-					'duplicate-id-aria',
-					'focusable-controls',
-					'focus-traps',
-					'heading-order',
-					'interactive-element-affordance',
-					'logical-tab-order',
-					'managed-focus',
-					'meta-refresh',
-					'meta-viewport',
-					'object-alt',
-					'offscreen-content-hidden',
-					'tabindex',
-					'th-has-data-cells',
-					'use-landmarks',
-					'video-caption',
-					'visual-order-follows-dom'
-					],
-				
+				onlyCategories: ['accessibility'],				
 				maxWaitForFcp: 15 * 1000,
 				maxWaitForLoad: 35 * 1000,
 				emulatedFormFactor: 'desktop',
