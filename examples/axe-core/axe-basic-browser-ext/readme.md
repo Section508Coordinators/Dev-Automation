@@ -12,6 +12,14 @@ The Axe web browser extension tool is a free tool from Deque Systems that offers
 
 The tool currently integrates with Chrome, Firefox, and Edge with extended features being available via the Chrome extension.
 
+**Note:** Deque also offers an upgrade to an axe beta extension tool. In addition to automated testing, this tools adds additional capabilities such as:
+
+- Intelligent Guided Testing
+- Ability to test a part of a page
+- Ability to save & export results
+
+This upgrade requires registration. You can find out more about this version [at the Deque web site](https://www.deque.com/axe/beta/?utm_source=dequeuniversity&utm_medium=referral&utm_campaign=axebeta_domore).
+
 ---
 
 ## Technology stack
@@ -45,4 +53,4 @@ See below for more information and basic usage:
 
 ---
 
-02/19/2021 | 10:`08a`
+02/21/2021 | 05:26a
