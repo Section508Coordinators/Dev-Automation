@@ -84,7 +84,7 @@ Options:
 
 In a git bash window, run the following command from the /bin/ directory:
 
-`node custom-axe -s https://section508coordinators.github.io/Dev-Automation/sitemaps/hhs-mini-sitemap.xml -h HTML_Report -x '.*(pdf|jpg|png)$'`
+`node custom-axe -s https://section508coordinators.github.io/Dev-Automation/sitemaps/test-sitemap.xml -h HTML_Report -x '.*(pdf|jpg|png)$'`
 
 This will run an accessibility test against a site map file of a small number of URLs, using the default axe-core rules, and create a folder with the name "***HTML_Report***" within the  "\bin\\" folder. Opening the index.html of that report will present you with test results and scoring.
 
@@ -102,10 +102,10 @@ Instances where the syntax calls for a sitemap.xml file containing URLs to test,
   - <u>Syntax</u>: `node 02-custom-axe.js -h <HTML_report_name>`
 - **Script: 03-custom-axe.js**
   - <u>Description</u>: Executes tests against URLs in a sitemap file and runs all default axe-core rules. You must provide a pointer to a sitemap file or use the test sitemap file in the syntax example.
-  - <u>Syntax</u>: `node 03-custom-axe -s https://section508coordinators.github.io/Dev-Automation/sitemaps/hhs-mini-sitemap.xml -h <HTML_report_name> -x '.*(pdf|jpg|png)$' `
+  - <u>Syntax</u>: `node 03-custom-axe -s https://section508coordinators.github.io/Dev-Automation/sitemaps/test-sitemap.xml -h 03-HTML_Report -x '.*(pdf|jpg|png)$' `
 - **Script: 04-custom-axe.js**
   - <u>Description</u>: Executes tests against URLs in a sitemap file and runs only preferred axe-core rules that are Trusted tester friendly. You must provide a pointer to a sitemap file or use the test sitemap file in the syntax example.
-  - <u>Syntax</u>: `node 04-custom-axe -s https://section508coordinators.github.io/Dev-Automation/sitemaps/hhs-mini-sitemap.xml -h <HTML_report_name> -x '.*(pdf|jpg|png)$'`
+  - <u>Syntax</u>: `node 04-custom-axe -s https://section508coordinators.github.io/Dev-Automation/sitemaps/test-sitemap.xml -h 04-HTML_Report -x '.*(pdf|jpg|png)$'`
 
 <hr>
 
@@ -115,6 +115,6 @@ More comprehensive guidance on the axe-core engine can be found in the [Axe Java
 
 ---
 
-02/19/2021 | 03:23p
+02/20/2021 | 07:09p
 
 
