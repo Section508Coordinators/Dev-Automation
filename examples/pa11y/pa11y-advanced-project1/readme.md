@@ -12,10 +12,10 @@ This project is meant to demonstrate multiple ways in which developers can use a
 
 - **URL Scanning**: Using the "URLs:" option, cite the identity and number of URLs to test against from within the script itself or use the sitemap switch (-s)  to use a sitemap.xml file of URLs to test against.
 - **Accessibility Standards**: Using the "standard:" option, indicate which accessibility standard rules to use for testing.
-- **Ruleset**: Using the "runners:" option, indicate which vendor ruleset you wish to use. Pa11y allows you to select one or combine multiple rulesets. Pa11y currently supports axe-core, HTML CodeSniffer, and custom rulesets created to match the Pa11y engine requirements.
+- **Ruleset**: Using the "runners:" option, indicate which vendor ruleset you wish to use. Pa11y allows you to select one or combine multiple rulesets. Pa11y currently supports axe-core, HTML CodeSniffer, and any other custom ruleset created to match the Pa11y engine requirements.
 - **Individual rule selection**: By default, pa11y will use all rules in an identified ruleset for testing. If you don't want Pa11y to use all rules but rather use a subset of preferred rules, you do this by citing which rules you want pa11y to ***ignore***.  You do this in Pa11y by using the "ignore:" configuration option. 
 
-- **HTML Reporting/Scoring**: Examples of writing test results to the command window or an HTML report. Also, extending the simple HTML report offered by the open source tool to provide a basic scoring model for mass scan results. This is done by using the HTML report switch (-h).
+- **HTML Reporting/Scoring**: using the HTML report switch (-h), this example provides summaries of rules that fail accessibility and  a simple scoring model for mass scan results. 
 
 ---
 
@@ -90,36 +90,59 @@ Options:
 
 In a git bash window, run the following command from the /bin/ directory:
 
-`node custom-pa11y.js -s http://coc.kciprojects.com/xml/kci-sitemap.xml -h --HTML_Report -x '.*(pdf|jpg|png)$'`
+`node custom-pa11y.js -s https://section508coordinators.github.io/Dev-Automation/sitemaps/test-sitemap.xml -h HTML_Report -x '.*(pdf|jpg|png)$'`
 
-This will run an accessibility test against a test web site of multiple web pages and create a folder with the name "***--HTML_Report***" within the  "\bin\\" folder. Opening the index.html of that report will present you with test results and scoring.
+This will run an accessibility test against a test web site of multiple web pages and create a folder with the name "***HTML_Report***" within the  "\bin\\" folder. Opening the index.html of that report will present you with test results and scoring.
 
 ## Pre-configured examples
 
-The /bin/ directory contains multiple "custom-pa11y" files that showcase different features via their configuration settings as follows:
+The ""\bin\\" directory contains multiple "custom-pa11y" files that showcase different features via their configuration settings as follows:
 
-- **Script 1 (01-custom-pa11y.js)**: 
-  Use the following syntax for this script:`node 01-custom-pa11y.js -h --HTML_Report -x '.*(pdf|jpg|png)$'`This script presents the following:
-  - Uses the "runners:" option to specify the HTML CodeSniffer ruleset to use for testing. No rules are ignored, so testing is done using the full range of rules.
-  - Uses the "urls:" option and tests against 5 URLs that are hard-coded inside the script, as opposed to pointing to a sitemap file.
-  - Uses the "standards:" option, this example uses the WCAG AA rules for HTML CodeSniffer. The HTML CodeSniffer ruleset is set via the "runners:" option.
-  - Finally in the absence of the -h switch on the command, this example writes the test results to the *command window*.  
-- **Script 2 (02-custom-pa11y.js):** 
-  Use the following syntax for this script:`node 02-custom-pa11y.js`This script presents the following:
-  - Uses the "runners:" option to specify the axe-core ruleset to use for testing. No rules are ignored, so testing is done using the full range of rules.
-  - Uses the "urls:" option and tests against 1 URL that is hard-coded inside the script, as opposed to pointing to a sitemap file.
-  - Finally in the absence of the -h switch on the command, this example writes the test results to the *command window*. 
-- **Script 3 (03-custom-pa11y.js):** 
-  Use the following syntax for this script:`node 03-custom-pa11y.js -s http://coc.kciprojects.com/xml/kci-sitemap.xml -h --HTML_Report -x '.*(pdf|jpg|png)$' `This script presents the following:
-  - Uses the "runners:" option to specify both the axe-core and HTML CodeSniffer rulesets to be used for testing. No rules are ignored, so testing is done using the full range of all rules from both rulesets.
-  - Uses the "-s" switch to override the hard coded URLs within the script but rather use a sitemap.xml file to  specify the URLs to test with.
-  - Finally using the -h switch on the command, this example writes the test results to an HTML report as opposed to the *command window*. Reports will write to the "/bin/" folder using the report name specified in the command switch ("HTML_Report").
-- **Script 4 (04-custom-pa11y.js):** 
-  Use the following syntax for this script:`node 04-custom-pa11y.js -s http://coc.kciprojects.com/xml/kci-sitemap.xml -h --HTML_Custom-Rules-Report -x '.*(pdf|jpg|png)$' `This script presents the following:
-  - Uses the "runners:" option to specify both the axe-core and HTML CodeSniffer rulesets to be used for testing. 
-  - Uses the "ignore" option to specific rules to ignore for both rulesets specififed
-  - Uses the "-s" switch to override the hard coded URLs within the script but rather use a sitemap.xml file to  specify the URLs to test with.
-  - Using the -h switch on the command, this example writes the test results to an HTML report as opposed to the *command window*. Reports will write to the "/bin/" folder using the report name specified in the command switch ("HTML_Custom-Rules-Report").
+- **Script : 01-custom-pa11y.js**: 
+  
+  - <u>Description</u>: This script does the following:
+  
+    - Uses the "runners:" option to specify use of the *HTML CodeSniffer* ruleset for testing. No rules are ignored, so testing is done using the full range of rules. 
+    - Uses the "urls:" option and tests against 10 embedded URLs that are hard-coded inside the script, as opposed to pointing to an external sitemap file for URLs to test. 
+    - Uses the "standards:" option configured to use WCAG AA rules for HTML CodeSniffer. The HTML CodeSniffer ruleset is set via the "runners:" option as described above.
+    - In the absence of the -h switch on the command, this example writes the test results to the *command window* for each URL tested.  
+  
+  - <u>Syntax</u>: `node 01-custom-pa11y.js`
+  
+    
+  
+- **Script: 02-custom-pa11y.js:** 
+  
+  - <u>Description</u>: This script does the following:
+    
+    - Uses the "runners:" option to specify the *axe-core* ruleset to use for testing. No rules are ignored, so testing is done using the full range of rules.
+    - Uses the "urls:" option and tests against the 10 embedded URLs that are hard-coded inside the script, as opposed to pointing to an external sitemap file.
+    - In the absence of the -h switch on the command, this example writes the test results to the *command window* for each URL tested. 
+    
+  - <u>Syntax</u>: `node 02-custom-pa11y.js`
+  
+    
+  
+- **Script 3: 03-custom-pa11y.js:** 
+
+  - <u>Description</u>: This script does the following:
+
+    - Uses the "runners:" option to specify both the *axe-core* and the *HTML CodeSniffer* rulesets to be used for testing. No rules are ignored for either ruleset, so testing is done using the full range of all rules from both rulesets.
+    - Uses the "-s" switch to identify an external sitemap.xml file containing the URLs with which to test.
+    - Using the -h switch on the command, this example writes the test results to an HTML report as opposed to the *command window*. Reports will write to the "\bin\" folder using the report name specified in the command switch shown in the syntax example below.
+
+  - <u>Syntax</u>: Use the following syntax for this script:`node 03-custom-pa11y.js -s https://section508coordinators.github.io/Dev-Automation/sitemaps/test-sitemap.xml -h HTML_Report -x '.*(pdf|jpg|png)$' `This script presents the following:
+
+    
+
+- **Script 4:  04-custom-pa11y.js:** 
+
+  - <u>Description</u>: This script does the following:
+    - Uses the "runners:" option to specify both the *axe-core* and the *HTML CodeSniffer* rulesets to be used for testing. 
+    - Uses the "ignore:" option to specify rules to ignore for both rulesets so as to use preferred rules for testing
+    - Uses the "-s" switch to identify an external sitemap.xml file containing the URLs with which to test.
+    - Using the -h switch on the command, this example writes the test results to an HTML report as opposed to the *command window*. Reports will write to the "\bin\\" folder using the report name specified in the command switch shown in the syntax example below.
+  - <u>Syntax</u>: Use the following syntax for this script:`node 04-custom-pa11y.js -s https://section508coordinators.github.io/Dev-Automation/sitemaps/test-sitemap.xml -h HTML_Report -x '.*(pdf|jpg|png)$' `
 
 ---
 
@@ -129,4 +152,4 @@ For more information on syntax for using this custom example, see the pa11y-ci s
 
 ---
 
-02/19/2021 | 10:35a
+02/22/2021 | 04:28a

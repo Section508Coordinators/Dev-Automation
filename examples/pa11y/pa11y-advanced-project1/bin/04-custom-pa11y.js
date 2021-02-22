@@ -1,6 +1,27 @@
 #!/usr/bin/env node
 'use strict';
 
+//
+// 02/22/2021
+// 04-custom-pa11y.js
+//
+// This script does the following:
+// - Uses the "runners:" option to specify both the axe-core and the 
+//   HTML CodeSniffer* rulesets to be used for testing. 
+//
+// - Uses the "ignore" option to specify rules to ignore for both rulesets 
+//   so as to use preferred rules for testing
+//
+// - Uses the "-s" switch to identify an external sitemap.xml file containing 
+//   the URLs with which to test.
+//
+// - Using the -h switch on the command, this example writes the test results 
+//   to an HTML report as opposed to the *command window*. Reports will write 
+//   to the "\bin\" folder using the report name specified in the command switch 
+//   shown in the syntax example on the GitHub site.
+//=============================================================================================
+
+
 const pa11yCi = require('pa11y-ci');
 const customPa11y = require('..');
 const globby = require('globby');
@@ -54,13 +75,8 @@ const urls = globby.sync(commander.args, {
 
 const config = {
 	urls: [
-	
-		"https://section508coordinators.github.io/BaselineTestPages2/test-cases/TC1005C001.html",
-		"https://section508coordinators.github.io/BaselineTestPages2/test-cases/TC1005C002.html",
-		"https://section508coordinators.github.io/BaselineTestPages2/test-cases/TC1005C003.html",
-		"https://section508coordinators.github.io/BaselineTestPages2/test-cases/TC1005C004.html",
-		"https://section508coordinators.github.io/BaselineTestPages2/test-cases/TC1005C007.html"
-	],
+
+		],
 
 	defaults: {
 		log: (commander.json || commander.htmlReport) ? undefined : console,
@@ -81,7 +97,7 @@ const config = {
 			'aria-roledescription',
 			'aria-roles',
 			'aria-valid-attr',
-			'aria-valid-attr-value',
+//			'aria-valid-attr-value',
 			'autocomplete-valid',
 			'avoid-inline-spacing',
 			'blink',

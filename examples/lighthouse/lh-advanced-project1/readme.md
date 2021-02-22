@@ -100,11 +100,11 @@ In a git bash window, run the following command from the /bin/ directory:
 
 `node custom-lighthouse.js -s https://section508coordinators.github.io/Dev-Automation/sitemaps/test-sitemap.xml -h HTML_LH-Report -x '.*(pdf|jpg|png)$'`
 
-This will run an accessibility test against a test web site of multiple web pages and create a folder with the name "***--HTML_LH-Report***" within the  "\bin\\" folder. Opening the index.html of that report will present you with test results and scoring.
+This will run an accessibility test against a test web site of multiple web pages and create a folder with the name "***HTML_LH-Report***" within the  "\bin\\" folder. Opening the index.html of that report will present you with test results and scoring.
 
 ## Pre-configured examples
 
-The /bin/ directory contains multiple "custom-lighthouse" script files that showcase different functionality and features via their configuration settings as shown below. 
+The "\bin\\" directory contains multiple "custom-lighthouse" script files that showcase different functionality and features via their configuration settings as shown below. 
 
 Instances where the syntax calls for a sitemap.xml file containing URLs to test, you can use the test sitemap file below in the syntax example, or point to your own sitemap.xml file:
 
