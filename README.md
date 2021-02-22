@@ -21,7 +21,7 @@ Given the range of complexity of tools and range of testing approach possible, t
 
 ## Automated tools and rulesets
 
-Some of the more powerful automated tools presented on this GitHub resource allow the user to pick and choose the individual, underlying rules used for testing. When automated tools have this feature, the user can exercise much more control over the quality and relevance of test results. Review the page [Automated tools and rulesets](https://github.com/Section508Coordinators/Dev-Automation/tree/master/rulesets) for automated rules reviewed and recommended by OAST as being closer in alignment with Trusted Tester methodology.
+Some of the more powerful automated tools presented on this GitHub resource allow the user to pick and choose the individual, underlying rules used for testing. When automated tools have this feature, the user can exercise much more control over the quality and relevance of test results. Review the page [Automated tools and rulesets](/rulesets) for automated rules reviewed and recommended by OAST as being closer in alignment with Trusted Tester methodology.
 
 ## Using the examples
 
