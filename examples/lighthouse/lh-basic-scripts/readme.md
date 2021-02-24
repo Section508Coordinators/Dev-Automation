@@ -49,27 +49,7 @@ In a Git Bash window, run: `node <script_name>`
 
 ### Example scripts
 
-
-The scripts will present different scenarios based on their internal configurations as follows:
-
-- <u>*Script 1*</u>:`01_lighthouse_BasicScript.js`: This script will:
-
-  - Runs only the audit (test) for 'accessibility' against one URL and all audits (rules)
-  - launches a visual instance of Chrome briefly while testing the page then closes 
-  - Writes an HTML report to your local machine file system.
-
-- <u>*Script 2*</u>:`02_lighthouse_BasicScript.js`: This script will:
-
-  - Runs only the audit (test) for 'accessibility' against one URL and all audits (rules)
-  - launches a headless instance of Chrome and sends no results to command window
-
-- <u>*Script 3*</u>:`03_lighthouse_BasicScript.js`: This script will:
-
-  - Runs only the audit (test) for 'accessibility' against a single URL
-
-  - Only tests against preferred audits (rules) favorable to TTv5
-
-  - launches a headless instance of Chrome and sends no results to command window
+- [The scripts in this section are in the process of being updated.  Check back later for updated content.]
 
 ---
 
