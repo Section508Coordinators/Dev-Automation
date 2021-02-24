@@ -58,9 +58,8 @@ In a Git Bash window, run: `node <script_name>`
 For more information on google lighthouse scripting, go here
 
 - Programmatic usage (scripting): https://github.com/GoogleChrome/lighthouse/blob/master/docs/readme.md#using-programmatically
-- Programmatic use: https://github.com/GoogleChrome/lighthouse/blob/HEAD/docs/readme.md#using-programmatically
 - Lighthouse configuration: https://github.com/GoogleChrome/lighthouse/blob/HEAD/docs/
 
 ---
 
-02/19/2021 | 10:33a
+02/24/2021 | 08:28a
