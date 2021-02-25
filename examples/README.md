@@ -1,6 +1,7 @@
 # Test automation examples
 
 <hr>
+[GitHub Home](/)
 
 Go to the [GitHub Playbook-Automation published page](https://section508coordinators.github.io/Dev-Automation/)
 
