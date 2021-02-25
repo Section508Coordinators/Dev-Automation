@@ -36,7 +36,7 @@ Perform the following steps to setup your environment to run the examples
 1. Install Chrome desktop
 2. Install Git 
 3. Install Node
-4. Install lighthouse: `npm install -g lighthouse`
+4. Install lighthouse: `npm install`
 5. Reboot
 
 ---
