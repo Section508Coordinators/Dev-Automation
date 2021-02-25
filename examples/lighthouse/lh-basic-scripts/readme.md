@@ -33,11 +33,11 @@ These examples use the following technology stack:
 
 Perform the following steps to setup your environment to run the examples
 
-2. Install Chrome desktop
+1. Install Chrome desktop
 2. Install Git 
-2. Install Node
-2. Install lighthouse: `npm install -g lighthouse`
-2. Reboot
+3. Install Node
+4. Install lighthouse: `npm install -g lighthouse`
+5. Reboot
 
 ---
 
@@ -49,7 +49,23 @@ In a Git Bash window, run: `node <script_name>`
 
 ### Example scripts
 
-- [The scripts in this section are in the process of being updated.  Check back later for updated content.]
+The scripts will present different scenarios based on their internal configurations as follows:
+
+- <u>*Script 1*</u>:`01_lighthouse_BasicScript.js`: This script:
+
+  - Runs only the audit (test) for 'accessibility' against one URL and all audits (rules)
+
+  - Writes an HTML report to your local machine file system.
+
+  - Writes message to the console indicating the processing is complete and the accessibility score of the page tested.
+
+    
+
+- <u>*Script 2*</u>:`02_lighthouse_BasicScript.js`: This script:
+
+  - Runs only the audit (test) for 'accessibility' against one URL and only against preferred audits (rules)
+  - Writes an HTML report to your local machine file system.
+  - Writes message to the console indicating the processing is complete and the accessibility score of the page tested.
 
 ---
 
@@ -62,4 +78,4 @@ For more information on google lighthouse scripting, go here
 
 ---
 
-02/24/2021 | 08:28a
+02/25/2021 | 12:22a
