@@ -1,0 +1,7 @@
+{
+  "dependencies": {
+    "fs": "^0.0.1-security",
+    "lighthouse": "^7.1.0",
+    "node": "^15.8.0"
+  }
+}
