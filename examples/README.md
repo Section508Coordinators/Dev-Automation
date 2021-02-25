@@ -2,7 +2,7 @@
 
 ---
 
-[GitHub Home](https://github.com/Section508Coordinators/Dev-Automation/)
+[GitHub Home](/Dev-Automation/)
 
 Go to the [GitHub Playbook-Automation published page](https://section508coordinators.github.io/Dev-Automation/)
 
