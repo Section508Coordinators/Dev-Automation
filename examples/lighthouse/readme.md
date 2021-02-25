@@ -8,11 +8,11 @@ Go to the [GitHub Playbook-Automation published page](https://section508coordina
 
 ### Basic examples
 
- 1. [Browser extensions](https://github.com/Section508Coordinators/Dev-Automation/tree/master/examples/lighthouse/lh-basic-browser-ext)
+ 1. [Browser extensions](/examples/lighthouse/lh-basic-browser-ext)
 
- 2. [Command line interface (CLI)](https://github.com/Section508Coordinators/Dev-Automation/tree/master/examples/lighthouse/lh-basic-cli)
+ 2. [Command line interface (CLI)](/examples/lighthouse/lh-basic-cli)
 
- 3. [Scripting](https://github.com/Section508Coordinators/Dev-Automation/tree/master/examples/lighthouse/lh-basic-scripts)
+ 3. [Scripting](/examples/lighthouse/lh-basic-scripts)
 
 ### Advanced examples
 
@@ -20,4 +20,4 @@ Go to the [GitHub Playbook-Automation published page](https://section508coordina
         
 ---
 
-02/19/2021 | 10:28a
+02/25/2021 | 01:11a

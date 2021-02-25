@@ -9,11 +9,11 @@ Go to the [GitHub Playbook-Automation published page](https://section508coordina
 
 ### Basic examples
 
- 1. [Browser extensions](https://github.com/Section508Coordinators/Dev-Automation/tree/master/examples/axe-core/axe-basic-browser-ext)
+ 1. [Browser extensions](/examples/axe-core/axe-basic-browser-ext)
 
- 2. [Command line interface (CLI)](https://github.com/Section508Coordinators/Dev-Automation/tree/master/examples/axe-core/axe-basic-cli)
+ 2. [Command line interface (CLI)](/examples/axe-core/axe-basic-cli)
 
- 3. [Scripting](https://github.com/Section508Coordinators/Dev-Automation/tree/master/examples/axe-core/axe-basic-scripts)
+ 3. [Scripting](/examples/axe-core/axe-basic-scripts)
         
 ### Advanced examples
 
