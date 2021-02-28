@@ -69,7 +69,7 @@ The scripts will present different scenarios based on their internal configurati
     
 - *<u>Script 3</u>*: `node 03_pa11y_BasicScript.js`  This script will:
   
-  - Test an HTML page **located on the local PC file system**
+  - Test an HTML page **located on the local PC file system**. Note that to run this script unmodified, you will need to create a folder on the local drive of the machine running the script of C:\_test\" and in that folder you must copy the file "*TC0813C001.html*" that is in this scripts folder. Otherwise, modify the  variable "vWebSite" in this script to point to where, on the local file system, the *TC0813C001.html* file resides.
   - suppress unwanted testing rules, such as HTML Code Sniffer Notices, as well as any other test rules not considered TTv5 friendly by using the "ignore:" option in the code.
   - Run select rules from the axe-core ruleset only via the "runners:" option.
   - Write test results to the command window
@@ -86,4 +86,4 @@ For more information on pa11y usage and syntax, go here: https://github.com/pa11
 
 ---
 
-02/19/2021 | 10:37a
+02/28/2021 | 05:08p
