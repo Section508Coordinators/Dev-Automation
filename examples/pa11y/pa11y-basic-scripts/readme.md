@@ -45,18 +45,34 @@ Perform the following steps to setup your environment to run the examples
 
 The scripts will present different scenarios based on their internal configurations as follows:
 
-- <u>*Script 1*</u>:`01_pa11y_BasicScript.js`: This script will:
+- <u>*Script 1*</u>:`node 01_pa11y_BasicScript.js`: This script will:
+  
   - test a server hosted web page
+  
   - suppress unwanted testing rules, such as HTML Code Sniffer ***Notices***, as well as any other test rules not considered TTv5 friendly by using the "ignore:" option in the code.
+  
   - Will run against the HTML CodeSniffer ruleset only by disabling the "runners:" option. Not specifying a runner causes pa11y to use the HTML CodeSniffer ruleset by default.
-- <u>*Script 2*</u>: `02_pa11y_BasicScript.js`  This script will:
+  
+  - Write test results to the command window
+  
+    
+- <u>*Script 2*</u>: `node 02_pa11y_BasicScript.js`  This script will:
+  
   - Test a server hosted web page
+  
   - suppress unwanted testing rules, such as HTML Code Sniffer Notices, as well as any other test rules not considered TTv5 friendly by using the "ignore:" option in the code.
+  
   - Will run select rules from both the axe-core and HTML CodeSniffer rulesets via the "runners:" option.
-- *<u>Script 3</u>*: `03_pa11y_BasicScript.js`  This script will:
-  - Test an HTML page located on a local PC file system
+  
+  - Write test results to the command window
+  
+    
+- *<u>Script 3</u>*: `node 03_pa11y_BasicScript.js`  This script will:
+  
+  - Test an HTML page **located on the local PC file system**
   - suppress unwanted testing rules, such as HTML Code Sniffer Notices, as well as any other test rules not considered TTv5 friendly by using the "ignore:" option in the code.
-  - run select rules from the axe-core ruleset only via the "runners:" option.
+  - Run select rules from the axe-core ruleset only via the "runners:" option.
+  - Write test results to the command window
 
 ## Usage/Syntax
 
