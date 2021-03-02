@@ -40,15 +40,11 @@ The following links provide examples for various test engines and examples:
   * ***Axe core***
     * Basic examples
         1. Browser extensions: (/examples/axe-core/axe-basic-browser-ext)
-<<<<<<< HEAD
-=======
-        2. [Browser extensions](./examples/axe-core/axe-basic-browser-ext)
->>>>>>> origin/master
-        3. Command line interface (CLI): (/examples/axe-core/axe-basic-cli)
-        4. Scripting: (/examples/axe-core/axe-basic-scripts)
+        2. Command line interface (CLI): (/examples/axe-core/axe-basic-cli)
+        3. cripting: (/examples/axe-core/axe-basic-scripts)
     * Advanced examples
         1. Axe-core custom project 1 (/examples/axe-core/axe-advanced-project1)
-    
+
   * ***Pa11y test engine***
     * Basic examples
         1. Windows UI: (/examples/pa11y/pa11y-basic-win-ui)
