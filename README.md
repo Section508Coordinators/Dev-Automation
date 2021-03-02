@@ -40,7 +40,7 @@ The following links provide examples for various test engines and examples:
   * ***Axe core***
     * Basic examples
         1. Browser extensions: (/examples/axe-core/axe-basic-browser-ext)
-        2. [Browser extensions](../../examples/axe-core/axe-basic-browser-ext)
+        2. [Browser extensions](./examples/axe-core/axe-basic-browser-ext)
         3. Command line interface (CLI): (/examples/axe-core/axe-basic-cli)
         4. Scripting: (/examples/axe-core/axe-basic-scripts)
     * Advanced examples
