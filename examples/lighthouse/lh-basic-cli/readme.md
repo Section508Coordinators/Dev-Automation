@@ -26,7 +26,7 @@ Also writes out the full `json` report for each site and optionally an `html` re
 
 This tool allows the user to pick and choose the individual, underlying rules for testing. Not all automated tool rulesets on the market perfectly align with the pass/fail success criteria as expressed by the DHS standard. However upon analysis, DHS OAST has identified specific rules, for specific vendor accessibility ruleset libraries, that provide value in identifying accessibility to the DHS Standard.
 
-Those analyses of vendor accessibility rulesets and the OAST ruleset recommendations reside in [rulesets folder](/rulesets) on this site.
+Those analyses of vendor accessibility rulesets and the OAST ruleset recommendations reside in rulesets folder (/rulesets) on this site.
 
 ---
 
@@ -289,5 +289,5 @@ For more information on Lighthouse batch, see: https://www.npmjs.com/package/lig
 
 ---
 
-02/19/2021 | 10:32a
+03/02/2021 | 05:05p
 

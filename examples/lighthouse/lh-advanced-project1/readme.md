@@ -24,7 +24,7 @@ This project is meant to demonstrate multiple ways in which developers can use a
 
 This tool allows the user to pick and choose the individual, underlying rules for testing. Not all automated tool rulesets on the market perfectly align with the pass/fail success criteria as expressed by the DHS standard. However upon analysis, DHS OAST has identified specific rules, for specific vendor accessibility ruleset libraries, that provide value in identifying accessibility to the DHS Standard.
 
-Those analyses of vendor accessibility rulesets and the OAST ruleset recommendations reside in [rulesets folder](/rulesets) on this site.
+Those analyses of vendor accessibility rulesets and the OAST ruleset recommendations reside in rulesets folder (/rulesets) on this site.
 
 #### Lighthouse and axe-core rulesets
 
@@ -35,9 +35,9 @@ Note that Deque axe-core open-source rules are the underlying rules for lighthou
 To see the axe-core rules exposed via Lighthouse testing:
 
 - Issue the command: `lighthouse --list-all-audits` and then note all listings with a preface of "**accessibility/**".
-- Reference the Lighthouse section of the [rulesets folder](/rulesets) on this site for a listing of those rules.
+- Reference the Lighthouse section of the rulesets folder on this site for a listing of those rules.
 
-To access the full range of axe-core rules, use the the [axe-core test tools](/examples/axe-core/) on this site.
+To access the full range of axe-core rules, use the the axe-core test tools on this site.
 
 ---
 
@@ -129,5 +129,5 @@ For more information on lighthouse syntax, go here: https://github.com/GoogleChr
 
 ---
 
-02/21/2021 | 03:03p
+03/02/2021 | 05:04p
 

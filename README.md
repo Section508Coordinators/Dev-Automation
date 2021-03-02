@@ -41,9 +41,9 @@ The following links provide examples for various test engines and examples:
     * Basic examples
         1. Browser extensions: (/examples/axe-core/axe-basic-browser-ext)
         2. Command line interface (CLI): (/examples/axe-core/axe-basic-cli)
-        3. cripting: (/examples/axe-core/axe-basic-scripts)
+        3. Scripting: (/examples/axe-core/axe-basic-scripts)
     * Advanced examples
-        1. Axe-core custom project 1 (/examples/axe-core/axe-advanced-project1)
+        1. Axe-core custom project 1: (/examples/axe-core/axe-advanced-project1)
 
   * ***Pa11y test engine***
     * Basic examples
@@ -64,6 +64,6 @@ The following links provide examples for various test engines and examples:
         
 ---
 
-03/02/2021 | 04:47
+03/02/2021 | 05:00p
 
 

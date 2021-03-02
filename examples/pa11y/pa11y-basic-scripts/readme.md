@@ -18,7 +18,7 @@ The scripts (JavaScript) in this project are meant to provide relatively simple 
 
 This tool allows the user to pick and choose the individual, underlying rules for testing. Not all automated tool rulesets on the market perfectly align with the pass/fail success criteria as expressed by the DHS standard. However upon analysis, DHS OAST has identified specific rules, for specific vendor accessibility ruleset libraries, that provide value in identifying accessibility to the DHS Standard.
 
-Those analyses of vendor accessibility rulesets and the OAST ruleset recommendations reside in [rulesets folder](/rulesets) on this site.
+Those analyses of vendor accessibility rulesets and the OAST ruleset recommendations reside in rulesets folder (/rulesets) on this site.
 
 ---
 
@@ -55,7 +55,6 @@ The scripts will present different scenarios based on their internal configurati
   
   - Write test results to the command window
   
-    
 - <u>*Script 2*</u>: `node 02_pa11y_BasicScript.js`  This script will:
   
   - Test a server hosted web page
@@ -66,7 +65,6 @@ The scripts will present different scenarios based on their internal configurati
   
   - Write test results to the command window
   
-    
 - *<u>Script 3</u>*: `node 03_pa11y_BasicScript.js`  This script will:
   
   - Test an HTML page **located on the local PC file system**. Note that to run this script unmodified, you will need to create a folder on the local drive of the machine running the script of C:\_test\" and in that folder you must copy the file "*TC0813C001.html*" that is in this scripts folder. Otherwise, modify the  variable "vWebSite" in this script to point to where, on the local file system, the *TC0813C001.html* file resides.
@@ -86,4 +84,4 @@ For more information on pa11y usage and syntax, go here: https://github.com/pa11
 
 ---
 
-02/28/2021 | 05:08p
+03/02/2021 | 05:07p
