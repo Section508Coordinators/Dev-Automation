@@ -52,7 +52,7 @@ The following links provide examples for various test engines and examples:
         3. Command line interface (CLI): (/examples/pa11y/pa11y-basic-cli)
         4. Scripting: (/examples/pa11y/pa11y-basic-scripts)
     * Advanced examples
-        1. Pa11y custom project 1]: (/examples/pa11y/pa11y-advanced-project1)
+        1. Pa11y custom project 1: (/examples/pa11y/pa11y-advanced-project1)
     
   * ***Google Lighthouse test engine***
     * Basic examples
@@ -64,6 +64,6 @@ The following links provide examples for various test engines and examples:
         
 ---
 
-03/02/2021 | 05:00p
+03/02/2021 | 05:27p
 
 
