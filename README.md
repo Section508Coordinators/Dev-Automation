@@ -33,7 +33,7 @@ The examples presented in this resource assumes knowledge and experience with Gi
 
 ## Test automation examples
 
-The following links point to examples for various test engines and examples on the ***GitHub site***. To navigate the ***Bitbucket mirror site***, use the navigational links located [HERE](https://maestro.dhs.gov/stash/projects/APPDEV/repos/dev-automation/browse/).
+The following links point to examples for various test engines and examples on the ***GitHub site***. To navigate the ***Bitbucket mirror site***, use the navigational links located [HERE](https://maestro.dhs.gov/stash/projects/APPDEV/repos/dev-automation/browse/bb_nav.md).
 
 ### Automated Accessibility Testing Tools
 
@@ -64,6 +64,6 @@ The following links point to examples for various test engines and examples on t
         
 ---
 
-03/04/2021 | 02:54p
+03/04/2021 | 03:25p
 
 
