@@ -12,7 +12,7 @@ The following links point to examples for various test engines and examples on t
         2. [Command line interface (CLI)](/examples/axe-core/axe-basic-cli)
         3. [Scripting](/examples/axe-core/axe-basic-scripts)
     * Advanced examples
-        1. [Axe-core custom project 1](/examples/axe-core/axe-advanced-project1)
+        1. [Axe-core custom project 1](https://maestro.dhs.gov/stash/projects/APPDEV/repos/dev-automation-2/browse/examples/axe-core/axe-advanced-project1)
 
   * ***Pa11y test engine***
     * Basic examples
