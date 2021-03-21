@@ -99,17 +99,18 @@ you can use timeout: 0 to disabled timeout errors if you're loading a heavy page
 
 In a git bash window, run the following command from the /bin/ directory:
 
-`node custom-axe.js --config config/custom-axe.config.js --template config/index.handlebars -h HTML_Report https://www.saga-it.com`
+`node custom-axe.js --config config/04-custom-axe.config --template config/index.handlebars -h HTML-Rpt-04 -s https://section508coordinators.github.io/Dev-Automation/sitemaps/test-sitemap.xml -x '.*(pdf|jpg|png)$'`
 
-This will run an accessibility test against a test web site of multiple web pages, with the configuration that is set with the **--config** option and using the template that is set with the **--template** option a folder will be created with the name "***HTML_Report***". Inside that folder will be index.html file of that report, it will display the test results and the score.
+This command will run an accessibility test against an external sitemap.xml file with 12 URLs, with the configuration that is set with the **--config** option and using the template that is set with the **--template** option a folder will be created with the name "***HTML-Rpt-04***". This report will be saved to that named folder with an index.html file that indicates the first page of the report which displays the test results and a simple results score.
 
 ## Pre-configured examples
 
-The /config/ directory contains multiple files with different configurations in each file, which show different features through their configuration settings as follows. Use the **--config** option to select any .js file found inside the /config/ directory:
+The /config/ directory contains multiple files with different configurations in each file, showing different features through their configuration settings as follows. Use the **--config** option to select any .js file found inside the /config/ directory. The pre-configured examples are meant to make it clear how a single script template can be customized by providing multiple examples:
 
-- **Run all axe rules when testing**: 01-custom-axe.js.
-
-- **Run only certain rules that are TTv5 friendly**: 02-custom-axe.js
+- **Run all axe rules when testing and run against URLs embedded in the script**: 01-custom-axe.js.
+- **Run only preferred rules that are TTv5 friendly and run against URLs embedded in the script**: 02-custom-axe.js
+- **Choose whether to run against preferred or all rules and run against embedded URLs**: 03-custom-axe.js.
+- **Run against preferred and choose whether to run against embedded URLs or point to an external sitemap.xml file**: 04-custom-axe.js.
 
 ## The syntax of the config files
 
@@ -177,6 +178,6 @@ More comprehensive guidance on the axe-core engine can be found in the [Axe Java
 
 ---
 
-03/21/2021 | 06:15p
+03/21/2021 | 06:30p
 
 
