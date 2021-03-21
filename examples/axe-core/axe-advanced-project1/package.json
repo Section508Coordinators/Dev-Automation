@@ -17,17 +17,21 @@
   },
   "main": "./lib/custom-axe.js",
   "bin": {
-    "custom-axe": "./bin/custom-axe.js"
+    "custom-axe": "bin/custom-axe.js"
   },
   "scripts": {},
   "dependencies": {
+    "@types/async": "^3.2.5",
+    "async": "^3.2.0",
     "axe-puppeteer": "^1.0.0",
     "commander": "^5.0.0",
     "globby": "^6.1.0",
     "pa11y-ci-reporter-html": "^2.0.1",
     "protocolify": "^3.0.0",
     "puppeteer": "^2.1.1",
-    "sitemapper": "^3.0.5"
+    "sitemapper": "^3.0.5",
+    "winston": "^3.3.3",
+    "winston-daily-rotate-file": "^4.5.0"
   },
   "devDependencies": {
     "typescript": "^3.8.3"

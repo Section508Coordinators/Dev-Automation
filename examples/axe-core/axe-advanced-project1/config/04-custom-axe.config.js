@@ -1,70 +1,43 @@
-#!/usr/bin/env node
-'use strict';
-
 //
-// 02/21/2021 axe
-// 02-custom-axe.js
-// Executes tests against internally "hard coded" URLs within the script file 
-// and only tests against preferred rules that are Trusted Tester friendly
+//DATE: 03/21/2021
+//FILE: 04-custom-axe.config.js
+//AUTHOR: DHS OAST/ALAN KING
 //
-
-const customAxe = require('..');
-const pkg = require('../package.json');
-const globby = require('globby');
-const protocolify = require('protocolify');
-const commander = require('commander');
-
-const fs = require('fs');
-
-commander
-	.version(pkg.version)
-	.name('node custom-axe.js')
-	.usage('[options] <paths>')
-	.option(
-		'-s, --sitemap <url>',
-		'the path to a sitemap'
-	)
-	.option(
-		'-f, --sitemap-find <pattern>',
-		'a pattern to find in sitemaps. Use with --sitemap-replace'
-	)
-	.option(
-		'-r, --sitemap-replace <string>',
-		'a replacement to apply in sitemaps. Use with --sitemap-find'
-	)
-	.option(
-		'-x, --sitemap-exclude <pattern>',
-		'a pattern to find in sitemaps and exclude any url that matches'
-	)
-	.requiredOption(
-		'-h, --html-report <dir>',
-		'Takes json output and uses pa11y-ci-reporter-html to generate a report in <dir>'
-	).parse(process.argv);
-
-// Parse the args into valid paths using glob and protocolify
-let commandLineUrls = globby.sync(commander.args, {nonull: true}).map(protocolify);
+//------------------------------------------------------------------
+//********************** DESCRIPTION *******************************
+//------------------------------------------------------------------
+//[1]-Rules: Depending on the switches you add to your node execution
+//           command, you can run against preferred axe rules by 
+//           leaving the "Rules" setting below configured as is, or you
+//           can remove the settings below and run against all rules 
+//
+//[2]-URL Source: Depending on the switches you add to your node execution
+//                command, you can populate the urls: setting below with
+//                URLs you want to run agains, or you can leave that
+//                section empty as it is and instead use the -s switch
+//                on your node command to point to an external sitemap.xml
+//                file containing URLs to run against.
+//==================================================================
 
 const config = {
 	urls: [
-
-		// Hard-code URLs for testing here
-
-		"https://section508coordinators.github.io/BaselineTestPages2/test-cases/TC1005C001.html",
-		"https://section508coordinators.github.io/BaselineTestPages2/test-cases/TC1005C002.html",
-		"https://section508coordinators.github.io/BaselineTestPages2/test-cases/TC1005C003.html",
-		"https://section508coordinators.github.io/BaselineTestPages2/test-cases/TC1005C004.html",
-		"https://section508coordinators.github.io/BaselineTestPages2/test-cases/TC1005C007.html"
-		],
-		
+	
+ 		],
+/* you can use timeout: 0 to disabled timeout errors if you're loading a heavy page.
+		timeout: 0,
+*/
+	concurrency:10,
+	navigationOptions:{
+		timeout: 20000,
+	},
 	axeConfig: {
 
 		 rules: [
-
 		 	//********************************************
 		 	//*** START OF TTv5-Friendly and verified ****
 		 	//********************************************
 			
-			{id: 'aria-allowed-role', enabled: true},
+			{id: 'aria-allowed-role', enabled: true}, 
 			{id: 'aria-valid-attr-value', enabled: true},
 			{id: 'aria-hidden-focus', enabled: true},
 			{id: 'aria-input-field-name', enabled: true},
@@ -167,27 +140,4 @@ const config = {
 	}
 };
 
-const main = async () => {
-	// configuration urls first, then commandline urls then sitemap
-	config.urls = config.urls.concat(commandLineUrls);
-
-	const filteredSitemapUrls = await customAxe.retrieveSitemapUrls(commander.sitemap,
-		commander.sitemapFind,
-		commander.sitemapReplace,
-		commander.sitemapExclude);
-
-	config.urls = config.urls.concat(filteredSitemapUrls);
-
-	const results = await customAxe.scanUrls(config.urls, config.axeConfig);
-
-	const summaryResults = await customAxe.convertAxeResultsToPa11yReportCompatible(results);
-	// console.log(JSON.stringify(summaryResults, null, 2));
-
-	await customAxe.generateHtmlReports(summaryResults, commander.htmlReport, {});
-};
-
-main().catch(error => {
-	console.error('unexpected failure: ');
-	console.error(error);
-	process.exit(1);
-});
+module.exports = config;
