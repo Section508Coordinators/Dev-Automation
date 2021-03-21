@@ -85,11 +85,11 @@ Options:
 ```
 
 ### If you want to change the timeout or the amount of concurrent tasks then change these options in custom-axe.config.js 
-    
+
     concurrency:10,
-	navigationOptions:{
-		timeout: 10000,
-	},
+    navigationOptions:{
+    	timeout: 10000,
+    },
 
 
 you can use timeout: 0 to disabled timeout errors if you're loading a heavy page.
@@ -177,6 +177,6 @@ More comprehensive guidance on the axe-core engine can be found in the [Axe Java
 
 ---
 
-03/02/2021 | 05:01p
+03/21/2021 | 06:15p
 
 
