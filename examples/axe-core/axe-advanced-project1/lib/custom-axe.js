@@ -9,14 +9,15 @@ const fs = require('fs');
 const Sitemapper = require('sitemapper');
 const {AxePuppeteer} = require('axe-puppeteer');
 const puppeteer = require('puppeteer');
-
+const queue = require('async/queue');
+const { addLoggingInfo, addLoggingError } = require('../utils/winston');
 
 // Following function code extracted from pa21y-ci-reporter-html. This was
 // necessary because the module is not configurable enough to allow
 // specifying a custom template.
-const generateSummaryHtmlReport = (summary, outputDir) => {
+const generateSummaryHtmlReport = (summary, outputDir, templateName) => {
 	// console.log(JSON.stringify(summary));
-	const templateFile = path.resolve(`${__dirname}/index.handlebars`);
+	const templateFile = path.resolve(`${__dirname}/../${templateName}`);
 	const summaryReportTemplate = fs.readFileSync(templateFile, 'utf-8');
 	const template = handlebars.compile(summaryReportTemplate);
 	// console.log(JSON.stringify(summary, null, 2));
@@ -25,12 +26,14 @@ const generateSummaryHtmlReport = (summary, outputDir) => {
 	fs.writeFileSync(outputFile, summaryReport);
 };
 
-exports.generateHtmlReports = async (jsonResults, outputDir, options) => {
+exports.generateHtmlReports = async (jsonResults, outputDir, options, template) => {
     validate.isString(outputDir, 'Invalid output directory path');
 
     pa11yCiReporter.ensureOutputDirectory(outputDir);
 
     const formattedResults = formatter.getResultsForHtmlReport(jsonResults);
+
+	addLoggingInfo('Generating page Html reports');
 
     const pages = await pa11yCiReporter.generatePageHtmlReports(formattedResults.results,
 								outputDir,
@@ -67,12 +70,16 @@ exports.generateHtmlReports = async (jsonResults, outputDir, options) => {
     summary.failures = summary.total - summary.passes;
     summary.score = `${Math.round((summary.passes / summary.total) * 100)}%`;
 
+	addLoggingInfo('Generating Summary Html reports');
+
     generateSummaryHtmlReport({
-	date: new Date(),
-	summary,
-	pages
-    },
-			      outputDir);
+			date: new Date(),
+			summary,
+			pages
+    	},
+		outputDir,
+		template
+	);
 
 };
 
@@ -112,37 +119,66 @@ exports.retrieveSitemapUrls = async (sitemapUrl, find, replace, exclude) => {
 	return filteredUrls;
 };
 
-exports.scanUrls = async (urls, axeConfig) => {
-	const browser = await puppeteer.launch();
-	const results = [];
+exports.scanUrls = async (config) => {
+	return new Promise(async resolve => {
 
-	for (const i in urls) {
-		let url = urls[i];
+		const browser = await puppeteer.launch();
 
-		// if the url is actually a function then we'll call it
-		// with the puppet browser and take the return val and use
-		// that as our url to scan
-		if (typeof url == 'function') {
-			url = await (url)(browser);
+		let results = [];
+		const taskQueue = queue(testRunner, config.concurrency);
+
+		// Push the URLs on to the queue
+	
+		taskQueue.drain(testRunComplete);
+		taskQueue.push(config.urls);
+		addLoggingInfo(config.urls.length+ ' urls to be scanned')
+		// This is the actual test runner, which the queue will
+		// execute on each of the URLs
+		async function testRunner(url, next) {
+
+			// if the url is actually a function then we'll call it
+			// with the puppet browser and take the return val and use
+			// that as our url to scan
+			if (typeof url == 'function') {
+				url = await (url)(browser);
+			}
+	
+			try {
+				const page = await browser.newPage();
+				await page.setDefaultNavigationTimeout(config.navigationOptions.timeout);
+				await page.setBypassCSP(true);
+				addLoggingInfo(`Browsing to URL: ${url}`)
+
+				await page.goto(url);
+		
+				let axe = new AxePuppeteer(page).configure(config.axeConfig);
+				if (config.axeConfig['tags'] && config.axeConfig.tags.length > 0) {
+					axe = axe.withTags(config.axeConfig.tags);
+				}
+				addLoggingInfo(`Analyzing URL: ${url}`)
+				const pageResults = await axe.analyze();
+				addLoggingInfo(`Successful analysis of URL: ${url}`)
+				results.push(pageResults);
+				await page.close();
+			} catch (error) {
+				addLoggingError(error.name + ' in url: '+ url)
+			}
+
+			next();
 		}
 
-		const page = await browser.newPage();
-		await page.setBypassCSP(true);
-		await page.goto(url);
-
-		let axe = new AxePuppeteer(page).configure(axeConfig);
-		if (axeConfig['tags'] && axeConfig.tags.length > 0) {
-			axe = axe.withTags(axeConfig.tags);
+		// This function is called once all of the URLs in the
+		// queue have been tested. It outputs the actual errors
+		// that occurred in the test as well as a pass/fail ratio
+		async function testRunComplete() {
+			addLoggingInfo(results.length+ ' urls scanned')
+			await browser.close();
+			// Resolve the promise with the report
+			resolve(results);
 		}
-		const pageResults = await axe.analyze();
-		results.push(pageResults);
-		await page.close();
-	}
+	});
+};
 
-	await browser.close();
-
-	return results;
-}
 
 
 /****************** from pa11y *******/
