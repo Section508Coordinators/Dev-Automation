@@ -10,6 +10,7 @@ const fetch = require('node-fetch');
 const handlebars = require('handlebars');
 const path = require('path');
 const cheerio = require('cheerio');
+const { addLoggingInfo, addLoggingError } = require('../utils/winston');
 
 const scanUrl = async (puppet, url, options) => {
 	// if the url is actually a function then we'll call it
@@ -19,9 +20,16 @@ const scanUrl = async (puppet, url, options) => {
 		url = await (url)(puppet);
 	}
 
+ 	// console.log(report);
+ 	//console.log(`Lighthouse scores: ${Object.values(lhr.categories).map(c => `${c.title} ${c.score}`).join(', ')}`);
+
+	addLoggingInfo(`Browsing to URL: ${url}`)
+	addLoggingInfo(`Analyzing URL: ${url}`)
 	const {lhr, report} = await lighthouse(url, options.flags, options.config);
+	addLoggingInfo(`Successful analysis of URL: ${url}`)
 	// console.log(report);
 	//console.log(`Lighthouse scores: ${Object.values(lhr.categories).map(c => `${c.title} ${c.score}`).join(', ')}`);
+	//console.log(lhr);
 	return lhr;
 }
 
@@ -57,12 +65,16 @@ const scanUrlsFn = async (puppet, options, urls) => {
 
 	for (var i = 0; i < urls.length; i++) {
 		// Run Lighthouse.
-		const lhr = await scanUrl(puppet, urls[i], options);
-		// console.log(report);
-
-		//console.log(`Lighthouse scores: ${Object.values(lhr.categories).map(c => `${c.title} ${c.score}`).join(', ')}`);
-		const html = ReportGenerator.generateReport(lhr, 'html');
-		results.push({lhr, html});
+		try {			
+			const lhr = await scanUrl(puppet, urls[i], options);
+			// console.log(report);
+	
+			//console.log(`Lighthouse scores: ${Object.values(lhr.categories).map(c => `${c.title} ${c.score}`).join(', ')}`);
+			const html = ReportGenerator.generateReport(lhr, 'html');
+			results.push({lhr, html});
+		} catch (error) {
+			addLoggingError(error.name + ' in url: '+ urls[i])
+		}
 	}
 	return results;
 };
@@ -71,8 +83,8 @@ const scanUrlsFn = async (puppet, options, urls) => {
 // Following function code extracted from pa21y-ci-reporter-html. This was
 // necessary because the module is not configurable enough to allow
 // specifying a custom template.
-const generateSummaryHtmlReport = (summary, outputDir) => {
-	const templateFile = path.resolve(`${__dirname}/index.handlebars`);
+const generateSummaryHtmlReport = (summary, outputDir, templateName) => {
+	const templateFile = path.resolve(`${__dirname}/../${templateName}`);
 	const summaryReportTemplate = fs.readFileSync(templateFile, 'utf-8');
 	const template = handlebars.compile(summaryReportTemplate);
 	// console.log(JSON.stringify(summary, null, 2));
@@ -81,7 +93,9 @@ const generateSummaryHtmlReport = (summary, outputDir) => {
 	fs.writeFileSync(outputFile, summaryReport);
 };
 
-exports.scanAndReport = async (urls, outputDir, config) => {
+exports.scanAndReport = async (urls, outputDir, config, templateName) => {
+	addLoggingInfo('Loading Puppet Chrome');
+
 	let results = await withPuppetChrome(scanUrlsFn, config, urls);
 
 	// ensure report directory exists
@@ -188,8 +202,8 @@ exports.scanAndReport = async (urls, outputDir, config) => {
 	summary.score = `${Math.round((summary.passes / summary.total) * 100)}%`;
 	// old lighthouse average approach
 	//summary.score = (summary.score / results.length);
-
-	generateSummaryHtmlReport({date: new Date(), summary, pages: formattedResults}, outputDir);
+	addLoggingInfo('Generating Summary Html reports');
+	generateSummaryHtmlReport({date: new Date(), summary, pages: formattedResults}, outputDir, templateName);
 
 	// console.log('avg score: ' + summary.score);
 };

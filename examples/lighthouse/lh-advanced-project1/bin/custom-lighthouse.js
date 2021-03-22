@@ -19,6 +19,7 @@ const pkg = require('../package.json');
 const commander = require('commander');
 const customLighthouse = require('..');
 const lighthouseConstants = require('lighthouse/lighthouse-core/config/constants.js');
+const { createWinstonLogger, addLoggingInfo, addLoggingError } = require('../utils/winston');
 
 commander
 	.version(pkg.version)
@@ -40,6 +41,21 @@ commander
 		'-x, --sitemap-exclude <pattern>',
 		'a pattern to find in sitemaps and exclude any url that matches'
 	)
+	.option(
+		'-c, --config <string>',
+		'Use an alternate configuration for this analysis',
+		'config/custom-lighthouse.config.js'
+ 	)
+	.option(
+		'-t, --template <string>',
+		'Use an alternate template for this analysis',
+		'config/index.handlebars'
+	)
+	.option(
+		'-l, --logs <Boolean>',
+		'Generate folder and log files',
+		'false'
+	)
 	.requiredOption(
 		'-h, --html-report <dir>',
 		'Output directory for lighthouse reports'
@@ -52,108 +68,42 @@ const urls = globby.sync(commander.args, {
 	nonull: true
 }).map(protocolify);
 
-const config = {
-	urls: [
+createWinstonLogger((commander.opts().logs == 'true'));
 
-		// Hard-code URLs for testing here. Note that if this script is run
-		// with a sitemap.xml switch, the URLs in this hard-coded list below
-		// will be added to the list of URLs cited in the sitemap.xml file for
-		// testing:
+addLoggingInfo('Starting script');
 
-		"https://www.hhs.gov/az/a/index.html",
-		"https://www.hhs.gov/about/index.html",
-		"https://www.hhs.gov/programs/index.html",
-		"https://www.hhs.gov/regulations/index.html",
-		"https://www.hhs.gov/about/news/coronavirus/index.html",
-		"https://www.hhs.gov/opioids/",
-		"https://www.hhs.gov/surgeongeneral/reports-and-publications/tobacco/index.html",
-		"https://www.hhs.gov/healthcare/index.html",
-		"https://www.hhs.gov/grants/index.html",
-		"https://www.hhs.gov/health.gov/our-work/physical-activity"
-		],
+const configPath = `../${commander.opts().config}`;
 
-	lighthouse: {
-		config: {
-			// desktop accessibility scan
-			extends: 'lighthouse:default',
-			settings: {
-				onlyCategories: ['accessibility'],
-				skipAudits: [
-					'accesskeys',
-					'aria-allowed-attr',
-					'aria-command-name',
-					'aria-hidden-body',
-					'aria-meter-name',
-					'aria-progressbar-name',
-					'aria-required-attr',
-					'aria-required-children',
-					'aria-required-parent',
-					'aria-roles',
-					'aria-toggle-field-name',
-					'aria-tooltip-name',
-					'aria-treeitem-name',
-					'aria-valid-attr',
-//					'aria-valid-attr-value',
-					'bypass',
-					'custom-controls-labels',
-					'custom-controls-roles',
-					'definition-list',
-					'dlitem',
-					'duplicate-id-active',
-					'duplicate-id-aria',
-					'focusable-controls',
-					'focus-traps',
-					'heading-order',
-					'interactive-element-affordance',
-					'logical-tab-order',
-					'managed-focus',
-					'meta-refresh',
-					'meta-viewport',
-					'object-alt',
-					'offscreen-content-hidden',
-					'tabindex',
-					'th-has-data-cells',
-					'use-landmarks',
-					'video-caption',
-					'visual-order-follows-dom'
-					],
-				
-				maxWaitForFcp: 15 * 1000,
-				maxWaitForLoad: 35 * 1000,
-				emulatedFormFactor: 'desktop',
+addLoggingInfo('Getting configurion');
 
-				// throttling: lighthouseConstants.throttling.mobileRegluar3G,
-				// fast desktop like performance
-				throttling: {
-					rttMs: 40,
-					throughputKbps: 10 * 1024,
-					cpuSlowdownMultiplier: 1,
-					requestLatencyMs: 0, // 0 means unset
-					downloadThroughputKbps: 0,
-					uploadThroughputKbps: 0,
-				},
-			}
-		},
-		flags: {
-			port: null, // unknown till launch
+const config = require(configPath);
 
-		}
+addLoggingInfo('Getting template');
 
-	}
-};
+const templateCustom = commander.opts().template;
 
 // start from here and wait for results
 (async () => {
 	// Load a sitemap based on the `--sitemap` flag
+
+	addLoggingInfo('Loading the sitemap in the configuration');
+
 	const newConfig = commander.sitemap ?
 		await customLighthouse.loadSitemapIntoConfig(commander, config) : config;
 
 	// configuration urls and sitemap urls before command line urls
 	let allUrls = (newConfig.urls || []).concat(urls);
-	await customLighthouse.scanAndReport(allUrls, commander.htmlReport, config.lighthouse);
+
+	addLoggingInfo('Scanning and reports');
+	await customLighthouse.scanAndReport(allUrls, commander.htmlReport, config.lighthouse, templateCustom);
 	
-})().catch(error => {
-	console.error('unexpected failure: ');
-	console.error(error);
-	process.exit(1);
-});
+})()	
+	.then(() => {
+		addLoggingInfo('Completed script');
+	})
+	.catch(error => {
+		console.error('unexpected failure: ');
+		console.error(error);
+		addLoggingError(`Error script not completed, unexpected failure: ${error}`);
+		process.exit(1);
+	});

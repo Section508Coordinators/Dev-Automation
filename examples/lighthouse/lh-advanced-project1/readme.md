@@ -76,6 +76,7 @@ npm install puppeteer --no-save
 
 Project1 can be used by running it as a command line tool, `custom-pa11y`from the /bin/ folder:
 
+
 ```
 Usage: node custom-lighthouse.js [options] <paths>
 
@@ -92,36 +93,95 @@ Options:
                                    pa11y-ci-reporter-html to generate a report
                                    in <dir>
   -h, --help                       display help for command
+  -c, --config <string>            Use an alternate configuration for this analysis,
+                                   default file: config/custom-axe.config.js
+  -t, --template <string>          Use an alternate template for this analysis,
+                                   default file: config/index.handlebars
+  -l, --logs <Boolean>,            Generate folder and log files,
+		                               default value: false'
 ```
 
 ### Example implementation of switches
 
 In a git bash window, run the following command from the /bin/ directory:
 
-`node custom-lighthouse.js -s https://section508coordinators.github.io/Dev-Automation/sitemaps/test-sitemap.xml -h HTML_LH-Report -x '.*(pdf|jpg|png)$'`
+`node custom-lighthouse.js --config config/04-custom-lighthouse.config --template config/index.handlebars -h HTML-Rpt-04 -s http://section508coordinators.github.io/Dev-Automation/sitemaps/test-sitemap.xml -x '.*(pdf|jpg|png)$'`
 
-This will run an accessibility test against a test web site of multiple web pages and create a folder with the name "***HTML_LH-Report***" within the  "\bin\\" folder. Opening the index.html of that report will present you with test results and scoring.
+This command will run an accessibility test against an external sitemap.xml file with 12 URLs, with the configuration that is set with the **--config** option and using the template that is set with the **--template** option and a folder will be created with the name "***HTML-Rpt-04***". This report will be saved to that named folder with an index.html file that indicates the first page of the report which displays the test results and a simple results score.
 
 ## Pre-configured examples
 
-The "\bin\\" directory contains multiple "custom-lighthouse" script files that showcase different functionality and features via their configuration settings as shown below. 
+The /config/ directory contains multiple files with different configurations in each file, which show different features through their configuration settings as follows. Use the **--config** option to select any .js file found inside the /config/ directory:
 
-Instances where the syntax calls for a sitemap.xml file containing URLs to test, you can use the test sitemap file below in the syntax example, or point to your own sitemap.xml file:
+- ***Example 1: 01-custom-lighthouse.js***
 
-- **Script: 01-custom-lighthouse.js**
-  - <u>Description</u>: Executes tests against internally "hard coded" URLs within the script file and runs all default lighthouse (axe-core) rules
-  - <u>Syntax</u>:  `node 01-custom-lighthouse.js -h <HTML_report_name>`
-- **Script: 02-custom-lighthouse.js**
-  - <u>Description:</u>  Executes tests against internally "hard coded" URLs within the script file and only tests against preferred rules that are Trusted Tester friendly
-  - <u>Syntax</u>: `node 02-custom-lighthouse.js -h <HTML_report_name>`
-- **Script: 03-custom-lighthouse.js**
-  - <u>Description</u>: Executes tests against URLs in a sitemap file and runs all default lighthouse (axe-core) rules. You must provide a pointer to a sitemap file or use the test sitemap file in the syntax example.
-  - <u>Syntax</u>: `node 03-custom-lighthouse -s https://section508coordinators.github.io/Dev-Automation/sitemaps/test-sitemap.xml -h <HTML_report_name> -x '.*(pdf|jpg|png)$' `
-- **Script: 04-custom-lighthouse.js**
-  - <u>Description</u>: Executes tests against URLs in a sitemap file and runs only preferred lighthouse (axe-core) rules that are Trusted Tester friendly. You must provide a pointer to a sitemap file or use the test sitemap file in the syntax example.
-  - <u>Syntax</u>: `node 04-custom-lighthouse -s https://section508coordinators.github.io/Dev-Automation/sitemaps/test-sitemap.xml -h <HTML_report_name> -x '.*(pdf|jpg|png)$'`
+  - Uses the "urls:" option and tests against 10 URLs that are hard-coded inside the script, as opposed to pointing to a sitemap file.
+    
+  - Does not constrain rules and therefore runs against all axe-core rules lighthouse runs by default.
 
----
+  - Syntax: `node custom-lighthouse.js --config config/01-custom-lighthouse.config.js --template config/index.handlebars -h HTML-Rpt-01` 
+
+    
+
+- ***Example 2: 02-custom-lighthouse.js***
+
+  - Uses the "urls:" option and tests against 10 URLs that are hard-coded inside the script, as opposed to pointing to a sitemap file.
+  - Instead of using all axe-core rules, uses the "skipAudits:" option to specify "TTv5 unfriendly" rules *to exclude* from testing
+  - Syntax: `node custom-lighthouse.js --config config/02-custom-lighthouse.config.js --template config/index.handlebars -h HTML-Rpt-02`
+
+## The syntax of the config files
+
+- **Urls**: Urls can be a string or a function, functions would use in case the url needs authentication, functions take a browser puppeteer that can be used to perform certain actions before returning the url to run against axe.
+
+  Login function example:
+
+  ```
+    async (puppet) => {
+	    // log into site before running tests and push the post login page onto
+		  const page = await puppet.newPage();
+		  await page.goto('http://testing-ground.scraping.pro/login');
+		  await page.waitForSelector('#usr', {visible: true});
+
+		  // Fill in and submit login form.
+		  const emailInput = await page.$('#usr');
+		  await emailInput.type('admin');
+		  const passwordInput = await page.$('#pwd');
+		  await passwordInput.type('12345');
+		  const submitButton = await page.$('input[type=submit]');
+
+	    await Promise.all([
+		    submitButton.click(),
+		    page.waitForNavigation(),
+		  ]);
+
+		  if (page.url() != 'http://testing-ground.scraping.pro/login?mode=welcome') {
+		    console.error('login failed!');
+		  } else {
+		    console.log('login succeeded');
+		    const cookies = await page.cookies();
+		    for (var key in cookies) {
+		      console.log(`found cookie ${cookies[key].name}`);
+		    }
+		  }
+		  await page.close();
+
+		  return 'http://testing-ground.scraping.pro/login?mode=welcome';
+		},
+  ```
+
+- **lighthouse**: inside the lighthouse object the configuration is set up.
+
+    - **onlyCategories**: Within the config object, this setting ensures rules that are analyzed are limited to the ones within the specific category (['accessibility']) selected and other rules are not included.
+
+    - **skipAudits**: Within the config object, this setting allows you to exclude rules from testing that are normally included in the category selected.
+
+## Configure the handlebars templates
+
+to modify any title, is to search inside the template and change the text
+
+to hide the table, go to the **style** tag and look for the **table** styles and add **display: none**.
+
+to hide the chart, you must comment out the script tag and comment out the tag containing the id accessibilityChart.
 
 # More information
 
@@ -129,5 +189,5 @@ For more information on lighthouse syntax, go here: https://github.com/GoogleChr
 
 ---
 
-03/02/2021 | 05:04p
+03/22/2021 | 05:19p
 
