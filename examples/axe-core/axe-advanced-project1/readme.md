@@ -107,14 +107,45 @@ This command will run an accessibility test against an external sitemap.xml file
 
 The /config/ directory contains multiple files with different configurations in each file, showing different features through their configuration settings as follows. Use the **--config** option to select any .js file found inside the /config/ directory. The pre-configured examples are meant to make it clear how a single script template can be customized by providing multiple examples:
 
-- **Run all axe rules when testing and run against URLs embedded in the script**: 01-custom-axe.js.
-- **Run only preferred rules that are TTv5 friendly and run against URLs embedded in the script**: 02-custom-axe.js
-- **Choose whether to run against preferred or all rules and run against embedded URLs**: 03-custom-axe.js.
-- **Run against preferred and choose whether to run against embedded URLs or point to an external sitemap.xml file**: 04-custom-axe.js.
+- ***Example 1: 01-custom-axe.js***
+
+  - Runs against all default axe-core rules
+
+  - Runs against URLs embedded in the script
+
+  - Syntax: `node custom-axe.js --config config/01-custom-axe.config --template config/index.handlebars -h HTML-Rpt-01`
+
+    
+
+- ***Example 2: 02-custom-axe.js***
+
+  - Runs against only preferred axe-core rules
+
+  - Runs against URLs embedded in the script
+
+  - Syntax: `node custom-axe.js --config config/02-custom-axe.config --template config/index.handlebars -h HTML-Rpt-02`
+
+    
+
+- ***Example 3: 03-custom-axe.js***
+
+  - Runs against all default axe-core rules
+
+  - Runs against URLs identified in an external sitemap.xml file
+
+  - Syntax:  `node custom-axe.js --config config/03-custom-axe.config --template config/index.handlebars -h HTML-Rpt-03 -s http://section508coordinators.github.io/Dev-Automation/sitemaps/test-sitemap.xml -x '.*(pdf|jpg|png)$'`
+
+    
+
+- ***Example 4: 04-custom-axe.js***
+
+  - Runs against only preferred axe-core rules
+  - Runs against URLs identified in an external sitemap.xml file
+  - Syntax: `node custom-axe.js --config config/04-custom-axe.config --template config/index.handlebars -h HTML-Rpt-04 -s http://section508coordinators.github.io/Dev-Automation/sitemaps/test-sitemap.xml -x '.*(pdf|jpg|png)$'`
 
 ## The syntax of the config files
 
-- **Urls**: urls can be a string or a function, functions would use in case the url needs authentication, functions take a browser puppeteer that can be used to perform certain actions before returning the url to run against axe.
+- **Urls**: Urls can be a string or a function. Functions would be used if accessing the url requires authentication. Functions use  *puppeteer* that can be used to perform certain actions before returning the url to run against.
 
   Login function example:
 
@@ -178,6 +209,6 @@ More comprehensive guidance on the axe-core engine can be found in the [Axe Java
 
 ---
 
-03/21/2021 | 06:30p
+03/22/2021 | 03:04p
 
 

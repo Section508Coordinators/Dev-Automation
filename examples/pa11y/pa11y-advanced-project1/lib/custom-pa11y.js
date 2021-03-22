@@ -8,14 +8,15 @@ const formatter = require('pa11y-ci-reporter-html/lib/data-formatter');
 const handlebars = require('handlebars');
 const path = require('path');
 const fs = require('fs');
+const { addLoggingInfo } = require('../utils/winston');
 
 
 // Following function code extracted from pa21y-ci-reporter-html. This was
 // necessary because the module is not configurable enough to allow
 // specifying a custom template.
-const generateSummaryHtmlReport = (summary, outputDir) => {
+const generateSummaryHtmlReport = (summary, outputDir, templateName) => {
 	// console.log(JSON.stringify(summary));
-	const templateFile = path.resolve(`${__dirname}/index.handlebars`);
+	const templateFile = path.resolve(`${__dirname}/../${templateName}`);
 	const summaryReportTemplate = fs.readFileSync(templateFile, 'utf-8');
 	const template = handlebars.compile(summaryReportTemplate);
 
@@ -70,7 +71,7 @@ const fixupResults = jsonResults => {
 	/////////////
 };
 
-exports.generateHtmlReports = async (jsonResults, outputDir, options) => {
+exports.generateHtmlReports = async (jsonResults, outputDir, options, templateName) => {
 	// // console.log('................');
 	// console.log(JSON.stringify(jsonResults, null, 2));
 	// console.log(`errors: ${jsonResults.errors}`);
@@ -103,7 +104,11 @@ exports.generateHtmlReports = async (jsonResults, outputDir, options) => {
 	accessibilityRuleCountSorted = accessibilityRuleCountSorted
 		.map((cur, i) => [i + 1, cur[0], nfObject.format(cur[1])]);
 
+	addLoggingInfo('Getting results for html reports');	
+
 	const formattedResults = formatter.getResultsForHtmlReport(jsonResults);
+
+	addLoggingInfo('Generating page Html reports');
 
 	const pages = await pa11yCiReporter.generatePageHtmlReports(formattedResults.results,
 		outputDir,
@@ -116,13 +121,16 @@ exports.generateHtmlReports = async (jsonResults, outputDir, options) => {
 	summary.codeCounts = accessibilityRuleCountSorted;
 	summary.codeCountErrorSum = codeCountErrorSum;
 
+	addLoggingInfo('Generating Summary Html reports');
+	
 	generateSummaryHtmlReport({
-		date: new Date(),
-		summary,
-		pages
-	},
-		outputDir);
-
+			date: new Date(),
+			summary,
+			pages
+		},
+		outputDir,
+		templateName
+	);
 };
 
 

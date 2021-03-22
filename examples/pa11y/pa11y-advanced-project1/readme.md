@@ -84,72 +84,128 @@ Options:
                                    pa11y-ci-reporter-html to generate a report
                                    in <dir>
   -h, --help                       display help for command
+  -c, --config <string>            Use an alternate configuration for this analysis,
+                                   default file: config/custom-axe.config.js
+  -t, --template <string>          Use an alternate template for this analysis,
+                                   default file: config/index.handlebars
+  -l, --logs <Boolean>,            Generate folder and log files,
+		                               default value: false'
 ```
+
+### If you want to change the timeout or the amount of concurrent tasks then change these options in custom-pa11y.config.js
+
+```
+defaults: {
+	concurrency:10,
+	timeout:10000,
+}
+```
+
+You can use timeout: 0 to disable timeout errors if you're loading a heavy page.
 
 ### Example implementation of switches
 
 In a git bash window, run the following command from the /bin/ directory:
 
-`node custom-pa11y.js -s https://section508coordinators.github.io/Dev-Automation/sitemaps/test-sitemap.xml -h HTML_Report -x '.*(pdf|jpg|png)$'`
+`node custom-pa11y.js --config config/04-custom-pa11y.config --template config/index.handlebars -h HTML-Rpt-04 -s https://section508coordinators.github.io/Dev-Automation/sitemaps/test-sitemap.xml -x '.*(pdf|jpg|png)$'`
 
-This will run an accessibility test against a test web site of multiple web pages and create a folder with the name "***HTML_Report***" within the  "\bin\\" folder. Opening the index.html of that report will present you with test results and scoring.
+This command will run an accessibility test against an external sitemap.xml file with 12 URLs, with the configuration that is set with the **--config** option and using the template that is set with the **--template** option and a folder will be created with the name "***HTML-Rpt-04***". This report will be saved to that named folder with an index.html file that indicates the first page of the report which displays the test results and a simple results score.
 
 ## Pre-configured examples
 
-The ""\bin\\" directory contains multiple "custom-pa11y" files that showcase different features via their configuration settings as follows:
+The /config/ directory contains multiple files with different configurations in each file, showing different features through their configuration settings as follows. Use the **--config** option to select any .js file found inside the /config/ directory. The pre-configured examples are meant to make it clear how a single script template can be customized by providing multiple examples:
 
-- **Script : 01-custom-pa11y.js**: 
-  
-  - <u>Description</u>: This script does the following:
-  
-    - Uses the "runners:" option to specify use of the *HTML CodeSniffer* ruleset for testing. No rules are ignored, so testing is done using the full range of rules. 
-    - Uses the "urls:" option and tests against 10 embedded URLs that are hard-coded inside the script, as opposed to pointing to an external sitemap file for URLs to test. 
-    - Uses the "standards:" option configured to use WCAG AA rules for HTML CodeSniffer. The HTML CodeSniffer ruleset is set via the "runners:" option as described above.
-    - In the absence of the -h switch on the command, this example writes the test results to the *command window* for each URL tested.  
-  
-  - <u>Syntax</u>: `node 01-custom-pa11y.js`
-  
-    
-  
-- **Script: 02-custom-pa11y.js:** 
-  
-  - <u>Description</u>: This script does the following:
-    
-    - Uses the "runners:" option to specify the *axe-core* ruleset to use for testing. No rules are ignored, so testing is done using the full range of rules.
-    - Uses the "urls:" option and tests against the 10 embedded URLs that are hard-coded inside the script, as opposed to pointing to an external sitemap file.
-    - In the absence of the -h switch on the command, this example writes the test results to the *command window* for each URL tested. 
-    
-  - <u>Syntax</u>: `node 02-custom-pa11y.js`
-  
-    
-  
-- **Script 3: 03-custom-pa11y.js:** 
+- ***Example 1: 01-custom-pa11y.js***
 
-  - <u>Description</u>: This script does the following:
+  - Runs all default rules within the selected HTML Code Sniffer ruleset
 
-    - Uses the "runners:" option to specify both the *axe-core* and the *HTML CodeSniffer* rulesets to be used for testing. No rules are ignored for either ruleset, so testing is done using the full range of all rules from both rulesets.
-    - Uses the "-s" switch to identify an external sitemap.xml file containing the URLs with which to test.
-    - Using the -h switch on the command, this example writes the test results to an HTML report as opposed to the *command window*. Reports will write to the "\bin\" folder using the report name specified in the command switch shown in the syntax example below.
+  - Runs against URLs embedded in the script
 
-  - <u>Syntax</u>: Use the following syntax for this script:`node 03-custom-pa11y.js -s https://section508coordinators.github.io/Dev-Automation/sitemaps/test-sitemap.xml -h HTML_Report -x '.*(pdf|jpg|png)$' `This script presents the following:
+  - Syntax: `node custom-pa11y.js --config config/01-custom-pa11y.config --template config/index.handlebars -h HTML-Rpt-01`
 
     
 
-- **Script 4:  04-custom-pa11y.js:** 
+- ***Example 2: 02-custom-pa11y.js***
 
-  - <u>Description</u>: This script does the following:
-    - Uses the "runners:" option to specify both the *axe-core* and the *HTML CodeSniffer* rulesets to be used for testing. 
-    - Uses the "ignore:" option to specify rules to ignore for both rulesets so as to use preferred rules for testing
-    - Uses the "-s" switch to identify an external sitemap.xml file containing the URLs with which to test.
-    - Using the -h switch on the command, this example writes the test results to an HTML report as opposed to the *command window*. Reports will write to the "\bin\\" folder using the report name specified in the command switch shown in the syntax example below.
-  - <u>Syntax</u>: Use the following syntax for this script:`node 04-custom-pa11y.js -s https://section508coordinators.github.io/Dev-Automation/sitemaps/test-sitemap.xml -h HTML_Report -x '.*(pdf|jpg|png)$' `
+  - Runs all default rules within the selected axe-core ruleset
 
----
+  - Runs against URLs embedded in the script
 
+  - Syntax: `node custom-pa11y.js --config config/02-custom-pa11y.config --template config/index.handlebars -h HTML-Rpt-02`
+
+    
+
+- ***Example 3: 03-custom-pa11y.js***
+
+  - Runs all default rules within the selected combination of both axe-core and HTML Code Sniffer rulesets
+
+  - Runs against URLs embedded in the script
+
+  - Syntax: `node custom-pa11y.js --config config/03-custom-pa11y.config --template config/index.handlebars -h HTML-Rpt-03`
+
+    
+
+- ***Example 4: 04-custom-pa11y.js***
+
+  - Runs against only preferred rules within the selected combination of both axe-core and HTML Code Sniffer rulesets
+  - Runs against URLs contained in an external sitemap.xml file
+  - Syntax: `node custom-pa11y.js --config config/04-custom-pa11y.config --template config/index.handlebars -h HTML-Rpt-04 -s https://section508coordinators.github.io/Dev-Automation/sitemaps/test-sitemap.xml -x '.*(pdf|jpg|png)$'`
+
+## The syntax of the config files
+
+- **Urls**: Urls can be a string or a function. Functions would be used if accessing the url requires authentication. Functions use  *puppeteer* that can be used to perform certain actions before returning the url to run against.
+
+  Login function example:
+
+  ```
+    async (puppet) => {
+	    // log into site before running tests and push the post login page onto
+		  const page = await puppet.newPage();
+		  await page.goto('http://testing-ground.scraping.pro/login');
+		  await page.waitForSelector('#usr', {visible: true});
+
+		  // Fill in and submit login form.
+		  const emailInput = await page.$('#usr');
+		  await emailInput.type('admin');
+		  const passwordInput = await page.$('#pwd');
+		  await passwordInput.type('12345');
+		  const submitButton = await page.$('input[type=submit]');
+
+	    await Promise.all([
+		    submitButton.click(),
+		    page.waitForNavigation(),
+		  ]);
+
+		  if (page.url() != 'http://testing-ground.scraping.pro/login?mode=welcome') {
+		    console.error('login failed!');
+		  } else {
+		    console.log('login succeeded');
+		    const cookies = await page.cookies();
+		    for (var key in cookies) {
+		      console.log(`found cookie ${cookies[key].name}`);
+		    }
+		  }
+		  await page.close();
+
+		  return 'http://testing-ground.scraping.pro/login?mode=welcome';
+		},
+  ```
+
+- **defaults**: inside the pa11yConfig object the configuration is set up.
+
+    - **ignore**: the rules to be ignored are added or modified.
+
+## Configure the handlebars templates
+
+to modify any title, is to search inside the template and change the text
+
+to hide the table, go to the **style** tag and look for the **table** styles and add **display: none**.
+
+to hide the chart, you must comment out the script tag and comment out the tag containing the id accessibilityChart.
 # More information
 
 For more information on syntax for using this custom example, see the pa11y-ci syntax information here: https://github.com/pa11y/pa11y-ci 
 
 ---
 
-03/02/2021 | 05:06p
+03/22/2021 | 03:32p
