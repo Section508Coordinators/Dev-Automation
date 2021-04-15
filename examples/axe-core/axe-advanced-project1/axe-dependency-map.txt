@@ -1,7 +1,5 @@
 Axe-advanced project1 full dependencies mapping:
 
-
-
 axe-advanced-project1 @0.0.9 (148 deps, 21.82mb, 3089 files)
 ├── @types/async@3.2.6 (26.36kb, 4 files)
 ├── async@3.2.0 (677.29kb, 137 files)
