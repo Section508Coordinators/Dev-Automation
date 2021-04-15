@@ -82,8 +82,8 @@ const config = {
 		flags: {
 			port: null, // unknown till launch
 
-		}
-
+		},
+		timeout: 120000
 	}
 };
 
