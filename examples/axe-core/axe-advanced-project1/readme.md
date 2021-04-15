@@ -34,15 +34,20 @@ Those analyses of vendor accessibility rulesets and the OAST ruleset recommendat
 
 This example uses the following technology stack:
 
-- Nodejs 6+
+- NodeJs 6+
 - Git
-- axe-Puppeteer
-- Commander
-- Globby
-- pa11y-ci-reporter-html
-- protocolify
-- puppeteer
-- sitemapper
+- @types/async 3.2.5: (https://www.npmjs.com/package/@types/async)
+- async 3.2.0: (https://www.npmjs.com/package/async)
+- axe-puppeteer 1.0.0 (https://www.npmjs.com/package/@axe-core/pupeeteer)
+- commander 5.0.0: (https://www.npmjs.com/package/commander)
+- globby 6.1.0: (https://www.npmjs.com/package/globby)
+- pa11y-ci-reporter-html 2.0.1: (https://www.npmjs.com/package/pa11y-ci-reporter-html)
+- protocolify 3.0.0: (https://www.npmjs.com/package/protocolify)
+- puppeteer 2.1.1: (https://www.npmjs.com/package/puppeteer)
+- sitemapper: 3.0.5 (https://www.npmjs.com/package/sitemapper)
+- winston: 3.3.3 (https://www.npmjs.com/package/winston)
+- winston-daily-rotate-file 4.5.0: (https://www.npmjs.com/package/winston-daily-rotate-file)
+- typescript 3.8.3: (https://www.npmjs.com/package/typescript)
 
 ---
 
@@ -209,6 +214,6 @@ More comprehensive guidance on the axe-core engine can be found in the [Axe Java
 
 ---
 
-03/22/2021 | 03:04p
+04/15/2021 | 11:26a
 
 

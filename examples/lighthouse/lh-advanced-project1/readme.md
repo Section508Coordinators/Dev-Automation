@@ -45,19 +45,37 @@ To access the full range of axe-core rules, use the the axe-core test tools on t
 
 This example uses the following technology stack:
 
-- Chrome desktop
-- Nodejs 12+
+- Chrome Desktop
+
+- NodeJs 12+
+
 - Git
-- cheerio
-- Commander
-- Globby
-- handlebars
-- lighthouse
-- axe-core
-- node-fetch
-- protocolify
-- puppeteer
-- typescript
+
+- cheerio 1.0.0-rc.3: (https://www.npmjs.com/package/cheerio)
+
+- commander 5.0.0: (https://www.npmjs.com/package/commander)
+
+- globby 6.1.0: (https://www.npmjs.com/package/globby)
+
+- handlebars 4.7.3: (https://www.npmjs.com/package/handlebars)
+
+- lighthouse 7.0.0: (https://www.npmjs.com/package/lighthouse)
+
+- node-fetch 2.6.0: (https://www.npmjs.com/package/node-fetch)
+
+- protocolify 2.0.0: (https://www.npmjs.com/package/protocolify)
+
+- puppeteer 2.1.1: (https://www.npmjs.com/package/puppeteer)
+
+- typescript 3.8.3: (https://www.npmjs.com/package/typescript)
+
+- winston: 3.3.3: (https://www.npmjs.com/package/winston)
+
+- winston-daily-rotate-file 4.5.0: (https://www.npmjs.com/package/winston-daily-rotate-file)
+
+- eslint 6.8.0: (https://www.npmjs.com/package/eslint)
+
+  
 
 
 ---
@@ -189,5 +207,5 @@ For more information on lighthouse syntax, go here: https://github.com/GoogleChr
 
 ---
 
-04/15/2021 | 10:25a
+04/15/2021 | 11:40a
 
