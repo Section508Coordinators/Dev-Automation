@@ -1,0 +1,499 @@
+Lighthouse-advanced project1 full dependencies mapping:
+
+
+lighthouse-advanced-project1@0.0.1[90m (384 deps, 136.85mb, 13340 files)[0m
+├─┬ cheerio@1.0.0-rc.6[90m (18 deps, 1010.52kb, 286 files)[0m
+│ ├─┬ cheerio-select@1.3.0[90m (11 deps, 313.02kb, 160 files)[0m
+│ │ ├─┬ css-select@4.0.0[90m (10 deps, 293.39kb, 148 files)[0m
+│ │ │ ├── boolbase@1.0.0[90m (1.3kb, 3 files)[0m
+│ │ │ ├── css-what@5.0.0[90m (🔗, 29.18kb, 12 files)[0m
+│ │ │ ├── domhandler@4.1.0[90m (🔗, 1 dep, 42.15kb, 15 files)[0m
+│ │ │ ├── domutils@2.5.2[90m (🔗, 6 deps, 174.69kb, 82 files)[0m
+│ │ │ ╰─┬ nth-check@2.0.0[90m (1 dep, 13.86kb, 15 files)[0m
+│ │ │   ╰── boolbase@1.0.0[90m (🔗, 1.3kb, 3 files)[0m
+│ │ ├── css-what@5.0.0[90m (29.18kb, 12 files)[0m
+│ │ ├── domelementtype@2.2.0[90m (6.7kb, 6 files)[0m
+│ │ ├── domhandler@4.1.0[90m (🔗, 1 dep, 42.15kb, 15 files)[0m
+│ │ ╰─┬ domutils@2.5.2[90m (6 deps, 174.69kb, 82 files)[0m
+│ │   ├── dom-serializer@1.3.1[90m (🔗, 4 deps, 121.83kb, 49 files)[0m
+│ │   ├── domelementtype@2.2.0[90m (🔗, 6.7kb, 6 files)[0m
+│ │   ╰── domhandler@4.1.0[90m (🔗, 1 dep, 42.15kb, 15 files)[0m
+│ ├─┬ dom-serializer@1.3.1[90m (4 deps, 121.83kb, 49 files)[0m
+│ │ ├── domelementtype@2.2.0[90m (6.7kb, 6 files)[0m
+│ │ ├── domhandler@4.1.0[90m (🔗, 1 dep, 42.15kb, 15 files)[0m
+│ │ ╰── entities@2.2.0[90m (56.32kb, 19 files)[0m
+│ ├─┬ domhandler@4.1.0[90m (1 dep, 42.15kb, 15 files)[0m
+│ │ ╰── domelementtype@2.2.0[90m (6.7kb, 6 files)[0m
+│ ├─┬ htmlparser2@6.1.0[90m (9 deps, 341.18kb, 131 files)[0m
+│ │ ├── domelementtype@2.2.0[90m (6.7kb, 6 files)[0m
+│ │ ├── domhandler@4.1.0[90m (🔗, 1 dep, 42.15kb, 15 files)[0m
+│ │ ├─┬ domutils@2.5.2[90m (6 deps, 174.69kb, 82 files)[0m
+│ │ │ ├── dom-serializer@1.3.1[90m (🔗, 4 deps, 121.83kb, 49 files)[0m
+│ │ │ ├── domelementtype@2.2.0[90m (🔗, 6.7kb, 6 files)[0m
+│ │ │ ╰── domhandler@4.1.0[90m (🔗, 1 dep, 42.15kb, 15 files)[0m
+│ │ ╰── entities@2.2.0[90m (56.32kb, 19 files)[0m
+│ ├── parse5@6.0.1[90m (323.36kb, 27 files)[0m
+│ ╰─┬ parse5-htmlparser2-tree-adapter@6.0.1[90m (1 dep, 334.49kb, 31 files)[0m
+│   ╰── parse5@6.0.1[90m (🔗, 323.36kb, 27 files)[0m
+├── commander@5.1.0[90m (104.33kb, 6 files)[0m
+├─┬ globby@6.1.0[90m (18 deps, 180.1kb, 85 files)[0m
+│ ├─┬ array-union@1.0.2[90m (1 dep, 5.9kb, 8 files)[0m
+│ │ ╰── array-uniq@1.0.3[90m (3.48kb, 4 files)[0m
+│ ├─┬ glob@7.1.6[90m (11 deps, 143.36kb, 57 files)[0m
+│ │ ├── fs.realpath@1.0.0[90m (13.12kb, 5 files)[0m
+│ │ ├─┬ inflight@1.0.6[90m (3 deps, 13.41kb, 16 files)[0m
+│ │ │ ├── once@1.4.0[90m (🔗, 1 dep, 6.84kb, 8 files)[0m
+│ │ │ ╰── wrappy@1.0.2[90m (2.89kb, 4 files)[0m
+│ │ ├── inherits@2.0.4[90m (3.87kb, 5 files)[0m
+│ │ ├─┬ minimatch@3.0.4[90m (3 deps, 54.66kb, 20 files)[0m
+│ │ │ ╰─┬ brace-expansion@1.1.11[90m (2 deps, 22.32kb, 16 files)[0m
+│ │ │   ├── balanced-match@1.0.2[90m (6.78kb, 5 files)[0m
+│ │ │   ╰── concat-map@0.0.1[90m (4.75kb, 7 files)[0m
+│ │ ├─┬ once@1.4.0[90m (1 dep, 6.84kb, 8 files)[0m
+│ │ │ ╰── wrappy@1.0.2[90m (2.89kb, 4 files)[0m
+│ │ ╰── path-is-absolute@1.0.1[90m (3.53kb, 4 files)[0m
+│ ├── object-assign@4.1.1[90m (5.36kb, 4 files)[0m
+│ ├── pify@2.3.0[90m (5.88kb, 4 files)[0m
+│ ╰─┬ pinkie-promise@2.0.1[90m (1 dep, 12.78kb, 8 files)[0m
+│   ╰── pinkie@2.0.4[90m (10.27kb, 4 files)[0m
+├─┬ handlebars@4.7.7[90m (5 deps, 4.77mb, 307 files)[0m
+│ ├── minimist@1.2.5[90m (31.63kb, 21 files)[0m
+│ ├── neo-async@2.6.2[90m (290.66kb, 119 files)[0m
+│ ├── source-map@0.6.1[90m (786.35kb, 20 files)[0m
+│ ├── wordwrap@1.0.0[90m (35.89kb, 9 files)[0m
+│ ╰── uglify-js@3.13.4[90m (1.06mb, 20 files)[0m
+├─┬ lighthouse@7.3.0[90m (280 deps, 66.28mb, 11197 files)[0m
+│ ├── axe-core@4.1.3[90m (2.61mb, 653 files)[0m
+│ ├─┬ chrome-launcher@0.13.4[90m (23 deps, 1.16mb, 218 files)[0m
+│ │ ├── @types/node@14.14.41[90m (738.03kb, 53 files)[0m
+│ │ ├── escape-string-regexp@1.0.5[90m (2.63kb, 4 files)[0m
+│ │ ├─┬ is-wsl@2.2.0[90m (1 dep, 6.61kb, 11 files)[0m
+│ │ │ ╰── is-docker@2.2.1[90m (2.94kb, 6 files)[0m
+│ │ ├── lighthouse-logger@1.2.0[90m (🔗, 3 deps, 103.46kb, 35 files)[0m
+│ │ ├─┬ mkdirp@0.5.5[90m (1 dep, 38.98kb, 27 files)[0m
+│ │ │ ╰── minimist@1.2.5[90m (🔗, 31.63kb, 21 files)[0m
+│ │ ╰─┬ rimraf@3.0.2[90m (12 deps, 160.28kb, 63 files)[0m
+│ │   ╰── glob@7.1.6[90m (🔗, 11 deps, 143.36kb, 57 files)[0m
+│ ├─┬ configstore@5.0.1[90m (13 deps, 181.67kb, 75 files)[0m
+│ │ ├─┬ dot-prop@5.3.0[90m (1 dep, 12.14kb, 10 files)[0m
+│ │ │ ╰── is-obj@2.0.0[90m (2.75kb, 5 files)[0m
+│ │ ├── graceful-fs@4.2.6[90m (27.91kb, 7 files)[0m
+│ │ ├─┬ make-dir@3.1.0[90m (1 dep, 75.31kb, 12 files)[0m
+│ │ │ ╰── semver@6.3.0[90m (🔗, 65.5kb, 7 files)[0m
+│ │ ├─┬ unique-string@2.0.0[90m (1 dep, 6.65kb, 10 files)[0m
+│ │ │ ╰── crypto-random-string@2.0.0[90m (3.84kb, 5 files)[0m
+│ │ ├─┬ write-file-atomic@3.0.3[90m (4 deps, 46.67kb, 27 files)[0m
+│ │ │ ├── imurmurhash@0.1.4[90m (11.61kb, 4 files)[0m
+│ │ │ ├── is-typedarray@1.0.0[90m (4.3kb, 5 files)[0m
+│ │ │ ├── signal-exit@3.0.3[90m (9.64kb, 6 files)[0m
+│ │ │ ╰─┬ typedarray-to-buffer@3.1.5[90m (1 dep, 12.93kb, 12 files)[0m
+│ │ │   ╰── is-typedarray@1.0.0[90m (🔗, 4.3kb, 5 files)[0m
+│ │ ╰── xdg-basedir@4.0.0[90m (5.56kb, 5 files)[0m
+│ ├── csp_evaluator@1.0.1[90m (211.63kb, 78 files)[0m
+│ ├─┬ cssstyle@1.2.1[90m (1 dep, 372.12kb, 124 files)[0m
+│ │ ╰── cssom@0.3.8[90m (47.85kb, 24 files)[0m
+│ ├── details-element-polyfill@2.4.0[90m (10.06kb, 4 files)[0m
+│ ├── http-link-header@0.8.0[90m (11.34kb, 5 files)[0m
+│ ├─┬ inquirer@7.3.3[90m (33 deps, 7.19mb, 4951 files)[0m
+│ │ ├─┬ ansi-escapes@4.3.2[90m (1 dep, 132.26kb, 51 files)[0m
+│ │ │ ╰── type-fest@0.21.3[90m (116.26kb, 46 files)[0m
+│ │ ├─┬ chalk@4.1.0[90m (5 deps, 93.7kb, 33 files)[0m
+│ │ │ ├─┬ ansi-styles@4.3.0[90m (2 deps, 49.67kb, 16 files)[0m
+│ │ │ │ ╰─┬ color-convert@2.0.1[90m (1 dep, 33.09kb, 11 files)[0m
+│ │ │ │   ╰── color-name@1.1.4[90m (6.54kb, 4 files)[0m
+│ │ │ ╰─┬ supports-color@7.2.0[90m (1 dep, 11.19kb, 10 files)[0m
+│ │ │   ╰── has-flag@4.0.0[90m (4.32kb, 5 files)[0m
+│ │ ├─┬ cli-cursor@3.1.0[90m (4 deps, 27.04kb, 26 files)[0m
+│ │ │ ╰─┬ restore-cursor@3.1.0[90m (3 deps, 22.77kb, 21 files)[0m
+│ │ │   ├─┬ onetime@5.1.2[90m (1 dep, 10.38kb, 10 files)[0m
+│ │ │   │ ╰── mimic-fn@2.1.0[90m (4.35kb, 5 files)[0m
+│ │ │   ╰── signal-exit@3.0.3[90m (🔗, 9.64kb, 6 files)[0m
+│ │ ├── cli-width@3.0.0[90m (11.22kb, 9 files)[0m
+│ │ ├─┬ external-editor@3.1.0[90m (5 deps, 497.22kb, 67 files)[0m
+│ │ │ ├── chardet@0.7.0[90m (73.09kb, 11 files)[0m
+│ │ │ ├─┬ iconv-lite@0.4.24[90m (1 dep, 369.38kb, 33 files)[0m
+│ │ │ │ ╰── safer-buffer@2.1.2[90m (41.31kb, 7 files)[0m
+│ │ │ ╰─┬ tmp@0.0.33[90m (1 dep, 28.4kb, 8 files)[0m
+│ │ │   ╰── os-tmpdir@1.0.2[90m (2.98kb, 4 files)[0m
+│ │ ├─┬ figures@3.2.0[90m (1 dep, 14.42kb, 9 files)[0m
+│ │ │ ╰── escape-string-regexp@1.0.5[90m (🔗, 2.63kb, 4 files)[0m
+│ │ ├── lodash@4.17.21[90m (1.35mb, 1054 files)[0m
+│ │ ├── mute-stream@0.0.8[90m (6.36kb, 4 files)[0m
+│ │ ├── run-async@2.4.1[90m (6.45kb, 4 files)[0m
+│ │ ├─┬ rxjs@6.6.7[90m (1 dep, 4.92mb, 3629 files)[0m
+│ │ │ ╰── tslib@1.14.1[90m (33.17kb, 13 files)[0m
+│ │ ├─┬ string-width@4.2.2[90m (4 deps, 66.53kb, 28 files)[0m
+│ │ │ ├── emoji-regex@8.0.0[90m (47.12kb, 8 files)[0m
+│ │ │ ├── is-fullwidth-code-point@3.0.0[90m (4.88kb, 5 files)[0m
+│ │ │ ╰── strip-ansi@6.0.0[90m (🔗, 1 dep, 9.49kb, 10 files)[0m
+│ │ ├─┬ strip-ansi@6.0.0[90m (1 dep, 9.49kb, 10 files)[0m
+│ │ │ ╰── ansi-regex@5.0.0[90m (5.56kb, 5 files)[0m
+│ │ ╰── through@2.3.8[90m (12.24kb, 11 files)[0m
+│ ├── intl@1.2.5[90m (21.2mb, 734 files)[0m
+│ ├─┬ intl-messageformat@4.4.0[90m (1 dep, 525.28kb, 42 files)[0m
+│ │ ╰── intl-messageformat-parser@1.8.1[90m (136.87kb, 11 files)[0m
+│ ├── intl-pluralrules@1.2.2[90m (48.24kb, 11 files)[0m
+│ ├── jpeg-js@0.4.3[90m (72.87kb, 9 files)[0m
+│ ├── js-library-detector@6.4.0[90m (65.53kb, 5 files)[0m
+│ ├─┬ jsonld@4.0.1[90m (84 deps, 7.87mb, 2043 files)[0m
+│ │ ├── canonicalize@1.0.5[90m (20.18kb, 19 files)[0m
+│ │ ├─┬ lru-cache@5.1.1[90m (1 dep, 29.77kb, 9 files)[0m
+│ │ │ ╰── yallist@3.1.1[90m (14.42kb, 5 files)[0m
+│ │ ├─┬ object.fromentries@2.0.4[90m (29 deps, 1.8mb, 1330 files)[0m
+│ │ │ ├─┬ call-bind@1.0.2[90m (5 deps, 115.62kb, 65 files)[0m
+│ │ │ │ ├── function-bind@1.1.1[90m (24.56kb, 12 files)[0m
+│ │ │ │ ╰─┬ get-intrinsic@1.1.1[90m (4 deps, 101.22kb, 53 files)[0m
+│ │ │ │   ├── function-bind@1.1.1[90m (🔗, 24.56kb, 12 files)[0m
+│ │ │ │   ├── has@1.0.3[90m (🔗, 1 dep, 27.27kb, 17 files)[0m
+│ │ │ │   ╰── has-symbols@1.0.2[90m (🔗, 17.63kb, 14 files)[0m
+│ │ │ ├─┬ define-properties@1.1.3[90m (1 dep, 48.41kb, 21 files)[0m
+│ │ │ │ ╰── object-keys@1.1.1[90m (25.92kb, 11 files)[0m
+│ │ │ ├─┬ es-abstract@1.18.0[90m (28 deps, 1.78mb, 1313 files)[0m
+│ │ │ │ ├── call-bind@1.0.2[90m (🔗, 5 deps, 115.62kb, 65 files)[0m
+│ │ │ │ ├─┬ es-to-primitive@1.2.1[90m (4 deps, 119.33kb, 68 files)[0m
+│ │ │ │ │ ├── is-callable@1.2.3[90m (🔗, 20.59kb, 13 files)[0m
+│ │ │ │ │ ├── is-date-object@1.0.2[90m (19.97kb, 11 files)[0m
+│ │ │ │ │ ╰─┬ is-symbol@1.0.3[90m (1 dep, 39.28kb, 27 files)[0m
+│ │ │ │ │   ╰── has-symbols@1.0.2[90m (🔗, 17.63kb, 14 files)[0m
+│ │ │ │ ├── function-bind@1.1.1[90m (24.56kb, 12 files)[0m
+│ │ │ │ ├─┬ get-intrinsic@1.1.1[90m (4 deps, 101.22kb, 53 files)[0m
+│ │ │ │ │ ├── function-bind@1.1.1[90m (🔗, 24.56kb, 12 files)[0m
+│ │ │ │ │ ├── has@1.0.3[90m (🔗, 1 dep, 27.27kb, 17 files)[0m
+│ │ │ │ │ ╰── has-symbols@1.0.2[90m (🔗, 17.63kb, 14 files)[0m
+│ │ │ │ ├── has@1.0.3[90m (🔗, 1 dep, 27.27kb, 17 files)[0m
+│ │ │ │ ├── has-symbols@1.0.2[90m (17.63kb, 14 files)[0m
+│ │ │ │ ├── is-callable@1.2.3[90m (20.59kb, 13 files)[0m
+│ │ │ │ ├── is-negative-zero@2.0.1[90m (23.52kb, 16 files)[0m
+│ │ │ │ ├─┬ is-regex@1.1.2[90m (6 deps, 143.21kb, 75 files)[0m
+│ │ │ │ │ ├── call-bind@1.0.2[90m (🔗, 5 deps, 115.62kb, 65 files)[0m
+│ │ │ │ │ ╰── has-symbols@1.0.2[90m (🔗, 17.63kb, 14 files)[0m
+│ │ │ │ ├── is-string@1.0.5[90m (15.38kb, 10 files)[0m
+│ │ │ │ ├── object-inspect@1.9.0[90m (48.07kb, 36 files)[0m
+│ │ │ │ ├── object-keys@1.1.1[90m (25.92kb, 11 files)[0m
+│ │ │ │ ├─┬ object.assign@4.1.2[90m (9 deps, 250.86kb, 120 files)[0m
+│ │ │ │ │ ├── call-bind@1.0.2[90m (🔗, 5 deps, 115.62kb, 65 files)[0m
+│ │ │ │ │ ├── define-properties@1.1.3[90m (🔗, 1 dep, 48.41kb, 21 files)[0m
+│ │ │ │ │ ├── has-symbols@1.0.2[90m (🔗, 17.63kb, 14 files)[0m
+│ │ │ │ │ ╰── object-keys@1.1.1[90m (🔗, 25.92kb, 11 files)[0m
+│ │ │ │ ├─┬ string.prototype.trimend@1.0.4[90m (8 deps, 180.34kb, 103 files)[0m
+│ │ │ │ │ ├── call-bind@1.0.2[90m (🔗, 5 deps, 115.62kb, 65 files)[0m
+│ │ │ │ │ ╰── define-properties@1.1.3[90m (🔗, 1 dep, 48.41kb, 21 files)[0m
+│ │ │ │ ├─┬ string.prototype.trimstart@1.0.4[90m (8 deps, 180.54kb, 103 files)[0m
+│ │ │ │ │ ├── call-bind@1.0.2[90m (🔗, 5 deps, 115.62kb, 65 files)[0m
+│ │ │ │ │ ╰── define-properties@1.1.3[90m (🔗, 1 dep, 48.41kb, 21 files)[0m
+│ │ │ │ ╰─┬ unbox-primitive@1.0.1[90m (13 deps, 248.64kb, 165 files)[0m
+│ │ │ │   ├── function-bind@1.1.1[90m (🔗, 24.56kb, 12 files)[0m
+│ │ │ │   ├── has-bigints@1.0.1[90m (10kb, 10 files)[0m
+│ │ │ │   ├── has-symbols@1.0.2[90m (🔗, 17.63kb, 14 files)[0m
+│ │ │ │   ╰─┬ which-boxed-primitive@1.0.2[90m (11 deps, 226.17kb, 144 files)[0m
+│ │ │ │     ├── is-bigint@1.0.1[90m (16.95kb, 17 files)[0m
+│ │ │ │     ├─┬ is-boolean-object@1.1.0[90m (6 deps, 141.38kb, 83 files)[0m
+│ │ │ │     │ ╰── call-bind@1.0.2[90m (🔗, 5 deps, 115.62kb, 65 files)[0m
+│ │ │ │     ├── is-number-object@1.0.4[90m (16.13kb, 10 files)[0m
+│ │ │ │     ├── is-string@1.0.5[90m (🔗, 15.38kb, 10 files)[0m
+│ │ │ │     ╰── is-symbol@1.0.3[90m (🔗, 1 dep, 39.28kb, 27 files)[0m
+│ │ │ ╰─┬ has@1.0.3[90m (1 dep, 27.27kb, 17 files)[0m
+│ │ │   ╰── function-bind@1.1.1[90m (24.56kb, 12 files)[0m
+│ │ ├─┬ rdf-canonize@2.0.1[90m (2 deps, 574.74kb, 38 files)[0m
+│ │ │ ├── semver@6.3.0[90m (🔗, 65.5kb, 7 files)[0m
+│ │ │ ╰── setimmediate@1.0.5[90m (8.36kb, 3 files)[0m
+│ │ ├─┬ request@2.88.2[90m (47 deps, 3.78mb, 594 files)[0m
+│ │ │ ├── aws-sign2@0.7.0[90m (13.85kb, 4 files)[0m
+│ │ │ ├── aws4@1.11.0[90m (21.76kb, 7 files)[0m
+│ │ │ ├── caseless@0.12.0[90m (13.92kb, 5 files)[0m
+│ │ │ ├─┬ combined-stream@1.0.8[90m (1 dep, 19.08kb, 11 files)[0m
+│ │ │ │ ╰── delayed-stream@1.0.0[90m (7.83kb, 6 files)[0m
+│ │ │ ├── extend@3.0.2[90m (22.91kb, 10 files)[0m
+│ │ │ ├── forever-agent@0.6.1[90m (13.68kb, 4 files)[0m
+│ │ │ ├─┬ form-data@2.3.3[90m (5 deps, 374.9kb, 50 files)[0m
+│ │ │ │ ├── asynckit@0.4.0[90m (26.72kb, 20 files)[0m
+│ │ │ │ ├── combined-stream@1.0.8[90m (🔗, 1 dep, 19.08kb, 11 files)[0m
+│ │ │ │ ╰── mime-types@2.1.30[90m (🔗, 1 dep, 212.67kb, 11 files)[0m
+│ │ │ ├─┬ har-validator@5.1.5[90m (7 deps, 1.43mb, 209 files)[0m
+│ │ │ │ ├─┬ ajv@6.12.6[90m (5 deps, 1.41mb, 181 files)[0m
+│ │ │ │ │ ├── fast-deep-equal@3.1.3[90m (12.66kb, 11 files)[0m
+│ │ │ │ │ ├── fast-json-stable-stringify@2.1.0[90m (16.56kb, 18 files)[0m
+│ │ │ │ │ ├── json-schema-traverse@0.4.1[90m (19.11kb, 9 files)[0m
+│ │ │ │ │ ╰─┬ uri-js@4.4.1[90m (1 dep, 490.54kb, 51 files)[0m
+│ │ │ │ │   ╰── punycode@2.1.1[90m (🔗, 31.67kb, 5 files)[0m
+│ │ │ │ ╰── har-schema@2.0.0[90m (14.75kb, 22 files)[0m
+│ │ │ ├─┬ http-signature@1.2.0[90m (15 deps, 946.03kb, 174 files)[0m
+│ │ │ │ ├── assert-plus@1.0.0[90m (11.17kb, 5 files)[0m
+│ │ │ │ ├─┬ jsprim@1.4.1[90m (5 deps, 265.13kb, 64 files)[0m
+│ │ │ │ │ ├── assert-plus@1.0.0[90m (🔗, 11.17kb, 5 files)[0m
+│ │ │ │ │ ├── extsprintf@1.3.0[90m (22.27kb, 9 files)[0m
+│ │ │ │ │ ├── json-schema@0.2.3[90m (143.66kb, 31 files)[0m
+│ │ │ │ │ ╰─┬ verror@1.10.0[90m (3 deps, 91.09kb, 27 files)[0m
+│ │ │ │ │   ├── assert-plus@1.0.0[90m (🔗, 11.17kb, 5 files)[0m
+│ │ │ │ │   ├── core-util-is@1.0.2[90m (🔗, 22.65kb, 6 files)[0m
+│ │ │ │ │   ╰── extsprintf@1.3.0[90m (🔗, 22.27kb, 9 files)[0m
+│ │ │ │ ╰─┬ sshpk@1.16.1[90m (9 deps, 644.79kb, 103 files)[0m
+│ │ │ │   ├─┬ asn1@0.2.4[90m (1 dep, 58.92kb, 16 files)[0m
+│ │ │ │   │ ╰── safer-buffer@2.1.2[90m (🔗, 41.31kb, 7 files)[0m
+│ │ │ │   ├── assert-plus@1.0.0[90m (🔗, 11.17kb, 5 files)[0m
+│ │ │ │   ├─┬ dashdash@1.14.1[90m (1 dep, 89.92kb, 11 files)[0m
+│ │ │ │   │ ╰── assert-plus@1.0.0[90m (🔗, 11.17kb, 5 files)[0m
+│ │ │ │   ├─┬ getpass@0.1.7[90m (1 dep, 16.71kb, 11 files)[0m
+│ │ │ │   │ ╰── assert-plus@1.0.0[90m (🔗, 11.17kb, 5 files)[0m
+│ │ │ │   ├── safer-buffer@2.1.2[90m (🔗, 41.31kb, 7 files)[0m
+│ │ │ │   ├── jsbn@0.1.1[90m (44.77kb, 7 files)[0m
+│ │ │ │   ├── tweetnacl@0.14.5[90m (169.97kb, 12 files)[0m
+│ │ │ │   ├─┬ ecc-jsbn@0.1.2[90m (2 deps, 113.22kb, 24 files)[0m
+│ │ │ │   │ ├── jsbn@0.1.1[90m (🔗, 44.77kb, 7 files)[0m
+│ │ │ │   │ ╰── safer-buffer@2.1.2[90m (🔗, 41.31kb, 7 files)[0m
+│ │ │ │   ╰─┬ bcrypt-pbkdf@1.0.2[90m (1 dep, 198.28kb, 17 files)[0m
+│ │ │ │     ╰── tweetnacl@0.14.5[90m (🔗, 169.97kb, 12 files)[0m
+│ │ │ ├── is-typedarray@1.0.0[90m (4.3kb, 5 files)[0m
+│ │ │ ├── isstream@0.1.2[90m (13kb, 8 files)[0m
+│ │ │ ├── json-stringify-safe@5.0.1[90m (12.42kb, 9 files)[0m
+│ │ │ ├── mime-types@2.1.30[90m (🔗, 1 dep, 212.67kb, 11 files)[0m
+│ │ │ ├── oauth-sign@0.9.0[90m (13.48kb, 4 files)[0m
+│ │ │ ├── performance-now@2.1.0[90m (11.08kb, 17 files)[0m
+│ │ │ ├── qs@6.5.2[90m (111.45kb, 18 files)[0m
+│ │ │ ├── safe-buffer@5.1.2[90m (🔗, 30.94kb, 5 files)[0m
+│ │ │ ├─┬ tough-cookie@2.5.0[90m (2 deps, 539.16kb, 23 files)[0m
+│ │ │ │ ├── psl@1.8.0[90m (422.87kb, 8 files)[0m
+│ │ │ │ ╰── punycode@2.1.1[90m (31.67kb, 5 files)[0m
+│ │ │ ├─┬ tunnel-agent@0.6.0[90m (1 dep, 47.64kb, 9 files)[0m
+│ │ │ │ ╰── safe-buffer@5.2.1[90m (🔗, 31.35kb, 5 files)[0m
+│ │ │ ╰── uuid@3.3.2[90m (🔗, 42.58kb, 21 files)[0m
+│ │ ╰── semver@6.3.0[90m (65.5kb, 7 files)[0m
+│ ├─┬ jsonlint-mod@1.7.6[90m (9 deps, 3.05mb, 824 files)[0m
+│ │ ├── JSV@4.0.2[90m (2mb, 230 files)[0m
+│ │ ├─┬ chalk@2.4.2[90m (6 deps, 83.07kb, 38 files)[0m
+│ │ │ ├─┬ ansi-styles@3.2.1[90m (2 deps, 44.62kb, 18 files)[0m
+│ │ │ │ ╰─┬ color-convert@1.9.3[90m (1 dep, 35.47kb, 14 files)[0m
+│ │ │ │   ╰── color-name@1.1.3[90m (9.14kb, 7 files)[0m
+│ │ │ ├── escape-string-regexp@1.0.5[90m (🔗, 2.63kb, 4 files)[0m
+│ │ │ ╰─┬ supports-color@5.5.0[90m (1 dep, 9.53kb, 9 files)[0m
+│ │ │   ╰── has-flag@3.0.0[90m (3.05kb, 4 files)[0m
+│ │ ╰── underscore@1.13.1[90m (880.22kb, 503 files)[0m
+│ ├─┬ lighthouse-logger@1.2.0[90m (3 deps, 103.46kb, 35 files)[0m
+│ │ ├─┬ debug@2.6.9[90m (1 dep, 56.16kb, 21 files)[0m
+│ │ │ ╰── ms@2.0.0[90m (6.12kb, 4 files)[0m
+│ │ ╰── marky@1.2.1[90m (29.55kb, 9 files)[0m
+│ ├── lighthouse-stack-packs@1.4.0[90m (126kb, 21 files)[0m
+│ ├── lodash.get@4.4.2[90m (25.89kb, 4 files)[0m
+│ ├── lodash.isequal@4.5.0[90m (51.44kb, 4 files)[0m
+│ ├── lodash.set@4.3.2[90m (27.68kb, 4 files)[0m
+│ ├── lookup-closest-locale@6.0.4[90m (1.12kb, 2 files)[0m
+│ ├── metaviewport-parser@0.2.0[90m (24.59kb, 9 files)[0m
+│ ├─┬ open@6.4.0[90m (1 dep, 38.98kb, 10 files)[0m
+│ │ ╰── is-wsl@1.1.0[90m (2.81kb, 4 files)[0m
+│ ├── parse-cache-control@1.0.1[90m (3.95kb, 6 files)[0m
+│ ├── ps-list@7.2.0[90m (483.37kb, 7 files)[0m
+│ ├─┬ raven@2.6.4[90m (8 deps, 173.97kb, 74 files)[0m
+│ │ ├── cookie@0.3.1[90m (16.43kb, 5 files)[0m
+│ │ ├─┬ md5@2.3.0[90m (3 deps, 34.07kb, 22 files)[0m
+│ │ │ ├── charenc@0.0.2[90m (2.86kb, 4 files)[0m
+│ │ │ ├── crypt@0.0.2[90m (4.91kb, 4 files)[0m
+│ │ │ ╰── is-buffer@1.1.6[90m (5.44kb, 5 files)[0m
+│ │ ├── stack-trace@0.0.10[90m (🔗, 8.64kb, 6 files)[0m
+│ │ ├── timed-out@4.0.1[90m (3.98kb, 4 files)[0m
+│ │ ╰── uuid@3.3.2[90m (42.58kb, 21 files)[0m
+│ ├─┬ rimraf@2.7.1[90m (12 deps, 158.46kb, 62 files)[0m
+│ │ ╰── glob@7.1.6[90m (🔗, 11 deps, 143.36kb, 57 files)[0m
+│ ├── robots-parser@2.3.0[90m (17.95kb, 5 files)[0m
+│ ├── semver@5.7.1[90m (60.13kb, 7 files)[0m
+│ ├─┬ speedline-core@1.4.3[90m (3 deps, 986.86kb, 81 files)[0m
+│ │ ├── @types/node@14.14.41[90m (738.03kb, 53 files)[0m
+│ │ ├── image-ssim@0.2.0[90m (36.64kb, 12 files)[0m
+│ │ ╰── jpeg-js@0.4.3[90m (🔗, 72.87kb, 9 files)[0m
+│ ├── third-party-web@0.12.3[90m (2.78mb, 38 files)[0m
+│ ├─┬ update-notifier@4.1.3[90m (88 deps, 1.06mb, 511 files)[0m
+│ │ ├─┬ boxen@4.2.0[90m (22 deps, 367.75kb, 140 files)[0m
+│ │ │ ├─┬ ansi-align@3.0.0[90m (5 deps, 59.66kb, 30 files)[0m
+│ │ │ │ ╰─┬ string-width@3.1.0[90m (4 deps, 52.46kb, 25 files)[0m
+│ │ │ │   ├── emoji-regex@7.0.3[90m (35.41kb, 8 files)[0m
+│ │ │ │   ├── is-fullwidth-code-point@2.0.0[90m (4.04kb, 4 files)[0m
+│ │ │ │   ╰─┬ strip-ansi@5.2.0[90m (1 dep, 9.09kb, 9 files)[0m
+│ │ │ │     ╰── ansi-regex@4.1.0[90m (5.02kb, 4 files)[0m
+│ │ │ ├── camelcase@5.3.1[90m (7.27kb, 5 files)[0m
+│ │ │ ├── chalk@3.0.0[90m (🔗, 5 deps, 92.82kb, 33 files)[0m
+│ │ │ ├── cli-boxes@2.2.1[90m (5.99kb, 6 files)[0m
+│ │ │ ├── string-width@4.2.2[90m (🔗, 4 deps, 66.53kb, 28 files)[0m
+│ │ │ ├── term-size@2.2.1[90m (62.88kb, 9 files)[0m
+│ │ │ ├── type-fest@0.8.1[90m (56.59kb, 19 files)[0m
+│ │ │ ╰─┬ widest-line@3.1.0[90m (5 deps, 70.18kb, 33 files)[0m
+│ │ │   ╰── string-width@4.2.2[90m (🔗, 4 deps, 66.53kb, 28 files)[0m
+│ │ ├─┬ chalk@3.0.0[90m (5 deps, 92.82kb, 33 files)[0m
+│ │ │ ├─┬ ansi-styles@4.3.0[90m (2 deps, 49.67kb, 16 files)[0m
+│ │ │ │ ╰─┬ color-convert@2.0.1[90m (1 dep, 33.09kb, 11 files)[0m
+│ │ │ │   ╰── color-name@1.1.4[90m (6.54kb, 4 files)[0m
+│ │ │ ╰─┬ supports-color@7.2.0[90m (1 dep, 11.19kb, 10 files)[0m
+│ │ │   ╰── has-flag@4.0.0[90m (4.32kb, 5 files)[0m
+│ │ ├── configstore@5.0.1[90m (🔗, 13 deps, 181.67kb, 75 files)[0m
+│ │ ├── has-yarn@2.1.0[90m (3.31kb, 5 files)[0m
+│ │ ├── import-lazy@2.1.0[90m (4.65kb, 4 files)[0m
+│ │ ├─┬ is-ci@2.0.0[90m (1 dep, 16kb, 12 files)[0m
+│ │ │ ╰── ci-info@2.0.0[90m (12.51kb, 6 files)[0m
+│ │ ├─┬ is-installed-globally@0.3.2[90m (3 deps, 24.87kb, 19 files)[0m
+│ │ │ ├─┬ global-dirs@2.1.0[90m (1 dep, 17.18kb, 9 files)[0m
+│ │ │ │ ╰── ini@1.3.7[90m (9.17kb, 4 files)[0m
+│ │ │ ╰── is-path-inside@3.0.3[90m (4.02kb, 5 files)[0m
+│ │ ├── is-npm@4.0.0[90m (4.68kb, 5 files)[0m
+│ │ ├── is-yarn-global@0.3.0[90m (2.49kb, 5 files)[0m
+│ │ ├─┬ latest-version@5.1.0[90m (38 deps, 514.4kb, 232 files)[0m
+│ │ │ ╰─┬ package-json@6.5.0[90m (37 deps, 510.21kb, 227 files)[0m
+│ │ │   ├─┬ got@9.6.0[90m (25 deps, 312.77kb, 134 files)[0m
+│ │ │   │ ├── @sindresorhus/is@0.14.0[90m (39.22kb, 6 files)[0m
+│ │ │   │ ├─┬ @szmarczak/http-timer@1.1.2[90m (1 dep, 11.47kb, 9 files)[0m
+│ │ │   │ │ ╰── defer-to-connect@1.1.3[90m (5.32kb, 5 files)[0m
+│ │ │   │ ├─┬ cacheable-request@6.1.0[90m (14 deps, 139.26kb, 70 files)[0m
+│ │ │   │ │ ├─┬ clone-response@1.0.2[90m (1 dep, 8kb, 8 files)[0m
+│ │ │   │ │ │ ╰── mimic-response@1.0.1[90m (🔗, 3.5kb, 4 files)[0m
+│ │ │   │ │ ├─┬ get-stream@5.2.0[90m (4 deps, 32.63kb, 25 files)[0m
+│ │ │   │ │ │ ╰── pump@3.0.0[90m (🔗, 3 deps, 20.52kb, 19 files)[0m
+│ │ │   │ │ ├── http-cache-semantics@4.1.0[90m (35.33kb, 4 files)[0m
+│ │ │   │ │ ├─┬ keyv@3.1.0[90m (1 dep, 19.63kb, 11 files)[0m
+│ │ │   │ │ │ ╰── json-buffer@3.0.0[90m (5.31kb, 7 files)[0m
+│ │ │   │ │ ├── lowercase-keys@2.0.0[90m (2.72kb, 5 files)[0m
+│ │ │   │ │ ├── normalize-url@4.5.0[90m (17.67kb, 5 files)[0m
+│ │ │   │ │ ╰─┬ responselike@1.0.2[90m (1 dep, 6.92kb, 8 files)[0m
+│ │ │   │ │   ╰── lowercase-keys@1.0.1[90m (🔗, 2.4kb, 4 files)[0m
+│ │ │   │ ├─┬ decompress-response@3.3.0[90m (1 dep, 6.96kb, 8 files)[0m
+│ │ │   │ │ ╰── mimic-response@1.0.1[90m (🔗, 3.5kb, 4 files)[0m
+│ │ │   │ ├── duplexer3@0.1.4[90m (6.28kb, 4 files)[0m
+│ │ │   │ ├─┬ get-stream@4.1.0[90m (4 deps, 28.22kb, 24 files)[0m
+│ │ │   │ │ ╰─┬ pump@3.0.0[90m (3 deps, 20.52kb, 19 files)[0m
+│ │ │   │ │   ├─┬ end-of-stream@1.4.4[90m (2 deps, 12.93kb, 12 files)[0m
+│ │ │   │ │   │ ╰── once@1.4.0[90m (🔗, 1 dep, 6.84kb, 8 files)[0m
+│ │ │   │ │   ╰── once@1.4.0[90m (🔗, 1 dep, 6.84kb, 8 files)[0m
+│ │ │   │ ├── lowercase-keys@1.0.1[90m (2.4kb, 4 files)[0m
+│ │ │   │ ├── mimic-response@1.0.1[90m (3.5kb, 4 files)[0m
+│ │ │   │ ├── p-cancelable@1.1.0[90m (12.22kb, 5 files)[0m
+│ │ │   │ ├── to-readable-stream@1.0.0[90m (2.72kb, 4 files)[0m
+│ │ │   │ ╰─┬ url-parse-lax@3.0.0[90m (1 dep, 7.04kb, 8 files)[0m
+│ │ │   │   ╰── prepend-http@2.0.0[90m (2.91kb, 4 files)[0m
+│ │ │   ├─┬ registry-auth-token@4.2.1[90m (5 deps, 83.01kb, 54 files)[0m
+│ │ │   │ ╰─┬ rc@1.2.8[90m (4 deps, 71.56kb, 47 files)[0m
+│ │ │   │   ├── deep-extend@0.6.0[90m (8.97kb, 6 files)[0m
+│ │ │   │   ├── ini@1.3.7[90m (🔗, 9.17kb, 4 files)[0m
+│ │ │   │   ├── minimist@1.2.5[90m (🔗, 31.63kb, 21 files)[0m
+│ │ │   │   ╰── strip-json-comments@2.0.1[90m (4.94kb, 4 files)[0m
+│ │ │   ├─┬ registry-url@5.1.0[90m (5 deps, 75.79kb, 52 files)[0m
+│ │ │   │ ╰─┬ rc@1.2.8[90m (4 deps, 71.56kb, 47 files)[0m
+│ │ │   │   ├── deep-extend@0.6.0[90m (8.97kb, 6 files)[0m
+│ │ │   │   ├── ini@1.3.7[90m (🔗, 9.17kb, 4 files)[0m
+│ │ │   │   ├── minimist@1.2.5[90m (🔗, 31.63kb, 21 files)[0m
+│ │ │   │   ╰── strip-json-comments@2.0.1[90m (4.94kb, 4 files)[0m
+│ │ │   ╰── semver@6.3.0[90m (🔗, 65.5kb, 7 files)[0m
+│ │ ├─┬ pupa@2.1.1[90m (1 dep, 10.95kb, 10 files)[0m
+│ │ │ ╰── escape-goat@2.1.1[90m (6.13kb, 5 files)[0m
+│ │ ├─┬ semver-diff@3.1.1[90m (1 dep, 70.62kb, 12 files)[0m
+│ │ │ ╰── semver@6.3.0[90m (🔗, 65.5kb, 7 files)[0m
+│ │ ╰── xdg-basedir@4.0.0[90m (5.56kb, 5 files)[0m
+│ ├─┬ ws@3.3.2[90m (3 deps, 144.37kb, 32 files)[0m
+│ │ ├── async-limiter@1.0.1[90m (6.74kb, 7 files)[0m
+│ │ ├── safe-buffer@5.1.2[90m (30.94kb, 5 files)[0m
+│ │ ╰── ultron@1.1.1[90m (9.11kb, 4 files)[0m
+│ ├─┬ yargs@16.2.0[90m (18 deps, 662.23kb, 173 files)[0m
+│ │ ├─┬ cliui@7.0.4[90m (9 deps, 156.48kb, 56 files)[0m
+│ │ │ ├── string-width@4.2.2[90m (🔗, 4 deps, 66.53kb, 28 files)[0m
+│ │ │ ├── strip-ansi@6.0.0[90m (🔗, 1 dep, 9.49kb, 10 files)[0m
+│ │ │ ╰─┬ wrap-ansi@7.0.0[90m (8 deps, 126.6kb, 48 files)[0m
+│ │ │   ├── ansi-styles@4.3.0[90m (🔗, 2 deps, 49.67kb, 16 files)[0m
+│ │ │   ├── string-width@4.2.2[90m (🔗, 4 deps, 66.53kb, 28 files)[0m
+│ │ │   ╰── strip-ansi@6.0.0[90m (🔗, 1 dep, 9.49kb, 10 files)[0m
+│ │ ├── escalade@3.1.1[90m (11.17kb, 9 files)[0m
+│ │ ├── get-caller-file@2.0.5[90m (4.61kb, 6 files)[0m
+│ │ ├── require-directory@2.1.1[90m (11.79kb, 7 files)[0m
+│ │ ├─┬ string-width@4.2.2[90m (4 deps, 66.53kb, 28 files)[0m
+│ │ │ ├── emoji-regex@8.0.0[90m (47.12kb, 8 files)[0m
+│ │ │ ├── is-fullwidth-code-point@3.0.0[90m (4.88kb, 5 files)[0m
+│ │ │ ╰── strip-ansi@6.0.0[90m (🔗, 1 dep, 9.49kb, 10 files)[0m
+│ │ ├── y18n@5.0.8[90m (22.89kb, 9 files)[0m
+│ │ ╰── yargs-parser@20.2.7[90m (🔗, 118.7kb, 11 files)[0m
+│ ╰── yargs-parser@20.2.7[90m (118.7kb, 11 files)[0m
+├── node-fetch@2.6.1[90m (154.07kb, 8 files)[0m
+├─┬ protocolify@2.0.0[90m (2 deps, 8.57kb, 12 files)[0m
+│ ├── file-url@2.0.2[90m (3.11kb, 4 files)[0m
+│ ╰── prepend-http@1.0.4[90m (2.55kb, 4 files)[0m
+├─┬ puppeteer@2.1.1[90m (44 deps, 1.91mb, 339 files)[0m
+│ ├── @types/mime-types@2.1.0[90m (2.83kb, 4 files)[0m
+│ ├─┬ debug@4.3.2[90m (1 dep, 47.05kb, 11 files)[0m
+│ │ ╰── ms@2.1.2[90m (6.68kb, 4 files)[0m
+│ ├─┬ extract-zip@1.7.0[90m (19 deps, 422.7kb, 155 files)[0m
+│ │ ├─┬ concat-stream@1.6.2[90m (10 deps, 209.84kb, 79 files)[0m
+│ │ │ ├── buffer-from@1.1.1[90m (4.85kb, 4 files)[0m
+│ │ │ ├── inherits@2.0.4[90m (🔗, 3.87kb, 5 files)[0m
+│ │ │ ├── readable-stream@2.3.7[90m (🔗, 7 deps, 170.31kb, 63 files)[0m
+│ │ │ ╰── typedarray@0.0.6[90m (25.35kb, 8 files)[0m
+│ │ ├─┬ debug@2.6.9[90m (1 dep, 56.16kb, 21 files)[0m
+│ │ │ ╰── ms@2.0.0[90m (6.12kb, 4 files)[0m
+│ │ ├─┬ mkdirp@0.5.5[90m (1 dep, 38.98kb, 27 files)[0m
+│ │ │ ╰── minimist@1.2.5[90m (🔗, 31.63kb, 21 files)[0m
+│ │ ╰─┬ yauzl@2.10.0[90m (3 deps, 107.41kb, 21 files)[0m
+│ │   ├─┬ fd-slicer@1.1.0[90m (1 dep, 34.99kb, 13 files)[0m
+│ │   │ ╰── pend@1.2.0[90m (5.87kb, 5 files)[0m
+│ │   ╰── buffer-crc32@0.2.13[90m (7.77kb, 4 files)[0m
+│ ├─┬ https-proxy-agent@4.0.0[90m (3 deps, 86.7kb, 26 files)[0m
+│ │ ├── agent-base@5.1.1[90m (23.14kb, 8 files)[0m
+│ │ ╰── debug@4.3.2[90m (🔗, 1 dep, 47.05kb, 11 files)[0m
+│ ├── mime@2.5.2[90m (58.27kb, 10 files)[0m
+│ ├─┬ mime-types@2.1.30[90m (1 dep, 212.67kb, 11 files)[0m
+│ │ ╰── mime-db@1.47.0[90m (195.56kb, 6 files)[0m
+│ ├── progress@2.0.3[90m (15.14kb, 7 files)[0m
+│ ├── proxy-from-env@1.1.0[90m (28.76kb, 7 files)[0m
+│ ├─┬ rimraf@2.7.1[90m (12 deps, 158.46kb, 62 files)[0m
+│ │ ╰── glob@7.1.6[90m (🔗, 11 deps, 143.36kb, 57 files)[0m
+│ ╰─┬ ws@6.2.1[90m (1 dep, 105.81kb, 22 files)[0m
+│   ╰── async-limiter@1.0.1[90m (6.74kb, 7 files)[0m
+├── typescript@3.9.9[90m (51.63mb, 171 files)[0m
+├─┬ winston@3.3.3[90m (36 deps, 2.13mb, 515 files)[0m
+│ ├── async@3.2.0[90m (677.29kb, 137 files)[0m
+│ ├─┬ @dabh/diagnostics@2.0.2[90m (11 deps, 475.79kb, 79 files)[0m
+│ │ ├─┬ colorspace@1.1.2[90m (8 deps, 131.1kb, 46 files)[0m
+│ │ │ ├─┬ color@3.0.0[90m (6 deps, 124.48kb, 36 files)[0m
+│ │ │ │ ├─┬ color-convert@1.9.3[90m (1 dep, 35.47kb, 14 files)[0m
+│ │ │ │ │ ╰── color-name@1.1.3[90m (9.14kb, 7 files)[0m
+│ │ │ │ ╰─┬ color-string@1.5.5[90m (3 deps, 73.26kb, 18 files)[0m
+│ │ │ │   ├── color-name@1.1.4[90m (6.54kb, 4 files)[0m
+│ │ │ │   ╰─┬ simple-swizzle@0.2.2[90m (1 dep, 56.96kb, 9 files)[0m
+│ │ │ │     ╰── is-arrayish@0.3.2[90m (53.44kb, 5 files)[0m
+│ │ │ ╰── text-hex@1.0.0[90m (2.65kb, 5 files)[0m
+│ │ ├── enabled@2.0.0[90m (5.75kb, 6 files)[0m
+│ │ ╰── kuler@2.0.0[90m (5.95kb, 6 files)[0m
+│ ├── is-stream@2.0.0[90m (5.56kb, 5 files)[0m
+│ ├─┬ logform@2.2.0[90m (5 deps, 326.96kb, 118 files)[0m
+│ │ ├── colors@1.4.0[90m (38.58kb, 21 files)[0m
+│ │ ├── fast-safe-stringify@2.0.7[90m (33.23kb, 10 files)[0m
+│ │ ├── fecha@4.2.1[90m (138.09kb, 12 files)[0m
+│ │ ├── ms@2.1.3[90m (6.56kb, 4 files)[0m
+│ │ ╰── triple-beam@1.3.0[90m (🔗, 9kb, 13 files)[0m
+│ ├─┬ one-time@1.0.0[90m (1 dep, 12.01kb, 12 files)[0m
+│ │ ╰── fn.name@1.1.0[90m (6.06kb, 7 files)[0m
+│ ├─┬ readable-stream@3.6.0[90m (4 deps, 174.08kb, 45 files)[0m
+│ │ ├── inherits@2.0.4[90m (3.87kb, 5 files)[0m
+│ │ ├─┬ string_decoder@1.3.0[90m (1 dep, 45.44kb, 9 files)[0m
+│ │ │ ╰── safe-buffer@5.2.1[90m (31.35kb, 5 files)[0m
+│ │ ╰── util-deprecate@1.0.2[90m (5.35kb, 6 files)[0m
+│ ├── stack-trace@0.0.10[90m (8.64kb, 6 files)[0m
+│ ├── triple-beam@1.3.0[90m (9kb, 13 files)[0m
+│ ╰─┬ winston-transport@4.4.0[90m (9 deps, 232.76kb, 93 files)[0m
+│   ├─┬ readable-stream@2.3.7[90m (7 deps, 170.31kb, 63 files)[0m
+│   │ ├── core-util-is@1.0.2[90m (22.65kb, 6 files)[0m
+│   │ ├── inherits@2.0.4[90m (🔗, 3.87kb, 5 files)[0m
+│   │ ├── isarray@1.0.0[90m (3.79kb, 8 files)[0m
+│   │ ├── process-nextick-args@2.0.1[90m (3.1kb, 4 files)[0m
+│   │ ├── safe-buffer@5.1.2[90m (🔗, 30.94kb, 5 files)[0m
+│   │ ├─┬ string_decoder@1.1.1[90m (1 dep, 45.88kb, 10 files)[0m
+│   │ │ ╰── safe-buffer@5.1.2[90m (🔗, 30.94kb, 5 files)[0m
+│   │ ╰── util-deprecate@1.0.2[90m (🔗, 5.35kb, 6 files)[0m
+│   ╰── triple-beam@1.3.0[90m (🔗, 9kb, 13 files)[0m
+╰─┬ winston-daily-rotate-file@4.5.2[90m (14 deps, 4.38mb, 666 files)[0m
+  ├─┬ file-stream-rotator@0.5.7[90m (1 dep, 4.06mb, 543 files)[0m
+  │ ╰── moment@2.29.1[90m (4.01mb, 533 files)[0m
+  ├── object-hash@2.1.1[90m (57.37kb, 5 files)[0m
+  ├── triple-beam@1.3.0[90m (9kb, 13 files)[0m
+  ╰─┬ winston-transport@4.4.0[90m (9 deps, 232.76kb, 93 files)[0m
+    ├─┬ readable-stream@2.3.7[90m (7 deps, 170.31kb, 63 files)[0m
+    │ ├── core-util-is@1.0.2[90m (22.65kb, 6 files)[0m
+    │ ├── inherits@2.0.4[90m (🔗, 3.87kb, 5 files)[0m
+    │ ├── isarray@1.0.0[90m (3.79kb, 8 files)[0m
+    │ ├── process-nextick-args@2.0.1[90m (3.1kb, 4 files)[0m
+    │ ├── safe-buffer@5.1.2[90m (🔗, 30.94kb, 5 files)[0m
+    │ ├─┬ string_decoder@1.1.1[90m (1 dep, 45.88kb, 10 files)[0m
+    │ │ ╰── safe-buffer@5.1.2[90m (🔗, 30.94kb, 5 files)[0m
+    │ ╰── util-deprecate@1.0.2[90m (🔗, 5.35kb, 6 files)[0m
+    ╰── triple-beam@1.3.0[90m (🔗, 9kb, 13 files)[0m

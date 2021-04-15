@@ -43,7 +43,7 @@ To access the full range of axe-core rules, use the the axe-core test tools on t
 
 ## Technology requirements
 
-This example uses the following technology stack:
+Below are the core dependencies. See [this dependencies file](lh-dependency-map.txt) for a mapping of all dependencies associated with this example.
 
 - Chrome Desktop
 
