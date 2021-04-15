@@ -32,7 +32,7 @@ Those analyses of vendor accessibility rulesets and the OAST ruleset recommendat
 
 ## Technology requirements
 
-Below are the core dependencies. See [this dependencies page](axe-dependency-map.txt) for a mapping of all dependencies associated with this example.
+Below are the core dependencies. See [this dependencies file](axe-dependency-map.txt) for a mapping of all dependencies associated with this example.
 
 - NodeJs 6+
 - Git
