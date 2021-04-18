@@ -38,21 +38,16 @@ Below are the core dependencies. See [this dependencies file](pa11y-dependency-m
 
 - axe-Puppeteer
 
-- Commander
 - async@3.6.3
 - chalk@1.1.3
 - chart.js@2.9.3
 - cheerio@0.22.0
 - globby@6.1.0
-- lodash@4.17.20
-- node-fetch@2.6.1
 - pa11y-ci-reporter-html@2.0.0
 - pa11y-ci@2.4.0
 - pa11y-lint-config@1.2.1
 - pa11y@5.3.0
-- winston-daily-rotate-file@4.5.0
 - winston@3.3.3
-- wordwrap@1.0.0
 
 
 
