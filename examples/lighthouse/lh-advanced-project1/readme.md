@@ -4,6 +4,8 @@
 
 Go to the [GitHub Playbook-Automation published page](https://section508coordinators.github.io/Dev-Automation/)
 
+Bitbucket mirror site navigation located [HERE](https://maestro.dhs.gov/stash/projects/APPDEV/repos/dev-automation/browse/bb_nav.md). DHS network permissions are required.
+
 ---
 
 
@@ -207,5 +209,5 @@ For more information on lighthouse syntax, go here: https://github.com/GoogleChr
 
 ---
 
-04/15/2021 | 11:40a
+04/18/2021 | 06:12p
 
