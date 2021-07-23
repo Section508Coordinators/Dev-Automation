@@ -1,13 +1,28 @@
 {
   "name": "axe-basic-scripting",
-  "version": "1.0.0",
-  "description": "Examples of using the axe-core library for basic scripting",
+  "version": "1.5.0",
+  "description": "Updated 07/23/2021: Examples of using the axe-core library in basic scripting",
   "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Section508Coordinators/Dev-Automation.git"
+  },
+  "keywords": [
+    "axe-core",
+    "accessibility",
+    "automated",
+    "testing"
+  ],
   "author": "Alan King",
-  "license": "MIT",
-  "private": true,
+  "license": "SEE LICENSE IN <https://github.com/Section508Coordinators/Dev-Automation/blob/master/examples/axe-core/axe-basic-scripts/LICENSE>",
+  "bugs": {
+    "url": "https://github.com/Section508Coordinators/Dev-Automation/issues"
+  },
+  "homepage": "https://github.com/Section508Coordinators/Dev-Automation/tree/master/examples/axe-core/axe-basic-scripts",
   "dependencies": {
-    "axe-webdriverjs": "^2.3.0",
-    "selenium-webdriver": "^4.0.0-alpha.8"
+    "@axe-core/webdriverjs": "^4.2.2"
   }
 }

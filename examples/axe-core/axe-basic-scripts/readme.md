@@ -29,28 +29,28 @@ These examples use the following technology stack:
 - Nodejs 6+
 - Git (Bash window is fine)
 - Chrome browser version 59+
-- Chrome WebDriver (use your version of Chrome)
+- Chrome WebDriver (driver version should match your version of Chrome browser)
 - Firefox browser
 - Firefox (Gecko) WebDriver
 - Selenium WebDriver
-- axe-WebDriverJs
+- @axe-core/webdriverjs
 - JavaScript
 
 ## Setup
 
-Perform the following steps to setup your environment to run the examples:
+Perform the following steps to setup your environment to run the examples. ***Note***: It is recommended that you install selenium-webdriver after installing @ax3-core/webdriverjs below:
 
 1. Install Nodejs 6+
 2. Install Git 
-3. Install Selenium Webdriver: `npm install selenium-webdriver --no-save`
 4. Install axe-core webdriverjs and its dependencies: `npm install @axe-core/webdriverjs`
-5. Running the examples, as is, will require you to have the Firefox and Chrome browsers installed on the machine. Also, you will need to install the corresponding WebDrivers as follows:
+4. Install Selenium Webdriver: `npm install selenium-webdriver --no-save`
+5. Running the examples, as is, will require you to have the Firefox and Chrome browsers installed on the machine. Also, you will need to install the corresponding Webdrivers as follows:
    1. **Chrome**
       1. Requires Chrome browser version 59+
-      2. Install the Chromedriver version that corresponds to your Chrome browser version and ensure its file system location is in your Windows PATH statement
+      2. Install the Chromedriver version that corresponds to your Chrome browser version and ensure its file system location is in your Windows PATH statement. You can download Chromedriver [HERE](https://chromedriver.chromium.org/downloads).
    2. **Firefox**
-      1. Requires any relatively current Firefox browser
-      2. Install Gecko driver and ensure it is in your PATH statement
+      1. Requires any relatively current version of the Firefox browser
+      2. Install Gecko driver and ensure it is in your PATH statement. You can download the Geckodriver [HERE](https://github.com/mozilla/geckodriver/releases).
 
 ---
 
@@ -92,4 +92,4 @@ More comprehensive guidance on the axe-core engine can be found in the [Axe Java
 
 ---
 
-03/02/2021 | 05:03p
+UPDATED: 07/23/2021 | 05:55p
