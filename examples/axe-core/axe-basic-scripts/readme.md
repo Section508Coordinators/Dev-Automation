@@ -38,7 +38,7 @@ These examples use the following technology stack:
 
 ## Setup
 
-Perform the following steps to setup your environment to run the examples. ***Note***: It is recommended that you install selenium-webdriver after installing @ax3-core/webdriverjs below:
+Perform the following steps to setup your environment to run the examples. ***Note***: It is recommended that you install selenium-webdriver after installing @axe-core/webdriverjs below:
 
 1. Install Nodejs 6+
 2. Install Git 
