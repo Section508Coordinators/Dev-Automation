@@ -1,0 +1,24 @@
+.body{
+  background: #f1f1f1;
+}
+.container{
+  padding: 100px;
+}
+.components{
+  padding: 20px 0 20px 0;
+  display: flex;
+  justify-content: space-around;
+}
+@media (max-width: 818px) {
+  .container{
+    padding: 20px;
+  }
+  .components{
+    display: flex;
+    flex-direction: column;
+    padding: 20px 0 40px 0;
+  }
+}
+table {
+  width: 100%;
+}
