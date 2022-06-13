@@ -1,1 +1,0 @@
-node 04-custom-axe -s https://section508coordinators.github.io/Dev-Automation/sitemaps/tsa.xml -h 01aa-Rpt_Axe_TSA -x '.*(pdf|jpg|png)$'
