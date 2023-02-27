@@ -18,7 +18,7 @@ The tool currently integrates with Chrome, Firefox, and Edge with extended featu
 - Ability to test a part of a page
 - Ability to save & export results
 
-This upgrade requires registration. You can find out more about this version [at the Deque web site](https://www.deque.com/axe/beta/?utm_source=dequeuniversity&utm_medium=referral&utm_campaign=axebeta_domore).
+This upgrade requires registration. You can find out more about this version [at the axe DevTools Pro plans page](https://axe.deque.com/plans).
 
 ---
 
